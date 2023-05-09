@@ -10,6 +10,8 @@ from my_modules import generate_colors
 from my_modules import *
 TEST_MODE = 1
 
+
+
 if __name__ == "__main__":
     PROGRAM_START_TIME = time.time()
     # Data Read
