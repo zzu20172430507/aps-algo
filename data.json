@@ -1,0 +1,2608 @@
+{
+    "AssaysModel": [
+      {
+        "Name": "test",
+        "ProjectId": "B48A055EF802466DBFC34B1600993BFA",
+        "AssaysId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "Tasks": [
+          {
+            "Id": "5b08bf3fc5864570b577c53138903160",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              
+            ],
+            "Next": [
+              "3bc7d4fd5cb94a81857d387836d528cb"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Get From Hotel",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "7A3B08A214C34737B482B2E1F9A207E0"
+          },
+          {
+            "Id": "3bc7d4fd5cb94a81857d387836d528cb",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "5b08bf3fc5864570b577c53138903160"
+            ],
+            "Next": [
+              "b35655a2c694446d92ce609aefe7a724"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6582FD88794A4600B8B388E4F729B175"
+          },
+          {
+            "Id": "b35655a2c694446d92ce609aefe7a724",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "3bc7d4fd5cb94a81857d387836d528cb"
+            ],
+            "Next": [
+              "128ab9bf9b524e47b99a1d4fd06894bb"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Open Lid",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6582FD88794A4600B8B388E4F729B175"
+          },
+          {
+            "Id": "128ab9bf9b524e47b99a1d4fd06894bb",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "b35655a2c694446d92ce609aefe7a724"
+            ],
+            "Next": [
+              "fee8a82e98e344e2966c6bae1a89c56b"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6E24506478EE493BA1DAFF48793D6695"
+          },
+          {
+            "Id": "fee8a82e98e344e2966c6bae1a89c56b",
+            "Occupy": [
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "128ab9bf9b524e47b99a1d4fd06894bb"
+            ],
+            "Next": [
+              "fc10f6039ed5497ea437298aabfe3aa0"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Washer",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6E24506478EE493BA1DAFF48793D6695"
+          },
+          {
+            "Id": "fc10f6039ed5497ea437298aabfe3aa0",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "fee8a82e98e344e2966c6bae1a89c56b"
+            ],
+            "Next": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "F7FB4BAB7380487A9D59356DEF613BE4"
+          },
+          {
+            "Id": "08af97a5a650453fbeeacb208f0dcae4",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "fc10f6039ed5497ea437298aabfe3aa0"
+            ],
+            "Next": [
+              "a26273cd69ab4c3ca4dccfadddeec137"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Load Plate",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "泳道1",
+            "TaskPlateName": "泳道1",
+            "StepName": "Load Plate",
+            "SequnceId": "9E210A6AD7674F70ADB062DD6CD16110",
+            "SequnceStepId": "EA332A34AD4549B8917A56D80E9E575C",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "F7FB4BAB7380487A9D59356DEF613BE4"
+          },
+          {
+            "Id": "a26273cd69ab4c3ca4dccfadddeec137",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ]
+            ],
+            "Occupy_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Release_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "08af97a5a650453fbeeacb208f0dcae4",
+              "9411c107b1db456790e744cce3e7a8b3"
+            ],
+            "Next": [
+              "f92a142f26be415bb68676f55c9c4c1f"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Load Plate",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "泳道2",
+            "TaskPlateName": "泳道1",
+            "StepName": "Load Plate",
+            "SequnceId": "9E210A6AD7674F70ADB062DD6CD16110",
+            "SequnceStepId": "E02507DAF15D46999079BD7D712C5146",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "F7FB4BAB7380487A9D59356DEF613BE4"
+          },
+          {
+            "Id": "f92a142f26be415bb68676f55c9c4c1f",
+            "Occupy": [
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Release": [
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Occupy_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Release_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 120,
+            "Pre": [
+              "a26273cd69ab4c3ca4dccfadddeec137"
+            ],
+            "Next": [
+              "cc7d7f163ba84d7f8f6d7aaea02996f0"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Load And Run Protocol",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": null,
+            "TaskPlateName": "泳道1",
+            "StepName": "Load And Run Protocol",
+            "SequnceId": "9E210A6AD7674F70ADB062DD6CD16110",
+            "SequnceStepId": "280F48C9F55048D29B145F628009E50A",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "F7FB4BAB7380487A9D59356DEF613BE4"
+          },
+          {
+            "Id": "cc7d7f163ba84d7f8f6d7aaea02996f0",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ]
+            ],
+            "Occupy_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Release_dependency": [
+              "08af97a5a650453fbeeacb208f0dcae4"
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "f92a142f26be415bb68676f55c9c4c1f"
+            ],
+            "Next": [
+              "da63ab87201944559bb83b330f0075d4"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Unload Plate",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "泳道1",
+            "TaskPlateName": "泳道1",
+            "StepName": "Unload Plate",
+            "SequnceId": "9E210A6AD7674F70ADB062DD6CD16110",
+            "SequnceStepId": "44FD0B8A8DDC440980E5D6AC9D9A457A",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "F7FB4BAB7380487A9D59356DEF613BE4"
+          },
+          {
+            "Id": "da63ab87201944559bb83b330f0075d4",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "cc7d7f163ba84d7f8f6d7aaea02996f0"
+            ],
+            "Next": [
+              "6cd8ddfab82b4e0f96b451db9fbc9316"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "8AA7C0E249884336BCB8DED5AF76C1DB"
+          },
+          {
+            "Id": "6cd8ddfab82b4e0f96b451db9fbc9316",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "da63ab87201944559bb83b330f0075d4"
+            ],
+            "Next": [
+              "2867eb13c7c14758b6d638efecead14e"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Close",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "8AA7C0E249884336BCB8DED5AF76C1DB"
+          },
+          {
+            "Id": "2867eb13c7c14758b6d638efecead14e",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "6cd8ddfab82b4e0f96b451db9fbc9316"
+            ],
+            "Next": [
+              "b05d9ae423b445078bc2b325fa3307d8"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "1A873FA760304F558B1FD3E059F764EA"
+          },
+          {
+            "Id": "b05d9ae423b445078bc2b325fa3307d8",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 3600,
+            "Pre": [
+              "2867eb13c7c14758b6d638efecead14e"
+            ],
+            "Next": [
+              "90dd69a6aaf04482a13a645b05c04737"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Incubator",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "1A873FA760304F558B1FD3E059F764EA"
+          },
+          {
+            "Id": "90dd69a6aaf04482a13a645b05c04737",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "b05d9ae423b445078bc2b325fa3307d8"
+            ],
+            "Next": [
+              "8781a8f08368404c901a16a3e035d83a"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "14119A15B25646FDBA0E14208D7D85DF"
+          },
+          {
+            "Id": "8781a8f08368404c901a16a3e035d83a",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "90dd69a6aaf04482a13a645b05c04737"
+            ],
+            "Next": [
+              "3d6f136746a04b16a0d5ad3341889acc"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Open Lid2",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "14119A15B25646FDBA0E14208D7D85DF"
+          },
+          {
+            "Id": "3d6f136746a04b16a0d5ad3341889acc",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "8781a8f08368404c901a16a3e035d83a"
+            ],
+            "Next": [
+              "032c712bbe7e4b5fa5ef7f95f87507ba"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "065C0A3F4F404C56B32AED89C6773A39"
+          },
+          {
+            "Id": "032c712bbe7e4b5fa5ef7f95f87507ba",
+            "Occupy": [
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 150,
+            "Pre": [
+              "3d6f136746a04b16a0d5ad3341889acc"
+            ],
+            "Next": [
+              "a9ebdea5f4bb4a91aa85b8711e6840f3"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Washer+分液",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "065C0A3F4F404C56B32AED89C6773A39"
+          },
+          {
+            "Id": "a9ebdea5f4bb4a91aa85b8711e6840f3",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "032c712bbe7e4b5fa5ef7f95f87507ba"
+            ],
+            "Next": [
+              "8c7c209dba7c4ef9b120fa49da031c48"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "9456EEC507F14BCAB6769EF7BF2742D1"
+          },
+          {
+            "Id": "8c7c209dba7c4ef9b120fa49da031c48",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "a9ebdea5f4bb4a91aa85b8711e6840f3"
+            ],
+            "Next": [
+              "0ca9d3c407374f1593720a9e22a814d2"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Close2",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "9456EEC507F14BCAB6769EF7BF2742D1"
+          },
+          {
+            "Id": "0ca9d3c407374f1593720a9e22a814d2",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "8c7c209dba7c4ef9b120fa49da031c48"
+            ],
+            "Next": [
+              "3883f91511884c6b8b8cf1468d28928a"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "DE4A5D33A1CD42DEAD0615ADCA5C321F"
+          },
+          {
+            "Id": "3883f91511884c6b8b8cf1468d28928a",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 1800,
+            "Pre": [
+              "0ca9d3c407374f1593720a9e22a814d2"
+            ],
+            "Next": [
+              "cb69b4a2d53045eebd805e65a7447d67"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Incubator2",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "DE4A5D33A1CD42DEAD0615ADCA5C321F"
+          },
+          {
+            "Id": "cb69b4a2d53045eebd805e65a7447d67",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "3883f91511884c6b8b8cf1468d28928a"
+            ],
+            "Next": [
+              "dcf9446a581c428e9cbe25968a07e984"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "3A00EAC6A23D4281AD70FD59A88CDCE0"
+          },
+          {
+            "Id": "dcf9446a581c428e9cbe25968a07e984",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "cb69b4a2d53045eebd805e65a7447d67"
+            ],
+            "Next": [
+              "01ed99bd8286499aad5311c645af8ad7"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Open Lid3",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "3A00EAC6A23D4281AD70FD59A88CDCE0"
+          },
+          {
+            "Id": "01ed99bd8286499aad5311c645af8ad7",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "dcf9446a581c428e9cbe25968a07e984"
+            ],
+            "Next": [
+              "db6f9152682d4201952a1b5f49430a0a"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "702601BEA15D445C8BF3DFBEFDD61646"
+          },
+          {
+            "Id": "db6f9152682d4201952a1b5f49430a0a",
+            "Occupy": [
+              [
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "01ed99bd8286499aad5311c645af8ad7"
+            ],
+            "Next": [
+              "e324d96ccf5747149899410bae07d98e"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "运行Protocol",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "702601BEA15D445C8BF3DFBEFDD61646"
+          },
+          {
+            "Id": "e324d96ccf5747149899410bae07d98e",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "A3C696911BC34A8CB60815D6C4529DE5"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "db6f9152682d4201952a1b5f49430a0a"
+            ],
+            "Next": [
+              "aaaeec23e97946679cf4c70e6c276248"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "66AC387CECA647D7A2D93D2DFB818C85"
+          },
+          {
+            "Id": "aaaeec23e97946679cf4c70e6c276248",
+            "Occupy": [
+              [
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "e324d96ccf5747149899410bae07d98e"
+            ],
+            "Next": [
+              "4d6a16416cbd431b9c35dbac92dbe86f"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "分液器FX(加显色剂)",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "66AC387CECA647D7A2D93D2DFB818C85"
+          },
+          {
+            "Id": "4d6a16416cbd431b9c35dbac92dbe86f",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "aaaeec23e97946679cf4c70e6c276248"
+            ],
+            "Next": [
+              "0724a0fb2ff64e4897399c0aa9d61045"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "3891234627D44297A7064BB9EC80454A"
+          },
+          {
+            "Id": "0724a0fb2ff64e4897399c0aa9d61045",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "4d6a16416cbd431b9c35dbac92dbe86f"
+            ],
+            "Next": [
+              "9b85c1a3bf6e41d3a75d97e9941c4522"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Close3",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "3891234627D44297A7064BB9EC80454A"
+          },
+          {
+            "Id": "9b85c1a3bf6e41d3a75d97e9941c4522",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "0724a0fb2ff64e4897399c0aa9d61045"
+            ],
+            "Next": [
+              "6b030aeb4a7b48f98edca17bb403e4da"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "398FD969239343C1905D82D12E83E56C"
+          },
+          {
+            "Id": "6b030aeb4a7b48f98edca17bb403e4da",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 600,
+            "Pre": [
+              "9b85c1a3bf6e41d3a75d97e9941c4522"
+            ],
+            "Next": [
+              "f0084b4d8b974f0a84a74090929903d3"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Incubator3",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "398FD969239343C1905D82D12E83E56C"
+          },
+          {
+            "Id": "f0084b4d8b974f0a84a74090929903d3",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "6b030aeb4a7b48f98edca17bb403e4da"
+            ],
+            "Next": [
+              "28197f6c549148a7b5948971011d5f3c"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "59D8AD9937864DC1B03CA48A569124FD"
+          },
+          {
+            "Id": "28197f6c549148a7b5948971011d5f3c",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "f0084b4d8b974f0a84a74090929903d3"
+            ],
+            "Next": [
+              "35d20b182899413e9cdae322ce9dd4cb"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Open Lid4",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "59D8AD9937864DC1B03CA48A569124FD"
+          },
+          {
+            "Id": "35d20b182899413e9cdae322ce9dd4cb",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "28197f6c549148a7b5948971011d5f3c"
+            ],
+            "Next": [
+              "fca12a4477314012ace463b83aa9b915"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "E5A0F965117842148626D72F83FBB241"
+          },
+          {
+            "Id": "fca12a4477314012ace463b83aa9b915",
+            "Occupy": [
+              [
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "35d20b182899413e9cdae322ce9dd4cb"
+            ],
+            "Next": [
+              "da2c85b16f7e4f5fb3e7ec409b8ee787"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "分液",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "E5A0F965117842148626D72F83FBB241"
+          },
+          {
+            "Id": "da2c85b16f7e4f5fb3e7ec409b8ee787",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "36C27F50528245278526E211C282FBFA"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "EE46C2FDBA2E4F33AA42273B2F74DF6F"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "fca12a4477314012ace463b83aa9b915"
+            ],
+            "Next": [
+              "b8325bea38774e9891e9e9a2d33e7cac"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "1D250F74EB9742348A9DAB6347A3F314"
+          },
+          {
+            "Id": "b8325bea38774e9891e9e9a2d33e7cac",
+            "Occupy": [
+              [
+                "36C27F50528245278526E211C282FBFA"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 120,
+            "Pre": [
+              "da2c85b16f7e4f5fb3e7ec409b8ee787"
+            ],
+            "Next": [
+              "945cdb03e46d4850b83b5e252541a400"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Spin",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "1D250F74EB9742348A9DAB6347A3F314"
+          },
+          {
+            "Id": "945cdb03e46d4850b83b5e252541a400",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              [
+                "36C27F50528245278526E211C282FBFA"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "b8325bea38774e9891e9e9a2d33e7cac"
+            ],
+            "Next": [
+              "880630fb24fe41608d54fbb5cd212088"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "A61383E86C8648089639A95B121BE65A"
+          },
+          {
+            "Id": "880630fb24fe41608d54fbb5cd212088",
+            "Occupy": [
+              [
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "945cdb03e46d4850b83b5e252541a400"
+            ],
+            "Next": [
+              "cc67c7e602b545e1a62a87ea994533f1"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Close4",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "A61383E86C8648089639A95B121BE65A"
+          },
+          {
+            "Id": "cc67c7e602b545e1a62a87ea994533f1",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "2F7670293A2746479AD1F01C64C34E04"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "880630fb24fe41608d54fbb5cd212088"
+            ],
+            "Next": [
+              "78e2f030f44f427e99df7060fceb78b9"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "CA19A03099034779BA269A61FF76D6EB"
+          },
+          {
+            "Id": "78e2f030f44f427e99df7060fceb78b9",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "cc67c7e602b545e1a62a87ea994533f1"
+            ],
+            "Next": [
+              
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Put In Hotel",
+            "PlateProcess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道1",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "CA19A03099034779BA269A61FF76D6EB"
+          },
+          {
+            "Id": "6ac5c1e601504ef5ad8ee6731c866077",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              
+            ],
+            "Next": [
+              "9411c107b1db456790e744cce3e7a8b3"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Get From Hotel",
+            "PlateProcess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道2",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "03C272052C4A4487A27299EC3F7FED85"
+          },
+          {
+            "Id": "9411c107b1db456790e744cce3e7a8b3",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "6ac5c1e601504ef5ad8ee6731c866077"
+            ],
+            "Next": [
+              "a26273cd69ab4c3ca4dccfadddeec137"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道2",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6446C2EC81104C25AAE979934CD84E20"
+          },
+          {
+            "Id": "6bcb6a2619b141678fe6372e1facc3ed",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Occupy_dependency": [
+              "19786a112ac34d3e9d338884b573e31f"
+            ],
+            "Release_dependency": [
+              "19786a112ac34d3e9d338884b573e31f"
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 30,
+            "Pre": [
+              "cc7d7f163ba84d7f8f6d7aaea02996f0"
+            ],
+            "Next": [
+              "6afb7c7be0d64257a3bffa9b3ceb25c1"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Unload Plate",
+            "PlateProcess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "StepPlateName": "泳道2",
+            "TaskPlateName": "泳道2",
+            "StepName": "Unload Plate",
+            "SequnceId": "9E210A6AD7674F70ADB062DD6CD16110",
+            "SequnceStepId": "A3E0BA94CD7F4F309E1B84A14D169220",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "6446C2EC81104C25AAE979934CD84E20"
+          },
+          {
+            "Id": "6afb7c7be0d64257a3bffa9b3ceb25c1",
+            "Occupy": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB"
+              ],
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              [
+                "FB7028F7502143B5BECD306A34E534DB",
+                "77CD5056579E44A0A2866B7F5C0B6958"
+              ]
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 20,
+            "Pre": [
+              "6bcb6a2619b141678fe6372e1facc3ed"
+            ],
+            "Next": [
+              "cdc7b44c8923470c8168367642e24336"
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "robot",
+            "PlateProcess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道2",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "58D365F93A3842CEBEBA38FA8B5E0595"
+          },
+          {
+            "Id": "cdc7b44c8923470c8168367642e24336",
+            "Occupy": [
+              [
+                "506B94FE7E804AA1BE1A183AB87736B8"
+              ]
+            ],
+            "Release": [
+              
+            ],
+            "Occupy_dependency": [
+              
+            ],
+            "Release_dependency": [
+              
+            ],
+            "Dependency2": -1,
+            "Status": 0,
+            "Priority": 0,
+            "Time": 10,
+            "Pre": [
+              "6afb7c7be0d64257a3bffa9b3ceb25c1"
+            ],
+            "Next": [
+              
+            ],
+            "Machine": "",
+            "Position": "",
+            "Release_machine": [
+              
+            ],
+            "Release_position": [
+              
+            ],
+            "Dependency": -1,
+            "Available": 0,
+            "Start_time": 0,
+            "Heuristic": 0,
+            "TaskName": "Put In Hotel",
+            "PlateProcess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "StepPlateName": "",
+            "TaskPlateName": "泳道2",
+            "StepName": "",
+            "SequnceId": "",
+            "SequnceStepId": "",
+            "ProcedurIds": [
+              
+            ],
+            "NodeId": "58D365F93A3842CEBEBA38FA8B5E0595"
+          }
+        ],
+        "Positions": [
+          {
+            "Id": "FB014BDBB1874B449B1ADED98E078360",
+            "Status": 0,
+            "Machine": "2F7670293A2746479AD1F01C64C34E04",
+            "PositionName": "PlateLidOpenAndClose_1 Position 1",
+            "MachineName": "PlateLidOpenAndClose_1"
+          },
+          {
+            "Id": "C99394357B6D4EB6A47CFB9B7D563BAC",
+            "Status": 0,
+            "Machine": "2F7670293A2746479AD1F01C64C34E04",
+            "PositionName": "PlateLidOpenAndClose_1 Position 2",
+            "MachineName": "PlateLidOpenAndClose_1"
+          },
+          {
+            "Id": "C14F69B0C6DD4D7E947946C16B73B53A",
+            "Status": 0,
+            "Machine": "2F7670293A2746479AD1F01C64C34E04",
+            "PositionName": "PlateLidOpenAndClose_1 Position 3",
+            "MachineName": "PlateLidOpenAndClose_1"
+          },
+          {
+            "Id": "2E7F482A5A76466DAA92E60B4532BEEF",
+            "Status": 0,
+            "Machine": "2F7670293A2746479AD1F01C64C34E04",
+            "PositionName": "PlateLidOpenAndClose_1 Position 4",
+            "MachineName": "PlateLidOpenAndClose_1"
+          },
+          {
+            "Id": "5F4E7DCBB25A4CA99DB5CD37A9413970",
+            "Status": 0,
+            "Machine": "36C27F50528245278526E211C282FBFA",
+            "PositionName": "Victor Nivo_1",
+            "MachineName": "Victor Nivo_1"
+          },
+          {
+            "Id": "ABCF55DE32C34A2CB4B4E8A505C5B062",
+            "Status": 0,
+            "Machine": "77CD5056579E44A0A2866B7F5C0B6958",
+            "PositionName": "Janus_1 Position 1",
+            "MachineName": "Janus_1"
+          },
+          {
+            "Id": "192FFDAA7FAF46299B61D5C2F4197FE2",
+            "Status": 0,
+            "Machine": "77CD5056579E44A0A2866B7F5C0B6958",
+            "PositionName": "Janus_1 Position 2",
+            "MachineName": "Janus_1"
+          },
+          {
+            "Id": "C785C6DFE9D44182AF7758FE1F0623CB",
+            "Status": 0,
+            "Machine": "A3C696911BC34A8CB60815D6C4529DE5",
+            "PositionName": "Wellwash_1",
+            "MachineName": "Wellwash_1"
+          },
+          {
+            "Id": "FB7028F7502143B5BECD306A34E534DB",
+            "Status": 0,
+            "Machine": "E95161839F544EFBA2CE6E66A1598553",
+            "PositionName": "DENSO RC8_1",
+            "MachineName": "DENSO RC8_1"
+          },
+          {
+            "Id": "506B94FE7E804AA1BE1A183AB87736B8",
+            "Status": 0,
+            "Machine": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
+            "PositionName": "StorageCarousel_1",
+            "MachineName": "StorageCarousel_1"
+          },
+          {
+            "Id": "2447A66F449247B182FA1D0B858E8B6D",
+            "Status": 0,
+            "Machine": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
+            "PositionName": "Multidrop Combi_1",
+            "MachineName": "Multidrop Combi_1"
+          }
+        ],
+        "Machines": [
+          {
+            "Id": "2F7670293A2746479AD1F01C64C34E04",
+            "Name": "PlateLidOpenAndClose_1"
+          },
+          {
+            "Id": "36C27F50528245278526E211C282FBFA",
+            "Name": "Victor Nivo_1"
+          },
+          {
+            "Id": "77CD5056579E44A0A2866B7F5C0B6958",
+            "Name": "Janus_1"
+          },
+          {
+            "Id": "A3C696911BC34A8CB60815D6C4529DE5",
+            "Name": "Wellwash_1"
+          },
+          {
+            "Id": "E95161839F544EFBA2CE6E66A1598553",
+            "Name": "DENSO RC8_1"
+          },
+          {
+            "Id": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
+            "Name": "StorageCarousel_1"
+          },
+          {
+            "Id": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
+            "Name": "Multidrop Combi_1"
+          }
+        ]
+      }
+    ]
+  }

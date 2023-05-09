@@ -1,0 +1,2852 @@
+{
+    "assaysmodel": [
+      {
+        "name": "test",
+        "projectid": "B48A055EF802466DBFC34B1600993BFA",
+        "assaysid": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "tasks": [
+          {
+            "id": "ab348422bda945b79b3cd5272031c5bd",
+            "occupy": [
+              [
+                "561656258C37441EADCAC907BB1181B9", 
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              
+            ],
+            "next": [
+              "8e994a22c01743468bed919e30b6c51e"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Get From Hotel",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "7A3B08A214C34737B482B2E1F9A207E0",
+            "processtype": 2,
+            "processtypetext": "抓板工艺"
+          },
+          {
+            "id": "8e994a22c01743468bed919e30b6c51e",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "ab348422bda945b79b3cd5272031c5bd"
+            ],
+            "next": [
+              "43d6909054b14d4fa9a9892a3bc0ae5e"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6582FD88794A4600B8B388E4F729B175",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "43d6909054b14d4fa9a9892a3bc0ae5e",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "8e994a22c01743468bed919e30b6c51e"
+            ],
+            "next": [
+              "2c29e1332786413fb19a50cdaab0f7fc"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Open Lid",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6582FD88794A4600B8B388E4F729B175",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "2c29e1332786413fb19a50cdaab0f7fc",
+            "occupy": [
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "43d6909054b14d4fa9a9892a3bc0ae5e"
+            ],
+            "next": [
+              "17141098a9aa4eb0af5911ca69b033de"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6E24506478EE493BA1DAFF48793D6695",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "17141098a9aa4eb0af5911ca69b033de",
+            "occupy": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "release": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "2c29e1332786413fb19a50cdaab0f7fc"
+            ],
+            "next": [
+              "853fda55fac140c09b05a7ba2554794c"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Washer",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6E24506478EE493BA1DAFF48793D6695",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "853fda55fac140c09b05a7ba2554794c",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "BFCECF90AC5440D4B35A41909D033511",
+                "F5E7EEE4A5AB4840B99E9A42771D2A76"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "17141098a9aa4eb0af5911ca69b033de"
+            ],
+            "next": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "F7FB4BAB7380487A9D59356DEF613BE4",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "3fde2e221f67418d9d2ba6ff27e228d7",
+            "occupy": [
+            ],
+            "release": [
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "853fda55fac140c09b05a7ba2554794c"
+            ],
+            "next": [
+              "406f47e8e3bb46f5b38115ec41a9390d"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Load Plate",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "泳道1",
+            "taskplatename": "泳道1",
+            "stepname": "Load Plate",
+            "sequnceid": "9E210A6AD7674F70ADB062DD6CD16110",
+            "sequncestepid": "EA332A34AD4549B8917A56D80E9E575C",
+            "procedurids": [
+              
+            ],
+            "nodeid": "F7FB4BAB7380487A9D59356DEF613BE4",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "406f47e8e3bb46f5b38115ec41a9390d",
+            "occupy": [
+            ],
+            "release": [
+            ],
+            "occupy_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "release_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "3fde2e221f67418d9d2ba6ff27e228d7",
+              "947fa862071147fc83190b98a18d2e23"
+            ],
+            "next": [
+              "f1b7379a93aa4109951cd98ebe800b69"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Load Plate",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "泳道2",
+            "taskplatename": "泳道1",
+            "stepname": "Load Plate",
+            "sequnceid": "9E210A6AD7674F70ADB062DD6CD16110",
+            "sequncestepid": "E02507DAF15D46999079BD7D712C5146",
+            "procedurids": [
+              
+            ],
+            "nodeid": "F7FB4BAB7380487A9D59356DEF613BE4",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "f1b7379a93aa4109951cd98ebe800b69",
+            "occupy": [
+              [
+                "8a25959e87804fb5aa7e4403b35bb42f"
+              ]
+            ],
+            "release": [
+              [
+                "8a25959e87804fb5aa7e4403b35bb42f"
+              ]
+            ],
+            "occupy_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "release_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 120,
+            "pre": [
+              "406f47e8e3bb46f5b38115ec41a9390d"
+            ],
+            "next": [
+              "d75bef51140547089a39244e1030dd65"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Load And Run Protocol",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": null,
+            "taskplatename": "泳道1",
+            "stepname": "Load And Run Protocol",
+            "sequnceid": "9E210A6AD7674F70ADB062DD6CD16110",
+            "sequncestepid": "280F48C9F55048D29B145F628009E50A",
+            "procedurids": [
+              
+            ],
+            "nodeid": "F7FB4BAB7380487A9D59356DEF613BE4",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "d75bef51140547089a39244e1030dd65",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ]
+            ],
+            "occupy_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "release_dependency": [
+              "3fde2e221f67418d9d2ba6ff27e228d7"
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "f1b7379a93aa4109951cd98ebe800b69"
+            ],
+            "next": [
+              "f746fe655b384cdb9cfe0a4ea71ae648",
+              "68cb43f6e86349dd9c49f4b4d48695cc"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Unload Plate",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "泳道1",
+            "taskplatename": "泳道1",
+            "stepname": "Unload Plate",
+            "sequnceid": "9E210A6AD7674F70ADB062DD6CD16110",
+            "sequncestepid": "44FD0B8A8DDC440980E5D6AC9D9A457A",
+            "procedurids": [
+              
+            ],
+            "nodeid": "F7FB4BAB7380487A9D59356DEF613BE4",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "f746fe655b384cdb9cfe0a4ea71ae648",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "BFCECF90AC5440D4B35A41909D033511",
+                "F5E7EEE4A5AB4840B99E9A42771D2A76"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "d75bef51140547089a39244e1030dd65"
+            ],
+            "next": [
+              "1d9a152c59e74c59a1e5acc1e8c2eb3b"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "8AA7C0E249884336BCB8DED5AF76C1DB",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "1d9a152c59e74c59a1e5acc1e8c2eb3b",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "f746fe655b384cdb9cfe0a4ea71ae648"
+            ],
+            "next": [
+              "9bc7946e763a43309b09cbd4a62f9f40"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Close",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "8AA7C0E249884336BCB8DED5AF76C1DB",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "9bc7946e763a43309b09cbd4a62f9f40",
+            "occupy": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "1d9a152c59e74c59a1e5acc1e8c2eb3b"
+            ],
+            "next": [
+              "d2e0116377a5400d9058c1629ea11548"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "1A873FA760304F558B1FD3E059F764EA",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "d2e0116377a5400d9058c1629ea11548",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 3600,
+            "pre": [
+              "9bc7946e763a43309b09cbd4a62f9f40"
+            ],
+            "next": [
+              "38c6c9cf87b544f890fcbb088837e49b"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Incubator",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "1A873FA760304F558B1FD3E059F764EA",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "38c6c9cf87b544f890fcbb088837e49b",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "d2e0116377a5400d9058c1629ea11548"
+            ],
+            "next": [
+              "1250f024a17d473296728b16b74986ee"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "14119A15B25646FDBA0E14208D7D85DF",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "1250f024a17d473296728b16b74986ee",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "38c6c9cf87b544f890fcbb088837e49b"
+            ],
+            "next": [
+              "b7b3950f7e6441a788618af0756d3fbe"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Open Lid2",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "14119A15B25646FDBA0E14208D7D85DF",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "b7b3950f7e6441a788618af0756d3fbe",
+            "occupy": [
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "1250f024a17d473296728b16b74986ee"
+            ],
+            "next": [
+              "f0992618ab4c4bc086f33db91e96b64e"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "065C0A3F4F404C56B32AED89C6773A39",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "f0992618ab4c4bc086f33db91e96b64e",
+            "occupy": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "release": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 150,
+            "pre": [
+              "b7b3950f7e6441a788618af0756d3fbe"
+            ],
+            "next": [
+              "9a4dd56355bc4ef5bc7e74fc691a4a25"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Washer+分液",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "065C0A3F4F404C56B32AED89C6773A39",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "9a4dd56355bc4ef5bc7e74fc691a4a25",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "f0992618ab4c4bc086f33db91e96b64e"
+            ],
+            "next": [
+              "b78280c58af343629e446fef5c537ad1"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "9456EEC507F14BCAB6769EF7BF2742D1",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "b78280c58af343629e446fef5c537ad1",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "9a4dd56355bc4ef5bc7e74fc691a4a25"
+            ],
+            "next": [
+              "d54109f4490b47439bc434fa5b9fd695"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Close2",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "9456EEC507F14BCAB6769EF7BF2742D1",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "d54109f4490b47439bc434fa5b9fd695",
+            "occupy": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "b78280c58af343629e446fef5c537ad1"
+            ],
+            "next": [
+              "d2fbea93ac9f468997dbd76bd81eeed2"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "DE4A5D33A1CD42DEAD0615ADCA5C321F",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "d2fbea93ac9f468997dbd76bd81eeed2",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 1800,
+            "pre": [
+              "d54109f4490b47439bc434fa5b9fd695"
+            ],
+            "next": [
+              "1cfc057531184d7e9795f2770b6aeddb"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Incubator2",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "DE4A5D33A1CD42DEAD0615ADCA5C321F",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "1cfc057531184d7e9795f2770b6aeddb",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "d2fbea93ac9f468997dbd76bd81eeed2"
+            ],
+            "next": [
+              "60adf0f830484523b3e29c018e99f2b5"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "3A00EAC6A23D4281AD70FD59A88CDCE0",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "60adf0f830484523b3e29c018e99f2b5",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "1cfc057531184d7e9795f2770b6aeddb"
+            ],
+            "next": [
+              "5865fe134b654354a7c676c2202c8d56"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Open Lid3",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "3A00EAC6A23D4281AD70FD59A88CDCE0",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "5865fe134b654354a7c676c2202c8d56",
+            "occupy": [
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "60adf0f830484523b3e29c018e99f2b5"
+            ],
+            "next": [
+              "ad33becb3f4e4606b9ff2abf8e7e8916"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "702601BEA15D445C8BF3DFBEFDD61646",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "ad33becb3f4e4606b9ff2abf8e7e8916",
+            "occupy": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "release": [
+              [
+                "92435a0fcb3f487c90910144cbdbc9a7"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "5865fe134b654354a7c676c2202c8d56"
+            ],
+            "next": [
+              "8dbccebd748440ce89d098a5735f2644"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "运行Protocol",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "702601BEA15D445C8BF3DFBEFDD61646",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "8dbccebd748440ce89d098a5735f2644",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "64A56CB44B484A01AA1DD9DAF72BE043"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "D2847D1F0F4D48F897BEC3335EF97E13"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "ad33becb3f4e4606b9ff2abf8e7e8916"
+            ],
+            "next": [
+              "15d4ffb3229b4f1aa2fff6bb2b3d7e37"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "66AC387CECA647D7A2D93D2DFB818C85",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "15d4ffb3229b4f1aa2fff6bb2b3d7e37",
+            "occupy": [
+              [
+                "def28ad6c48d4efca5d830b9cd1cec13"
+              ]
+            ],
+            "release": [
+              [
+                "def28ad6c48d4efca5d830b9cd1cec13"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "8dbccebd748440ce89d098a5735f2644"
+            ],
+            "next": [
+              "cad4fd2ae7c64c6aa54bf331621ca911"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "分液器FX(加显色剂)",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "66AC387CECA647D7A2D93D2DFB818C85",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "cad4fd2ae7c64c6aa54bf331621ca911",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "64A56CB44B484A01AA1DD9DAF72BE043"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "15d4ffb3229b4f1aa2fff6bb2b3d7e37"
+            ],
+            "next": [
+              "54434ef521244fd8b12f990e91d314a9"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "3891234627D44297A7064BB9EC80454A",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "54434ef521244fd8b12f990e91d314a9",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "cad4fd2ae7c64c6aa54bf331621ca911"
+            ],
+            "next": [
+              "6387f10080ef45c5be1b290f4f52bf25"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Close3",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "3891234627D44297A7064BB9EC80454A",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "6387f10080ef45c5be1b290f4f52bf25",
+            "occupy": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "54434ef521244fd8b12f990e91d314a9"
+            ],
+            "next": [
+              "27b895a605f5448ebe21586cc7252ce6"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "398FD969239343C1905D82D12E83E56C",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "27b895a605f5448ebe21586cc7252ce6",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 600,
+            "pre": [
+              "6387f10080ef45c5be1b290f4f52bf25"
+            ],
+            "next": [
+              "a2153b22806d4fbb9cd68cdf0697c821"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Incubator3",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "398FD969239343C1905D82D12E83E56C",
+            "processtype": 5,
+            "processtypetext": "孵育工艺"
+          },
+          {
+            "id": "a2153b22806d4fbb9cd68cdf0697c821",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "27b895a605f5448ebe21586cc7252ce6"
+            ],
+            "next": [
+              "bff67a58307f4c17a94535e4c45fe9cb"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "59D8AD9937864DC1B03CA48A569124FD",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "bff67a58307f4c17a94535e4c45fe9cb",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "a2153b22806d4fbb9cd68cdf0697c821"
+            ],
+            "next": [
+              "a4b39f7ca24b4f96a8cb53ff9bd35b85"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Open Lid4",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "59D8AD9937864DC1B03CA48A569124FD",
+            "processtype": 7,
+            "processtypetext": "开盖工艺"
+          },
+          {
+            "id": "a4b39f7ca24b4f96a8cb53ff9bd35b85",
+            "occupy": [
+              [
+                "64A56CB44B484A01AA1DD9DAF72BE043"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "bff67a58307f4c17a94535e4c45fe9cb"
+            ],
+            "next": [
+              "9505ebc48bb24759a4496ce7d0d9c9bf"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "E5A0F965117842148626D72F83FBB241",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "9505ebc48bb24759a4496ce7d0d9c9bf",
+            "occupy": [
+              [
+                "def28ad6c48d4efca5d830b9cd1cec13"
+              ]
+            ],
+            "release": [
+              [
+                "def28ad6c48d4efca5d830b9cd1cec13"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "a4b39f7ca24b4f96a8cb53ff9bd35b85"
+            ],
+            "next": [
+              "8ef46feb5b814f1c93f868b852141f99"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "分液",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "E5A0F965117842148626D72F83FBB241",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "8ef46feb5b814f1c93f868b852141f99",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "DACB177CA05F4B1DBC442267E5C417B8"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "64A56CB44B484A01AA1DD9DAF72BE043"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "9505ebc48bb24759a4496ce7d0d9c9bf"
+            ],
+            "next": [
+              "80a0b8808a56464486b26fa1aed26d31"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "1D250F74EB9742348A9DAB6347A3F314",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "80a0b8808a56464486b26fa1aed26d31",
+            "occupy": [
+              [
+                "97ad5410b34143e1bfffd22d2627e16a"
+              ]
+            ],
+            "release": [
+              [
+                "97ad5410b34143e1bfffd22d2627e16a"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 120,
+            "pre": [
+              "8ef46feb5b814f1c93f868b852141f99"
+            ],
+            "next": [
+              "a9cb61205ed64399b69e2fbfed625bba"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Spin",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "1D250F74EB9742348A9DAB6347A3F314",
+            "processtype": 0,
+            "processtypetext": "标准工艺"
+          },
+          {
+            "id": "a9cb61205ed64399b69e2fbfed625bba",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "release": [
+              [
+                "DACB177CA05F4B1DBC442267E5C417B8"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "80a0b8808a56464486b26fa1aed26d31"
+            ],
+            "next": [
+              "bfbf9196617a48d4bec8f11fbbc85db2"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "A61383E86C8648089639A95B121BE65A",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "bfbf9196617a48d4bec8f11fbbc85db2",
+            "occupy": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "release": [
+              [
+                "8f5a2a5c30274f8e8d3b5296d9f231fc"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "a9cb61205ed64399b69e2fbfed625bba"
+            ],
+            "next": [
+              "45b6f308477748dd852214a270392ab8"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Close4",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "A61383E86C8648089639A95B121BE65A",
+            "processtype": 8,
+            "processtypetext": "关盖工艺"
+          },
+          {
+            "id": "45b6f308477748dd852214a270392ab8",
+            "occupy": [
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "9FC736DE8C074A988AB20A937D469237",
+                "8CA99E0FD2E34BFF95AC808363590D6D",
+                "B26B08FE65C448EAAC20EF378064B70B",
+                "320D55DAEB694E869690735A1654A031"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "bfbf9196617a48d4bec8f11fbbc85db2"
+            ],
+            "next": [
+              "84116291ef344a9bb7aa8d54803adc20"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "CA19A03099034779BA269A61FF76D6EB",
+            "processtype": 3,
+            "processtypetext": "放板工艺"
+          },
+          {
+            "id": "84116291ef344a9bb7aa8d54803adc20",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019",
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "45b6f308477748dd852214a270392ab8"
+            ],
+            "next": [
+              
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Put In Hotel",
+            "plateprocess": "EF2D59EFE7F74504B839CEF389A614CF",
+            "stepplatename": "",
+            "taskplatename": "泳道1",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "CA19A03099034779BA269A61FF76D6EB",
+            "processtype": 3,
+            "processtypetext": "放板工艺"
+          },
+          {
+            "id": "51c1fa9945c149499b7605145e8e571b",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019",
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              
+            ],
+            "next": [
+              "947fa862071147fc83190b98a18d2e23"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Get From Hotel",
+            "plateprocess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "stepplatename": "",
+            "taskplatename": "泳道2",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "03C272052C4A4487A27299EC3F7FED85",
+            "processtype": 2,
+            "processtypetext": "抓板工艺"
+          },
+          {
+            "id": "947fa862071147fc83190b98a18d2e23",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "BFCECF90AC5440D4B35A41909D033511",
+                "F5E7EEE4A5AB4840B99E9A42771D2A76"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "51c1fa9945c149499b7605145e8e571b"
+            ],
+            "next": [
+              "406f47e8e3bb46f5b38115ec41a9390d"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "stepplatename": "",
+            "taskplatename": "泳道2",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6446C2EC81104C25AAE979934CD84E20",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "68cb43f6e86349dd9c49f4b4d48695cc",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "F5E7EEE4A5AB4840B99E9A42771D2A76"
+              ]
+            ],
+            "occupy_dependency": [
+              "230ab4777c61465e87783e1ee6e6f71c"
+            ],
+            "release_dependency": [
+              "230ab4777c61465e87783e1ee6e6f71c"
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 30,
+            "pre": [
+              "d75bef51140547089a39244e1030dd65"
+            ],
+            "next": [
+              "1440081bff4a4e8da68b5831252ab96f"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Unload Plate",
+            "plateprocess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "stepplatename": "泳道2",
+            "taskplatename": "泳道2",
+            "stepname": "Unload Plate",
+            "sequnceid": "9E210A6AD7674F70ADB062DD6CD16110",
+            "sequncestepid": "A3E0BA94CD7F4F309E1B84A14D169220",
+            "procedurids": [
+              
+            ],
+            "nodeid": "6446C2EC81104C25AAE979934CD84E20",
+            "processtype": 1,
+            "processtypetext": "多板工艺"
+          },
+          {
+            "id": "1440081bff4a4e8da68b5831252ab96f",
+            "occupy": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "release": [
+              [
+                "D726DA2E8C0340109694C414F523F501"
+              ],
+              [
+                "BFCECF90AC5440D4B35A41909D033511",
+                "F5E7EEE4A5AB4840B99E9A42771D2A76"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 20,
+            "pre": [
+              "68cb43f6e86349dd9c49f4b4d48695cc"
+            ],
+            "next": [
+              "51c3854ada06471db80e3c1d023a06d9"
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "robot",
+            "plateprocess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "stepplatename": "",
+            "taskplatename": "泳道2",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "58D365F93A3842CEBEBA38FA8B5E0595",
+            "processtype": 3,
+            "processtypetext": "放板工艺"
+          },
+          {
+            "id": "51c3854ada06471db80e3c1d023a06d9",
+            "occupy": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019"
+              ]
+            ],
+            "release": [
+              [
+                "e7592b143cee4ba8a72c0b08b6aad019",
+                "561656258C37441EADCAC907BB1181B9"
+              ]
+            ],
+            "occupy_dependency": [
+              
+            ],
+            "release_dependency": [
+              
+            ],
+            "dependency2": -1,
+            "status": 0,
+            "priority": 0,
+            "time": 10,
+            "pre": [
+              "1440081bff4a4e8da68b5831252ab96f"
+            ],
+            "next": [
+              
+            ],
+            "machine": "",
+            "position": "",
+            "release_machine": [
+              
+            ],
+            "release_position": [
+              
+            ],
+            "dependency": -1,
+            "available": 0,
+            "start_time": 0,
+            "heuristic": 0,
+            "taskname": "Put In Hotel",
+            "plateprocess": "F050673CB0B54749B65E8BD073BC1D4A",
+            "stepplatename": "",
+            "taskplatename": "泳道2",
+            "stepname": "",
+            "sequnceid": "",
+            "sequncestepid": "",
+            "procedurids": [
+              
+            ],
+            "nodeid": "58D365F93A3842CEBEBA38FA8B5E0595",
+            "processtype": 3,
+            "processtypetext": "放板工艺"
+          }
+        ],
+        "positions": [
+          {
+            "id": "9FC736DE8C074A988AB20A937D469237",
+            "status": 0,
+            "machine": "2F7670293A2746479AD1F01C64C34E04",
+            "positionname": "PlateLidOpenAndClose_1 Position 1",
+            "machinename": "PlateLidOpenAndClose_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "8CA99E0FD2E34BFF95AC808363590D6D",
+            "status": 0,
+            "machine": "2F7670293A2746479AD1F01C64C34E04",
+            "positionname": "PlateLidOpenAndClose_1 Position 2",
+            "machinename": "PlateLidOpenAndClose_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "B26B08FE65C448EAAC20EF378064B70B",
+            "status": 0,
+            "machine": "2F7670293A2746479AD1F01C64C34E04",
+            "positionname": "PlateLidOpenAndClose_1 Position 3",
+            "machinename": "PlateLidOpenAndClose_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "320D55DAEB694E869690735A1654A031",
+            "status": 0,
+            "machine": "2F7670293A2746479AD1F01C64C34E04",
+            "positionname": "PlateLidOpenAndClose_1 Position 4",
+            "machinename": "PlateLidOpenAndClose_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "DACB177CA05F4B1DBC442267E5C417B8",
+            "status": 0,
+            "machine": "36C27F50528245278526E211C282FBFA",
+            "positionname": "Victor Nivo_1",
+            "machinename": "Victor Nivo_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "BFCECF90AC5440D4B35A41909D033511",
+            "status": 0,
+            "machine": "77CD5056579E44A0A2866B7F5C0B6958",
+            "positionname": "Janus_1 Position 1",
+            "machinename": "Janus_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "F5E7EEE4A5AB4840B99E9A42771D2A76",
+            "status": 0,
+            "machine": "77CD5056579E44A0A2866B7F5C0B6958",
+            "positionname": "Janus_1 Position 2",
+            "machinename": "Janus_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "D2847D1F0F4D48F897BEC3335EF97E13",
+            "status": 0,
+            "machine": "A3C696911BC34A8CB60815D6C4529DE5",
+            "positionname": "Wellwash_1",
+            "machinename": "Wellwash_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "D726DA2E8C0340109694C414F523F501",
+            "status": 0,
+            "machine": "E95161839F544EFBA2CE6E66A1598553",
+            "positionname": "DENSO RC8_1",
+            "machinename": "DENSO RC8_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "561656258C37441EADCAC907BB1181B9",
+            "status": 0,
+            "machine": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
+            "positionname": "StorageCarousel_1",
+            "machinename": "StorageCarousel_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "64A56CB44B484A01AA1DD9DAF72BE043",
+            "status": 0,
+            "machine": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
+            "positionname": "Multidrop Combi_1",
+            "machinename": "Multidrop Combi_1",
+            "sourcetype": "plate"
+          },
+          {
+            "id": "8f5a2a5c30274f8e8d3b5296d9f231fc",
+            "status": 0,
+            "machine": "2F7670293A2746479AD1F01C64C34E04",
+            "positionname": "PlateLidOpenAndClose_1 work",
+            "machinename": "PlateLidOpenAndClose_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "97ad5410b34143e1bfffd22d2627e16a",
+            "status": 0,
+            "machine": "36C27F50528245278526E211C282FBFA",
+            "positionname": "Victor Nivo_1 work",
+            "machinename": "Victor Nivo_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "8a25959e87804fb5aa7e4403b35bb42f",
+            "status": 0,
+            "machine": "77CD5056579E44A0A2866B7F5C0B6958",
+            "positionname": "Janus_1 work",
+            "machinename": "Janus_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "92435a0fcb3f487c90910144cbdbc9a7",
+            "status": 0,
+            "machine": "A3C696911BC34A8CB60815D6C4529DE5",
+            "positionname": "Wellwash_1 work",
+            "machinename": "Wellwash_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "7f9368fce7604e069a7b01b08f26e43f",
+            "status": 0,
+            "machine": "E95161839F544EFBA2CE6E66A1598553",
+            "positionname": "DENSO RC8_1 work",
+            "machinename": "DENSO RC8_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "e7592b143cee4ba8a72c0b08b6aad019",
+            "status": 0,
+            "machine": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
+            "positionname": "StorageCarousel_1 work",
+            "machinename": "StorageCarousel_1",
+            "sourcetype": "work"
+          },
+          {
+            "id": "def28ad6c48d4efca5d830b9cd1cec13",
+            "status": 0,
+            "machine": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
+            "positionname": "Multidrop Combi_1 work",
+            "machinename": "Multidrop Combi_1",
+            "sourcetype": "work"
+          }
+        ],
+        "machines": [
+          {
+            "id": "2F7670293A2746479AD1F01C64C34E04",
+            "name": "PlateLidOpenAndClose_1"
+          },
+          {
+            "id": "36C27F50528245278526E211C282FBFA",
+            "name": "Victor Nivo_1"
+          },
+          {
+            "id": "77CD5056579E44A0A2866B7F5C0B6958",
+            "name": "Janus_1"
+          },
+          {
+            "id": "A3C696911BC34A8CB60815D6C4529DE5",
+            "name": "Wellwash_1"
+          },
+          {
+            "id": "E95161839F544EFBA2CE6E66A1598553",
+            "name": "DENSO RC8_1"
+          },
+          {
+            "id": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
+            "name": "StorageCarousel_1"
+          },
+          {
+            "id": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
+            "name": "Multidrop Combi_1"
+          }
+        ]
+      }
+    ]
+  }

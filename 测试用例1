@@ -1,0 +1,145 @@
+# 设置每个task需要的资源,暂时手动设置一个例子，测试算法是否可行，后面会从数据结构中生成下面的内容。
+    tasks[0].occupy = [1]   # 0：冰箱1出Plate
+    tasks[0].release = []
+    tasks[1].occupy = [2]   # 机械臂取Plate
+    tasks[1].release = [1]
+    tasks[2].occupy = [3,5,7]  # 工作站加载Plate
+    tasks[2].release = [2]
+    tasks[3].occupy = [9]    # 冰箱2出Mix1
+    tasks[3].release = []
+    tasks[4].occupy = [2]    # 机械臂取Mix1
+    tasks[4].release = [9]
+    tasks[5].occupy = [4,6,8]   # 工作站加载Mix1
+    tasks[5].release = [2]
+    tasks[6].occupy = []        # 工作站工作
+    tasks[6].release = []
+    tasks[7].occupy = [2]        # 工作站卸载对应的Plate
+    tasks[7].release = [3,5,7]
+    tasks[8].occupy = []        # 机械臂放Plate到Hotel
+    tasks[8].release = [2]
+    tasks[9].occupy = [2]        # 工作站unload mix1
+    tasks[9].release = [4,6,8]
+    tasks[10].occupy = []       # 机械臂放Plate到trash
+    tasks[10].release = [2]
+    tasks[11].occupy = [1]   # 0：冰箱1出Plate1
+    tasks[11].release = []
+    tasks[12].occupy = [2]   # 机械臂取Plate1
+    tasks[12].release = [1]
+    tasks[13].occupy = [3,5,7]  # 工作站加载Plate1
+    tasks[13].release = [2]
+    tasks[14].occupy = [9]    # 冰箱2出Mix1_1
+    tasks[14].release = []
+    tasks[15].occupy = [2]    # 机械臂取Mix1_1
+    tasks[15].release = [9]
+    tasks[16].occupy = [4,6,8]   # 工作站加载Mix1_1
+    tasks[16].release = [2]
+    tasks[17].occupy = []        # 工作站工作
+    tasks[17].release = []
+    tasks[18].occupy = [2]        # 工作站卸载对应的Plate1
+    tasks[18].release = [3,5,7]
+    tasks[19].occupy = []        # 机械臂放Plate1到Hotel
+    tasks[19].release = [2]
+    tasks[20].occupy = [2]        # 工作站unload mix1_1
+    tasks[20].release = [4,6,8]
+    tasks[21].occupy = []       # 机械臂放Plate1到trash
+    tasks[21].release = [2]
+
+    # 构建TaskGraph，连接task之间的有向图，每个task维护其前驱task集合。 有向图使用前驱进行表示，便于查找任务的前驱任务是否完成。
+    tasks[0].pre = []
+    tasks[1].pre = [0]
+    tasks[2].pre = [1]
+    tasks[3].pre = []
+    tasks[4].pre = [3]
+    tasks[5].pre = [2, 4]
+    tasks[6].pre = [5]
+    tasks[7].pre = [6]
+    tasks[8].pre = [7]
+    tasks[9].pre = [7]
+    tasks[10].pre = [9]
+    tasks[11].pre = []
+    tasks[12].pre = [11]
+    tasks[13].pre = [12]
+    tasks[14].pre = []
+    tasks[15].pre = [14]
+    tasks[16].pre = [13, 15]
+    tasks[17].pre = [16]
+    tasks[18].pre = [17]
+    tasks[19].pre = [18]
+    tasks[20].pre = [18]
+    tasks[21].pre = [20]
+
+    tasks[0].next = [1]
+    tasks[1].next = [2]
+    tasks[2].next = [5]
+    tasks[3].next = [4]
+    tasks[4].next = [5]
+    tasks[5].next = [6]
+    tasks[6].next = [7]
+    tasks[7].next = [8,9]
+    tasks[8].next = []
+    tasks[9].next = [10]
+    tasks[10].next = []
+    tasks[11].next = [12]
+    tasks[12].next = [13]
+    tasks[13].next = [16]
+    tasks[14].next = [15]
+    tasks[15].next = [16]
+    tasks[16].next = [17]
+    tasks[17].next = [18]
+    tasks[18].next = [19,20]
+    tasks[19].next = []
+    tasks[20].next = [21]
+    tasks[21].next = []
+    
+    pre_END = [8,10,19,21]  # pre_END 表示最终节点的前驱节点。
+    machines = [MachineBase(m) for m in args.machine]
+    task_graph = TaskGragh(tasks)
+    # 每个task占用的设备资源，和释放的设备资源  这里每个任务
+    # task的时间
+    tasks[0].time = 5
+    tasks[1].time = 10
+    tasks[2].time = 7
+    tasks[3].time = 3
+    tasks[4].time = 10
+    tasks[5].time = 10
+    tasks[6].time = 20
+    tasks[7].time = 5
+    tasks[8].time = 5
+    tasks[9].time = 5
+    tasks[10].time = 5
+    tasks[11].time = 5
+    tasks[12].time = 10
+    tasks[13].time = 7
+    tasks[14].time = 3
+    tasks[15].time = 10
+    tasks[16].time = 10
+    tasks[17].time = 20
+    tasks[18].time = 5
+    tasks[19].time = 5
+    tasks[20].time = 5
+    tasks[21].time = 5
+
+    # task.dependency 的设置
+    tasks[5].dependency = 2
+    tasks[16].dependency = 13
+    # 根据L1列表调度算法计算优先级
+    # L1列表调度算法通过计算到终点节点的时间来作为优先级。
+    # 这是一个图，从根节点向上搜索
+    for node in pre_END:
+        tasks = dfs(tasks,node)
+    print("tasks' priority are shown as follows:")
+    for id,task in enumerate(tasks):
+        print(f"task {id} priority:", task.priority)
+    # L1 scheduling to compute priority 优先级计算时考虑启发式规则，优先选择执行后prioqueue长度更长的
+    print("\n")
+    # 对资源的建模
+    positions[0].machine = 0
+    positions[1].machine = 1
+    positions[2].machine = 2
+    positions[3].machine = 2
+    positions[4].machine = 3
+    positions[5].machine = 3
+    positions[6].machine = 4
+    positions[7].machine = 4
+    positions[8].machine = 5
+    positions[9].machine = 6
