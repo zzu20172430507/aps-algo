@@ -47,7 +47,7 @@ if __name__ == "__main__":
                        SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT)
 
     # 3. Results Output
-    my_modules.ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, base_num, positions, t_idx_dic, p_idx_dic)
+    my_modules.ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_dic)
 
     # 4.Generating Output
     PROGRAM_STEP3_TIME = time.time()

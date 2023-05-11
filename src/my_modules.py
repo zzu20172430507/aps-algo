@@ -47,6 +47,7 @@ class MachineBase:
     def __init__(self, id) -> None:
         self.id = id
         self.name = ""
+        self.type = ""
 
 
 class Position:
@@ -146,6 +147,7 @@ def data_read():
         task.sequncestepid = tasks_json[tidx]['sequncestepid']
         task.taskplates = tasks_json[tidx]['taskplates']
         task.color = "#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+        task.processtype = tasks_json[tidx]['processtype']
         if task.PlateProcess not in plateprocesses:
             plateprocesses.append(task.PlateProcess)
     for pidx, pos in enumerate(positions):
@@ -157,6 +159,7 @@ def data_read():
         mac.id = machines_json[midx]['id']
         mac.name = machines_json[midx]['name']
         m_idx_dic[machines_json[midx]['id']] = midx
+        mac.type = machines_json[midx]['type']
     for task in tasks:  # 通过occupy_dependency和release_dependency标识是否存在占用释放依赖关系
         for occ in task.occupy:
             task.occupy_dependency.append(-1)
@@ -181,6 +184,7 @@ def data_read():
             tasks[t].sequncestepid = task_base.sequncestepid
             tasks[t].taskplates = task_base.taskplates
             tasks[t].color = task_base.color
+            tasks[t].processtype = task_base.processtype
     for t in range(board_num * base_num):  # 复制的任务的前驱和后继的id对应加上
         if t >= base_num:
             task_base = tasks[t % base_num]
@@ -315,9 +319,18 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
             if task.occupy_dependency[occ_id] == -1:
                 for pos in occ:  # 从里面选择第一个可用的
                     if positions[p_idx_dic[pos]].status == 0:
-                        positions[p_idx_dic[pos]].status = 1
                         tmp_position.append(positions[p_idx_dic[pos]].id)
                         tmp_machine.append(positions[p_idx_dic[pos]].machine)
+                        if task.task_name == "Incubator":
+                            continue
+                        elif task.task_name == "robot":
+                            is_pre = 0
+                            for nxt in task.next:
+                                if tasks[t_idx_dic[nxt]].task_name == "Incubator":
+                                    is_pre = 1
+                            if is_pre == 1:
+                                continue
+                        positions[p_idx_dic[pos]].status = 1
                         break
         # 若当前task 选择了依赖约束：和其他task在相同的machine上执行   处理某些任务必须在相同设备上执行的约束。
             else:
@@ -343,9 +356,18 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
                         task.release_machine.append(positions[cur_pos].machine)
             else:
                 for pos in rel:
-                    positions[p_idx_dic[pos]].status = 0
                     task.release_position.append(pos)
                     task.release_machine.append(positions[p_idx_dic[pos]].machine)
+                    if task.task_name == "Incubator":
+                        continue
+                    elif task.task_name == "robot":
+                        is_next = 0
+                        for pre in task.pre:
+                            if tasks[t_idx_dic[pre]].task_name == "Incubator":
+                                is_next = 1
+                        if is_next == 1:
+                            continue
+                    positions[p_idx_dic[pos]].status = 0
         task.status = 1
         tmpPos = [0 for _ in range(len(positions))]
         for pos_id, pos in enumerate(positions):
@@ -496,7 +518,7 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
     return tasks, positions, machines, step, SAVED_CUR_TASK_STATUS, TASK_SELECT
 
 
-def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, base_num, positions, t_idx_dic, p_idx_dic):
+def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_idc):
     if step != len(tasks):
         print("exsiting deadlock !")
     else:
@@ -536,11 +558,29 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, ba
             PositionStatus[p_idx_dic[pos_id]] = t_idx_dic[tasks[task].id]
         for occ_pos in tasks[task].position:
             pos_id = occ_pos
+            if "Incubator" in tasks[task].task_name:
+                continue
+            elif tasks[task].task_name == "robot":
+                is_pre = 0
+                for nxt in tasks[task].next:
+                    if "Incubator" in tasks[t_idx_dic[nxt]].task_name:
+                        is_pre = 1
+                if is_pre == 1:
+                    continue
             Tm[p_idx_dic[pos_id]] = begin_time
         tasks[task].available = begin_time + tasks[task].time   # available 记录设备完成工作时间
         tasks[task].start_time = begin_time  # start_time 记录开始占用该设备的时间
         for release_position in tasks[task].release_position:
             release_id = p_idx_dic[release_position]
+            if "Incubator" in tasks[task].task_name:
+                continue
+            elif tasks[task].task_name == "robot":
+                is_next = 0
+                for pre in tasks[task].pre:
+                    if "Incubator" in tasks[t_idx_dic[pre]].task_name:
+                        is_next = 1
+                if is_next == 1:
+                    continue
             if release_position in tasks[task].position:
                 Tm[release_id] = begin_time+tasks[task].time
             else:
