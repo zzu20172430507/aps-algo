@@ -321,12 +321,12 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
                     if positions[p_idx_dic[pos]].status == 0:
                         tmp_position.append(positions[p_idx_dic[pos]].id)
                         tmp_machine.append(positions[p_idx_dic[pos]].machine)
-                        if task.task_name == "Incubator":
+                        if "Incubator" in task.task_name:
                             continue
                         elif task.task_name == "robot":
                             is_pre = 0
                             for nxt in task.next:
-                                if tasks[t_idx_dic[nxt]].task_name == "Incubator":
+                                if "Incubator" in tasks[t_idx_dic[nxt]].task_name:
                                     is_pre = 1
                             if is_pre == 1:
                                 continue
@@ -358,12 +358,12 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
                 for pos in rel:
                     task.release_position.append(pos)
                     task.release_machine.append(positions[p_idx_dic[pos]].machine)
-                    if task.task_name == "Incubator":
+                    if "Incubator" in task.task_name:
                         continue
                     elif task.task_name == "robot":
                         is_next = 0
                         for pre in task.pre:
-                            if tasks[t_idx_dic[pre]].task_name == "Incubator":
+                            if "Incubator" in tasks[t_idx_dic[pre]].task_name:
                                 is_next = 1
                         if is_next == 1:
                             continue
