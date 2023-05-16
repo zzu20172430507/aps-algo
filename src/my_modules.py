@@ -117,7 +117,8 @@ def data_read():
     machines_json = data['assaysmodel'][0]['machines']
     assayssid = data['assaysmodel'][0]['assaysid']
     base_num = len(tasks_json)
-    board_num = 2  # board_num 表示该任务图需要复制多少份
+    board_num = 100  # board_num 表示该任务图需要复制多少份
+    window_size = 2  # window_size 表示每次排几个任务。
     heuristics = 0
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}
@@ -201,7 +202,7 @@ def data_read():
             for rel_id, rel in enumerate(task_base.release_dependency):
                 if rel != -1:
                     tasks[t].release_dependency[rel_id] = task_base.release_dependency[rel_id] + int(t//base_num*base_num)
-    return tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, heuristics
+    return tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, heuristics, window_size
 
 
 def list_scheduling(tasks, t_idx_dic):
@@ -228,32 +229,33 @@ def list_scheduling2(tasks, t_idx_dic):
     return tasks
 
 
-def Initialize(tasks, positions, t_idx_dic, p_idx_dic):
+def Initialize(tasks, begin, end, positions, t_idx_dic, p_idx_dic):
     # 1. Initialize
     import heapq
     q = []
     pq_tmp = []
-    for task in tasks:
-        flag = 1
-        if task.pre is not None:
-            for pre in task.pre:  # 判断是否所有前驱任务都完成
-                if tasks[t_idx_dic[pre]].status == 0:
-                    flag = 0
-        # 判断所需要的资源是否都满足
-        flag2 = 1
-        for occ_id, occ in enumerate(task.occupy):
-            tmp_f = 0
-            for pos in occ:
-                if positions[p_idx_dic[pos]].status == 0:
-                    tmp_f = 1
-            if tmp_f == 0:  # 如果资源里有一项
-                flag2 = 0
-        if len(task.occupy) == 0:
+    for idx, task in enumerate(tasks):
+        if idx >= begin and idx < end:  # 初始化时只考虑窗口内的任务加入到队列里。
+            flag = 1
+            if task.pre is not None:
+                for pre in task.pre:  # 判断是否所有前驱任务都完成
+                    if tasks[t_idx_dic[pre]].status == 0:
+                        flag = 0
+            # 判断所需要的资源是否都满足
             flag2 = 1
-        # 如果前驱任务完成了并且资源可满足，那么当前任务可执行 PUT INTO PRIORITY QUEUE
-        if flag == 1 and flag2 == 1:
-            heapq.heappush(q, task)
-            pq_tmp.append(t_idx_dic[task.id])
+            for occ_id, occ in enumerate(task.occupy):
+                tmp_f = 0
+                for pos in occ:
+                    if positions[p_idx_dic[pos]].status == 0:
+                        tmp_f = 1
+                if tmp_f == 0:  # 如果资源里有一项
+                    flag2 = 0
+            if len(task.occupy) == 0:
+                flag2 = 1
+            # 如果前驱任务完成了并且资源可满足，那么当前任务可执行 PUT INTO PRIORITY QUEUE
+            if flag == 1 and flag2 == 1:
+                heapq.heappush(q, task)
+                pq_tmp.append(t_idx_dic[task.id])
     i = 0
     Finished = []
     SAVED_INFORMATION = []  # 用于存储每步选择过的task，当前这步选择的task，选择前的状态
@@ -272,7 +274,7 @@ def Initialize(tasks, positions, t_idx_dic, p_idx_dic):
     return tasks, positions, i, Finished, SAVED_INFORMATION, SAVED_CUR_TASK, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, TASK_SELECT, DEAD, step, q, pq_tmp
 
 
-def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT):
+def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT):
     while len(q) > 0:
         task = heapq.heappop(q)  # EACH TIME GET THE PRIOR TASK
         SIG_CALL_BACK = 0  # SIG_CALL_BACK用于记录是否在当前队列中找到了可执行的任务。
@@ -372,8 +374,7 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
         tmpPos = [0 for _ in range(len(positions))]
         for pos_id, pos in enumerate(positions):
             tmpPos[pos_id] = pos.status
-        print("pos状态为:", tmpPos)
- 
+        # print("pos状态为:", tmpPos)
         # 更新队列
         i = 0
         other_q = []
@@ -386,7 +387,8 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
             print(task.id, "其他优先队列中的task:", other_q)
             print("task_state:", task_state)
         pq_list = []
-        for t in tasks:
+        for idx in range(start_task_id, end_task_id):
+            t = tasks[idx]
             flag = 1
             if t.pre is not None:
                 for pre in t.pre:  # 判断是否所有前驱任务都完成
@@ -401,100 +403,48 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
                         tmp_f = 1
                 if tmp_f == 0:  # 如果资源里有一项
                     flag2 = 0
-                    # if step == 12 and t_idx_dic[t.id] == 41:
-                    #     print(occ)
-                    #     print(p_idx_dic[pos], positions[p_idx_dic[pos]].status)
             if len(t.occupy) == 0:
                 flag2 = 1
             if flag == 1 and flag2 == 1 and t.status == 0:
                 heapq.heappush(q, t)
-                pq_list.append(t.id)
-                if heuristics == 1:   # 启发式规则计算第二优先级
-                    tmp_Task = tasks   # 暂存状态，假设执行一步，计算下一步可执行的任务数量作为优先级
-                    tmp_position = positions
-                    tmp_machine = machines
-                    tmp_cnt = 0
-                    # -----------------simulate exe task-------------------------------------------------------------------------------------------------------------
-                    # 如果当前task没有设置依赖约束，则从所有可用设备中选择第一个可用设备占用
-                    if task.dependency == -1:
-                        for pos in task.occupy:
-                            if positions[pos].status == 0:
-                                positions[pos].status = 1
-                                task.position = positions[pos].id
-                                task.machine = positions[pos].machine
-                                break
-                    # 若当前task 选择了依赖约束：和其他task在相同的machine上执行   处理某些任务必须在相同设备上执行的约束。
-                    else:
-                        for pos in task.occupy:
-                            if positions[pos-1].status == 0 and positions[pos].machine == tasks[task.dependency].machine:
-                                positions[pos-1].status = 1
-                                task.position = positions[pos].id
-                                task.machine = positions[pos].machine
-                                break
-                        if len(task.occupy) == 0:
-                            task.machine = tasks[task.dependency].machine
-                    # 当前任务释放设备
-                    if len(task.release) > 1 and task.dependency2 != -1:
-                        pos = tasks[task.dependency2].position
-                        positions[pos].status = 0
-                        task.release_position.append(pos)
-                        task.release_machine.append(positions[pos].machine)
-                    else:
-                        for pos in task.release:
-                            positions[pos].status = 0
-                            task.release_position.append(pos)
-                            task.release_machine.append(positions[pos].machine)
-                    task.status = 1
-                    while i < len(q):  # 输出一下当前优先队列里的内容，用于调试   先将优先队列内容清空，看所有任务当前是否能执行，后续可以对这里进行一定的优化工作。
-                        print("task:", task.id, heapq.heappop(q).id)
-                    for task in tasks:
-                        flag = 1
-                        if task.pre is not None:
-                            for pre in task.pre:  # 判断是否所有前驱任务都完成
-                                if tasks[pre].status == 0:
-                                    flag = 0
-                        # 判断所需要的资源是否都满足
-                        flag2 = 0
-                        if task.dependency == -1:
-                            for pos in task.occupy:
-                                if positions[pos-1].status == 0:
-                                    flag2 = 1
-                        else:
-                            for pos in task.occupy:
-                                if positions[pos-1].status == 0 and positions[pos-1].machine == tasks[task.dependency].machine:
-                                    flag2 = 1
-                        if len(task.occupy) == 0:
-                            flag2 = 1
-                        if flag == 1 and flag2 == 1 and task.status == 0:
-                            tmp_cnt += 1
-                    tasks = copy.deepcopy(tmp_Task)
-                    positions = copy.deepcopy(tmp_position)
-                    machines = copy.deepcopy(tmp_machine)
-                    task.heuristic = copy.deepcopy(tmp_cnt)
-            # if step == 12 and t_idx_dic[t.id] == 41:
-            #     print(t.task_name)
-            #     print(flag, " ", flag2)
-
+                pq_list.append(t.id)           
         SAVED_PRIOR_QUEUE[step] = [t.id for t in q]
-        print([t_idx_dic[t.id] for t in q])
         Finished_task = []
         for t in tasks:
             if t.status == 1:
                 Finished_task.append(t.id)
         # print("step:", step, "Selected_Task:", task.task_name, "Priority_queue:", pq_list, "Finished:", Finished_task, "occ:", task.occupy, "rel:", task.release)
-        print("step:", step, "Selected_Task:", task.task_name, " id: ", t_idx_dic[task.id])
+        # print("step:", step, "Selected_Task:", task.task_name, " id: ", t_idx_dic[task.id])
         posS = []
         for p in positions:
             posS.append(p.status)
         # print("pos_status:", posS)
-        taskS = []
-        for t in tasks:
-            taskS.append(t.status)
-        # print("task_status:", taskS)
-        taskS = []
-        for t in SAVED_CUR_TASK_STATUS[step-1]:
-            taskS.append(t.status)
         TASK_SELECT[step] = Finished_task
+        if len(q) == 0 and step == end_task_id:   # 如果当前队列为空了，并且当前step执行到了任务图最后一步，那么把新的图加进来。
+            window = end_task_id - start_task_id  # window表示窗口中有多少个任务
+            start_task_id = end_task_id
+            end_task_id = end_task_id + window
+            for idx, t in enumerate(tasks):
+                if idx >= start_task_id and idx < end_task_id:
+                    flag = 1
+                    if t.pre is not None:
+                        for pre in t.pre:  # 判断是否所有前驱任务都完成
+                            if tasks[t_idx_dic[pre]].status == 0:
+                                flag = 0
+                    flag2 = 1
+                    for occ_id, occ in enumerate(t.occupy):
+                        tmp_f = 0
+                        for pos in occ:
+                            if positions[p_idx_dic[pos]].status == 0:
+                                tmp_f = 1
+                        if tmp_f == 0:  # 如果资源里有一项
+                            flag2 = 0
+                    if len(t.occupy) == 0:
+                        flag2 = 1
+                    if flag == 1 and flag2 == 1 and t.status == 0:
+                        heapq.heappush(q, t)
+                        pq_list.append(t.id)
+            continue
         if len(q) == 0 and step != len(tasks):
             # CALL BACK
             if step == 0:
@@ -515,6 +465,7 @@ def Run(tasks, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_C
             for dec in SAVED_PRE_DECISIONS[step]:
                 decision.append(dec)
             # print("STEP:", step, "SAVED_PRE_DECISIONS:", decision)
+        print("进度：", step, "/" , len(tasks))
     return tasks, positions, machines, step, SAVED_CUR_TASK_STATUS, TASK_SELECT
 
 
