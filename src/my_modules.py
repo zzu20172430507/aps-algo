@@ -12,6 +12,7 @@ class Task:
     """
     def __init__(self, id, occupy) -> None:
         self.id = id
+        self.idx = 0
         # self.occupy表示占用的设备资源，例如 [1,2,3] 表示从1，2，3中选择一个
         self.occupy = occupy
         self.release = []
@@ -39,7 +40,7 @@ class Task:
     def __lt__(self, other):
         """定义<比较操作符"""
         if self.priority == other.priority:
-            return self.heuristic > other.heuristic
+            return self.idx < other.idx
         return self.priority < other.priority
 
 
@@ -117,8 +118,8 @@ def data_read():
     machines_json = data['assaysmodel'][0]['machines']
     assayssid = data['assaysmodel'][0]['assaysid']
     base_num = len(tasks_json)
-    board_num = 100  # board_num 表示该任务图需要复制多少份
-    window_size = 2  # window_size 表示每次排几个任务。
+    board_num = 10  # board_num 表示该任务图需要复制多少份
+    window_size = 5  # window_size 表示每次排几个任务。
     heuristics = 0
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}
@@ -274,8 +275,10 @@ def Initialize(tasks, begin, end, positions, t_idx_dic, p_idx_dic):
     return tasks, positions, i, Finished, SAVED_INFORMATION, SAVED_CUR_TASK, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, TASK_SELECT, DEAD, step, q, pq_tmp
 
 
-def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT):
+def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT, SAVED_CUR_TASK, base_num):
+    cnt = 0
     while len(q) > 0:
+        cnt += 1
         task = heapq.heappop(q)  # EACH TIME GET THE PRIOR TASK
         SIG_CALL_BACK = 0  # SIG_CALL_BACK用于记录是否在当前队列中找到了可执行的任务。
         while task.id in SAVED_PRE_DECISIONS[step]:  # 所有优先队列中的任务如果出现在了之前这一步的记录中，那么则不会选择，如果都没有，那么sigcallback记为1
@@ -283,37 +286,62 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 SIG_CALL_BACK = 1
                 break
             task = heapq.heappop(q)
-
         while SIG_CALL_BACK == 1:  # 如果当前所有的队列中的都尝试过了，就再往前回溯一步
             SAVED_PRE_DECISIONS[step] = []  # 再往前一步要清空现在这一步的内容，否则可能对后续会产生影响
             if step == 0:  # 如果当前没有上一步了，那么需要报错处理
                 print("PLEASE CHECK INPUT NO RESULT AVAILABLE")
                 exit()
             step -= 1
-            # print("remove:", SAVED_CUR_TASK.pop(step))
-            tasks = copy.deepcopy(SAVED_CUR_TASK_STATUS[step])  # 恢复状态
-            positions = copy.deepcopy(SAVED_CUR_RESOURCE_POSITIONS[step])
-            machines = copy.deepcopy(SAVED_CUR_RESOURCE_MACHINES[step])
+            task = tasks[t_idx_dic[SAVED_CUR_TASK[step]]]  # 需要返回上一步，修改上一步的选择
+            # task恢复
+            task.status = 0  # 任务设为未执行
+            SAVED_CUR_TASK.pop()
+            # position恢复
+            # 释放position 恢复
+            for pos in task.release_position:
+                if "Incubator" in task.task_name:
+                    continue
+                elif task.task_name == "robot":
+                    is_next = 0
+                    for pre in task.pre:
+                        if "Incubator" in tasks[t_idx_dic[pre]].task_name:
+                            is_next = 1
+                    if is_next == 1:
+                        continue
+                positions[p_idx_dic[pos]].status = 1
+            # 占用position恢复
+            for pos in task.position:  
+                if "Incubator" in task.task_name:
+                    continue
+                elif task.task_name == "robot":
+                    is_pre = 0
+                    for nxt in task.next:
+                        if "Incubator" in tasks[t_idx_dic[nxt]].task_name:
+                            is_pre = 1
+                    if is_pre == 1:
+                        continue
+                positions[p_idx_dic[pos]].status = 0
             q_id = copy.deepcopy(SAVED_PRIOR_QUEUE[step])
             q = [tasks[t_idx_dic[t_id]] for t_id in q_id]
             task = heapq.heappop(q)
 
             SIG_tmp = 0
             while task.id in SAVED_PRE_DECISIONS[step]:
+                if task.status == 0:  # 如果上一步选择task，但是不行这个任务没有执行完
+                    for idx in range(t_idx_dic[task.id], len(tasks), base_num):
+                        if tasks[idx].id not in SAVED_PRE_DECISIONS[step]:
+                            SAVED_PRE_DECISIONS[step].append(tasks[idx].id)
                 if len(q) == 0 and (task.id in SAVED_PRE_DECISIONS[step]):
                     SIG_tmp = 1
                     break
                 task = heapq.heappop(q)
             if SIG_tmp == 0:
                 break
-
-        SAVED_CUR_TASK_STATUS[step] = copy.deepcopy(tasks)  # 保存当前step的task-status
-        SAVED_CUR_RESOURCE_POSITIONS[step] = copy.deepcopy(positions)
-        SAVED_CUR_RESOURCE_MACHINES[step] = copy.deepcopy(machines)
+        
         SAVED_PRE_DECISIONS[step].append(copy.deepcopy(task.id))
-
+        SAVED_CUR_TASK.append(task.id)
+        print("!!!", task.task_name, t_idx_dic[task.id], "base:", len(SAVED_PRE_DECISIONS[step]), "mod:", t_idx_dic[task.id] % base_num)
         step += 1
-
         # 如果当前task没有设置依赖约束，则从所有可用设备中选择第一个可用设备占用
         tmp_machine = []
         tmp_position = []
@@ -347,6 +375,8 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
         task.machine = copy.deepcopy(tmp_machine)
         task.position = copy.deepcopy(tmp_position)
 
+        tmp_rel_machine = []
+        tmp_rel_position = []
         # 当前任务释放设备
         for rel_id, rel in enumerate(task.release):
             if len(rel) > 1 and task.release_dependency[rel_id] != -1:
@@ -354,12 +384,12 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 for cur_pos in rel:
                     if cur_pos in pre_pos:
                         positions[cur_pos].status = 0
-                        task.release_position.append(cur_pos)
-                        task.release_machine.append(positions[cur_pos].machine)
+                        tmp_rel_position.append(cur_pos)
+                        tmp_rel_machine.append(positions[cur_pos].machine)
             else:
                 for pos in rel:
-                    task.release_position.append(pos)
-                    task.release_machine.append(positions[p_idx_dic[pos]].machine)
+                    tmp_rel_position.append(pos)
+                    tmp_rel_machine.append(positions[p_idx_dic[pos]].machine)
                     if "Incubator" in task.task_name:
                         continue
                     elif task.task_name == "robot":
@@ -370,6 +400,8 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                         if is_next == 1:
                             continue
                     positions[p_idx_dic[pos]].status = 0
+        task.release_machine = copy.deepcopy(tmp_rel_machine)
+        task.release_position = copy.deepcopy(tmp_rel_position)
         task.status = 1
         tmpPos = [0 for _ in range(len(positions))]
         for pos_id, pos in enumerate(positions):
@@ -380,13 +412,15 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
         other_q = []
         while i < len(q):  # 输出一下当前优先队列里的内容，用于调试   先将优先队列内容清空，看所有任务当前是否能执行，后续可以对这里进行一定的优化工作。
             other_q.append(t_idx_dic[heapq.heappop(q).id])
-        task_state = []
-        for t in tasks:
-            task_state.append(t.status)
-        if DEAD == 1:
-            print(task.id, "其他优先队列中的task:", other_q)
-            print("task_state:", task_state)
+        # task_state = []
+        # for t in tasks:
+        #     task_state.append(t.status)
+        # if DEAD == 1:
+        #     print(task.id, "其他优先队列中的task:", other_q)
+        #     print("task_state:", task_state)
         pq_list = []
+        # end_task_id += 1
+        end_task_id = min(end_task_id, len(tasks))
         for idx in range(start_task_id, end_task_id):
             t = tasks[idx]
             flag = 1
@@ -410,85 +444,132 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 pq_list.append(t.id)           
         SAVED_PRIOR_QUEUE[step] = [t.id for t in q]
         Finished_task = []
-        for t in tasks:
-            if t.status == 1:
+        for idx in range(start_task_id, end_task_id):
+            if tasks[idx].status == 1:
                 Finished_task.append(t.id)
         # print("step:", step, "Selected_Task:", task.task_name, "Priority_queue:", pq_list, "Finished:", Finished_task, "occ:", task.occupy, "rel:", task.release)
         # print("step:", step, "Selected_Task:", task.task_name, " id: ", t_idx_dic[task.id])
-        posS = []
-        for p in positions:
-            posS.append(p.status)
+        # posS = []
+        # for p in positions:
+        #     posS.append(p.status)
         # print("pos_status:", posS)
         TASK_SELECT[step] = Finished_task
+        flag = 0
+        # for idx in range(0, start_task_id + base_num):
+        #     if tasks[idx].status == 0:
+        #         flag = 1
+        # if flag == 0:
+        #     print("???", task.idx, "S:", start_task_id, "E:", end_task_id)
+        #     start_task_id = start_task_id + base_num
+        #     end_task_id = min(len(tasks), end_task_id + base_num)
+        #     print("!!!!", task.idx, "S:", start_task_id, "E:", end_task_id)
+        #     for idx in range(start_task_id, end_task_id):
+        #         t = tasks[idx]
+        #         flag = 1
+        #         if t.pre is not None:
+        #             for pre in t.pre:  # 判断是否所有前驱任务都完成
+        #                 if tasks[t_idx_dic[pre]].status == 0:
+        #                     flag = 0
+        #         flag2 = 1
+        #         for occ_id, occ in enumerate(t.occupy):
+        #             tmp_f = 0
+        #             for pos in occ:
+        #                 if positions[p_idx_dic[pos]].status == 0:
+        #                     tmp_f = 1
+        #             if tmp_f == 0:  # 如果资源里有一项
+        #                 flag2 = 0
+        #         if len(t.occupy) == 0:
+        #             flag2 = 1
+        #         if flag == 1 and flag2 == 1 and t.status == 0:
+        #             heapq.heappush(q, t)
+        #             pq_list.append(t.id)
+            
+        if len(q) == 0 and step == len(tasks):
+            break
         if len(q) == 0 and step == end_task_id:   # 如果当前队列为空了，并且当前step执行到了任务图最后一步，那么把新的图加进来。
             window = end_task_id - start_task_id  # window表示窗口中有多少个任务
             start_task_id = end_task_id
             end_task_id = end_task_id + window
-            for idx, t in enumerate(tasks):
-                if idx >= start_task_id and idx < end_task_id:
-                    flag = 1
-                    if t.pre is not None:
-                        for pre in t.pre:  # 判断是否所有前驱任务都完成
-                            if tasks[t_idx_dic[pre]].status == 0:
-                                flag = 0
+            if end_task_id >= len(tasks):
+                end_task_id = len(tasks)
+            for idx in range(start_task_id, end_task_id):
+                t = tasks[idx]
+                flag = 1
+                if t.pre is not None:
+                    for pre in t.pre:  # 判断是否所有前驱任务都完成
+                        if tasks[t_idx_dic[pre]].status == 0:
+                            flag = 0
+                flag2 = 1
+                for occ_id, occ in enumerate(t.occupy):
+                    tmp_f = 0
+                    for pos in occ:
+                        if positions[p_idx_dic[pos]].status == 0:
+                            tmp_f = 1
+                    if tmp_f == 0:  # 如果资源里有一项
+                        flag2 = 0
+                if len(t.occupy) == 0:
                     flag2 = 1
-                    for occ_id, occ in enumerate(t.occupy):
-                        tmp_f = 0
-                        for pos in occ:
-                            if positions[p_idx_dic[pos]].status == 0:
-                                tmp_f = 1
-                        if tmp_f == 0:  # 如果资源里有一项
-                            flag2 = 0
-                    if len(t.occupy) == 0:
-                        flag2 = 1
-                    if flag == 1 and flag2 == 1 and t.status == 0:
-                        heapq.heappush(q, t)
-                        pq_list.append(t.id)
+                if flag == 1 and flag2 == 1 and t.status == 0:
+                    heapq.heappush(q, t)
+                    pq_list.append(t.id)
             continue
-        if len(q) == 0 and step != len(tasks):
+        if len(q) == 0 and step != len(tasks):  # 这里主要做的是撤销操作、。
             # CALL BACK
             if step == 0:
                 print('请检查输入是否符合逻辑！')
                 exit()
             step -= 1
-            # 首先恢复到上一个step的状态。
-            tasks = copy.deepcopy(SAVED_CUR_TASK_STATUS[step])  # task状态恢复
-            positions = copy.deepcopy(SAVED_CUR_RESOURCE_POSITIONS[step])  # position状态恢复
-            machines = copy.deepcopy(SAVED_CUR_RESOURCE_MACHINES[step])  # machine状态恢复
-            # print("remove:", SAVED_CUR_TASK.pop())
-            # Finished.pop()
-            q_id = copy.deepcopy(SAVED_PRIOR_QUEUE[step])
-            q = [tasks[t_idx_dic[t_id]] for t_id in q_id]
-            # print("RETURN　LAST　STEP !!", "任务ID:", t_idx_dic[task.id], "当前step:", step)
-            DEAD = 2
-            decision = []
-            for dec in SAVED_PRE_DECISIONS[step]:
-                decision.append(dec)
-            # print("STEP:", step, "SAVED_PRE_DECISIONS:", decision)
-        print("进度：", step, "/" , len(tasks))
-    return tasks, positions, machines, step, SAVED_CUR_TASK_STATUS, TASK_SELECT
+            # 首先恢复到执行该task之前的状态
+            task.status = 0  # 任务设为未执行
+            SAVED_CUR_TASK.pop()
+            # position恢复
+            # 释放position 恢复
+            for pos in task.release_position:
+                if "Incubator" in task.task_name:
+                    continue
+                elif task.task_name == "robot":
+                    is_next = 0
+                    for pre in task.pre:
+                        if "Incubator" in tasks[t_idx_dic[pre]].task_name:
+                            is_next = 1
+                    if is_next == 1:
+                        continue
+                positions[p_idx_dic[pos]].status = 1
+            # 占用position恢复
+            for pos in task.position:  
+                if "Incubator" in task.task_name:
+                    continue
+                elif task.task_name == "robot":
+                    is_pre = 0
+                    for nxt in task.next:
+                        if "Incubator" in tasks[t_idx_dic[nxt]].task_name:
+                            is_pre = 1
+                    if is_pre == 1:
+                        continue
+                positions[p_idx_dic[pos]].status = 0
+            # 优先队列恢复
+            heapq.heappush(q, task)
+        if step % 1 == 0:
+            print("进度：", step, "/", len(tasks))
+        # PROGRAM_END_TIME = time.time()
+        # sum += PROGRAM_END_TIME - PROGRAM_START_TIME
+        # print("sum Time:", PROGRAM_END_TIME - PROGRAM_START_TIME, "AVG Time:",  sum/cnt, "s")
+    return tasks, positions, machines, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK
 
 
-def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_idc):
+def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_idc):
     if step != len(tasks):
         print("exsiting deadlock !")
     else:
         print("successfully compute solution !")
     print("step=", step)
     # tasks_status = SAVED_CUR_TASK_STATUS[step-1]
-    task_id = []
-    for step in range(0, len(tasks)):
-        l1 = TASK_SELECT[step]
-        l2 = TASK_SELECT[step+1]
-        for i in l2:
-            if i not in l1:
-                task_id.append(i)
-
+    task_id = SAVED_CUR_TASK
+    tsk_tmp = []
+    for tid in task_id:
+        tsk_tmp.append(t_idx_dic[tid])
     print("task分配资源的顺序为:")
     print(len(task_id))
-    tsk_tmp = []
-    for t in task_id:
-        tsk_tmp.append(t_idx_dic[t])
     print(tsk_tmp)
     colors = generate_colors(board_num * base_num)
     tmp = []
@@ -519,8 +600,13 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, board_num, ba
                 if is_pre == 1:
                     continue
             Tm[p_idx_dic[pos_id]] = begin_time
-        tasks[task].available = begin_time + tasks[task].time   # available 记录设备完成工作时间
-        tasks[task].start_time = begin_time  # start_time 记录开始占用该设备的时间
+        if "Incubator" in tasks[task].task_name:
+            begin_time = tasks[t_idx_dic[tasks[task].pre[0]]].start_time
+            tasks[task].available = begin_time + tasks[task].time   # available 记录设备完成工作时间
+            tasks[task].start_time = begin_time  # start_time 记录开始占用该设备的时间
+        else:
+            tasks[task].available = begin_time + tasks[task].time   # available 记录设备完成工作时间
+            tasks[task].start_time = begin_time  # start_time 记录开始占用该设备的时间
         for release_position in tasks[task].release_position:
             release_id = p_idx_dic[release_position]
             if "Incubator" in tasks[task].task_name:
@@ -631,7 +717,7 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
                 "Color": color
             }
             Children.append(sub_child)
-        print("mintime = ", mintime.strftime("%Y-%m-%d %H:%M:%S"))
+        # print("mintime = ", mintime.strftime("%Y-%m-%d %H:%M:%S"))
         # 每个plateProcess中所有任务记录下
         for seq in sequences:  # 对于每个sequence中如果有task属于该sequence，则生成一个任务
             # print("!!!", sequences[seq])
@@ -644,7 +730,6 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
                             break
             stask = sorted(stask, key=lambda x: x[1])
             if stask != []:
-                print("len stask:", len(stask))
                 child_id = tasks[stask[0][0]].id
                 node_id = tasks[stask[0][0]].nodeid
                 instrument_name = seq
