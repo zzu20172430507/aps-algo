@@ -63,3 +63,4 @@ if __name__ == "__main__":
     print("计算甘特图:", PROGRAM_OUT_TIME - PROGRAM_RUN_TIME, "s")
     print("生成文件:", PROGRAM_END_TIME - PROGRAM_OUT_TIME, "s")
     
+    # my_modules.display(tasks)
