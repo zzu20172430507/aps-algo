@@ -100,8 +100,16 @@ def data_read():
     machines_json = data['assaysmodel'][0]['machines']
     assayssid = data['assaysmodel'][0]['assaysid']
     base_num = len(tasks_json)
+<<<<<<< HEAD
     board_num = 4  # board_num 表示该任务图需要复制多少份
+=======
+<<<<<<< HEAD
+    board_num = 3  # board_num 表示该任务图需要复制多少份
+=======
+    board_num = 2  # board_num 表示该任务图需要复制多少份
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
     window_size = 2  # window_size 表示每次排几个任务。
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
     heuristics = 0
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}

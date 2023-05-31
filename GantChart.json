@@ -4,368 +4,898 @@
     "Name": "Plate1",
     "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
     "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+<<<<<<< HEAD
     "StartTime": "2023-05-31 11:18:40",
     "EndTime": "2023-05-31 13:16:20",
+=======
+<<<<<<< HEAD
+    "StartTime": "2023-05-13 16:30:29",
+    "EndTime": "2023-05-13 19:50:09",
+=======
+    "StartTime": "2023-05-24 15:52:29",
+    "EndTime": "2023-05-24 17:56:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
     "Children": [
       {
         "Id": "3abcccade5ac45e3984366bfbf8006f4",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "7A3B08A214C34737B482B2E1F9A207E0",
         "Name": "Get From Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:18:40",
         "EndTime": "2023-05-31 11:18:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:30:29",
+        "EndTime": "2023-05-13 16:30:39",
+=======
+        "StartTime": "2023-05-24 15:52:29",
+        "EndTime": "2023-05-24 15:52:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#1700F5"
+=======
+<<<<<<< HEAD
+        "Color": "#6D6678"
+=======
+        "Color": "#7A0433"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "a2821cc0ba5e446ba803a99a7fb863e2",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "6582FD88794A4600B8B388E4F729B175",
         "Name": "Open Lid",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:19:10",
         "EndTime": "2023-05-31 11:19:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:30:59",
+        "EndTime": "2023-05-13 16:31:09",
+=======
+        "StartTime": "2023-05-24 15:52:59",
+        "EndTime": "2023-05-24 15:53:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#8E476C"
+=======
+<<<<<<< HEAD
+        "Color": "#7D161E"
+=======
+        "Color": "#6F2BA3"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "58e55206f34f429db67d0b0f751ad68c",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00424929178470255,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0025041736227045075,
+=======
+        "Percentage": 0.004032258064516129,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "6E24506478EE493BA1DAFF48793D6695",
         "Name": "Washer",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:19:40",
         "EndTime": "2023-05-31 11:20:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:31:29",
+        "EndTime": "2023-05-13 16:31:59",
+=======
+        "StartTime": "2023-05-24 15:53:29",
+        "EndTime": "2023-05-24 15:53:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#135184"
+=======
+<<<<<<< HEAD
+        "Color": "#98D3FF"
+=======
+        "Color": "#D85E03"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "e2180b6779074f189cd02d2915740e69",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "8AA7C0E249884336BCB8DED5AF76C1DB",
         "Name": "Close",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:22:10",
         "EndTime": "2023-05-31 11:22:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:33:59",
+        "EndTime": "2023-05-13 16:34:09",
+=======
+        "StartTime": "2023-05-24 15:55:59",
+        "EndTime": "2023-05-24 15:56:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#A2A376"
+=======
+<<<<<<< HEAD
+        "Color": "#DD4B7B"
+=======
+        "Color": "#A9D885"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "3705f6f6e1854e74bdc5bceb516417aa",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.509915014164306,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.3005008347245409,
+=======
+        "Percentage": 0.4838709677419355,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "1A873FA760304F558B1FD3E059F764EA",
         "Name": "Incubator",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:22:20",
         "EndTime": "2023-05-31 12:22:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:39:49",
+        "EndTime": "2023-05-13 17:39:49",
+=======
+        "StartTime": "2023-05-24 15:56:09",
+        "EndTime": "2023-05-24 16:56:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 3600,
         "TimeSpan": "01:00:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#94A887"
+=======
+<<<<<<< HEAD
+        "Color": "#BCCC0B"
+=======
+        "Color": "#DA4C9A"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "b332a6803839414798266d8016e375d6",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "14119A15B25646FDBA0E14208D7D85DF",
         "Name": "Open Lid2",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:22:40",
         "EndTime": "2023-05-31 12:22:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 17:40:09",
+        "EndTime": "2023-05-13 17:40:19",
+=======
+        "StartTime": "2023-05-24 16:56:29",
+        "EndTime": "2023-05-24 16:56:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#E2D199"
+=======
+<<<<<<< HEAD
+        "Color": "#A81B08"
+=======
+        "Color": "#D701DE"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "db108564f2454122aabf4b5d9f7b0420",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.021246458923512748,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.012520868113522538,
+=======
+        "Percentage": 0.020161290322580645,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "065C0A3F4F404C56B32AED89C6773A39",
         "Name": "Washer+分液",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:23:10",
         "EndTime": "2023-05-31 12:25:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 17:40:39",
+        "EndTime": "2023-05-13 17:43:09",
+=======
+        "StartTime": "2023-05-24 16:56:59",
+        "EndTime": "2023-05-24 16:59:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 150,
         "TimeSpan": "00:02:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#8DD849"
+=======
+<<<<<<< HEAD
+        "Color": "#8F8B41"
+=======
+        "Color": "#A41E04"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "72b1a6b76fb7475f8851517184428361",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "9456EEC507F14BCAB6769EF7BF2742D1",
         "Name": "Close2",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:26:00",
         "EndTime": "2023-05-31 12:26:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 17:43:29",
+        "EndTime": "2023-05-13 17:43:39",
+=======
+        "StartTime": "2023-05-24 16:59:49",
+        "EndTime": "2023-05-24 16:59:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2BB753"
+=======
+<<<<<<< HEAD
+        "Color": "#B36C2F"
+=======
+        "Color": "#445E11"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "f7bdf993aeb845d4881e63883b06aacf",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.254957507082153,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.15025041736227046,
+=======
+        "Percentage": 0.24193548387096775,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "DE4A5D33A1CD42DEAD0615ADCA5C321F",
         "Name": "Incubator2",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:26:10",
         "EndTime": "2023-05-31 12:56:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 17:43:59",
+        "EndTime": "2023-05-13 18:13:59",
+=======
+        "StartTime": "2023-05-24 16:59:59",
+        "EndTime": "2023-05-24 17:29:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 1800,
         "TimeSpan": "00:30:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#BCD011"
+=======
+<<<<<<< HEAD
+        "Color": "#4D18E9"
+=======
+        "Color": "#B32F14"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "53356cbf104c4174879ca423b953f93d",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "3A00EAC6A23D4281AD70FD59A88CDCE0",
         "Name": "Open Lid3",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:56:30",
         "EndTime": "2023-05-31 12:56:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:14:19",
+        "EndTime": "2023-05-13 18:14:29",
+=======
+        "StartTime": "2023-05-24 17:30:19",
+        "EndTime": "2023-05-24 17:30:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#0DD9B4"
+=======
+<<<<<<< HEAD
+        "Color": "#CF030E"
+=======
+        "Color": "#64E8F7"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "7d43b27081c14b8eac4ba73331388d30",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00424929178470255,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0025041736227045075,
+=======
+        "Percentage": 0.004032258064516129,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "702601BEA15D445C8BF3DFBEFDD61646",
         "Name": "运行Protocol",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:57:00",
         "EndTime": "2023-05-31 12:57:30",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:14:49",
+        "EndTime": "2023-05-13 18:15:19",
+=======
+        "StartTime": "2023-05-24 17:30:49",
+        "EndTime": "2023-05-24 17:31:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#0E4511"
+=======
+<<<<<<< HEAD
+        "Color": "#A07AE7"
+=======
+        "Color": "#C1C02B"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "0dcef70b228b415488d4ea7c1d2eba5e",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00424929178470255,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0025041736227045075,
+=======
+        "Percentage": 0.004032258064516129,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "66AC387CECA647D7A2D93D2DFB818C85",
         "Name": "分液器FX(加显色剂)",
         "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:57:50",
         "EndTime": "2023-05-31 12:58:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:15:39",
+        "EndTime": "2023-05-13 18:16:09",
+=======
+        "StartTime": "2023-05-24 17:31:39",
+        "EndTime": "2023-05-24 17:32:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#573AC6"
+=======
+<<<<<<< HEAD
+        "Color": "#E09CB3"
+=======
+        "Color": "#C76A98"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "0c87544237204dadbe5ef626cb14068e",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "3891234627D44297A7064BB9EC80454A",
         "Name": "Close3",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:00:50",
         "EndTime": "2023-05-31 13:01:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:50:39",
+        "EndTime": "2023-05-13 18:50:49",
+=======
+        "StartTime": "2023-05-24 17:34:39",
+        "EndTime": "2023-05-24 17:34:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#426048"
+=======
+<<<<<<< HEAD
+        "Color": "#0D224D"
+=======
+        "Color": "#C30066"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "03edce0e903647118209a74f3b3ae00c",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.08498583569405099,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.05008347245409015,
+=======
+        "Percentage": 0.08064516129032258,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "398FD969239343C1905D82D12E83E56C",
         "Name": "Incubator3",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:01:00",
         "EndTime": "2023-05-31 13:11:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:51:09",
+        "EndTime": "2023-05-13 19:01:09",
+=======
+        "StartTime": "2023-05-24 17:34:49",
+        "EndTime": "2023-05-24 17:44:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 600,
         "TimeSpan": "00:10:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#599D3C"
+=======
+<<<<<<< HEAD
+        "Color": "#E8B3F2"
+=======
+        "Color": "#5A3D96"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "47609adad6de479fa944795db41ed045",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "59D8AD9937864DC1B03CA48A569124FD",
         "Name": "Open Lid4",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:11:20",
         "EndTime": "2023-05-31 13:11:30",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:01:29",
+        "EndTime": "2023-05-13 19:01:39",
+=======
+        "StartTime": "2023-05-24 17:52:09",
+        "EndTime": "2023-05-24 17:52:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#55DF38"
+=======
+<<<<<<< HEAD
+        "Color": "#A15391"
+=======
+        "Color": "#BBFCA0"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "b4e080a5b8f04615878160ad0d51476b",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00424929178470255,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0025041736227045075,
+=======
+        "Percentage": 0.004032258064516129,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "E5A0F965117842148626D72F83FBB241",
         "Name": "分液",
         "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:11:50",
         "EndTime": "2023-05-31 13:12:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:01:59",
+        "EndTime": "2023-05-13 19:02:29",
+=======
+        "StartTime": "2023-05-24 17:52:39",
+        "EndTime": "2023-05-24 17:53:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#31CFA4"
+=======
+<<<<<<< HEAD
+        "Color": "#E0C2FA"
+=======
+        "Color": "#C4E5F2"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "9731fe7060c84072be3fe966837a0b7b",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.0169971671388102,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.01001669449081803,
+=======
+        "Percentage": 0.016129032258064516,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "1D250F74EB9742348A9DAB6347A3F314",
         "Name": "Spin",
         "InstrumentName": "Victor Nivo_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:12:40",
         "EndTime": "2023-05-31 13:14:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:02:49",
+        "EndTime": "2023-05-13 19:04:49",
+=======
+        "StartTime": "2023-05-24 17:53:29",
+        "EndTime": "2023-05-24 17:55:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 120,
         "TimeSpan": "00:02:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#E9EF41"
+=======
+<<<<<<< HEAD
+        "Color": "#9C637C"
+=======
+        "Color": "#8B37B9"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "bf24858c57174d3b8ae4eb9d856717f5",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "A61383E86C8648089639A95B121BE65A",
         "Name": "Close4",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:15:40",
         "EndTime": "2023-05-31 13:15:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:49:29",
+        "EndTime": "2023-05-13 19:49:39",
+=======
+        "StartTime": "2023-05-24 17:55:49",
+        "EndTime": "2023-05-24 17:55:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#B44466"
+=======
+<<<<<<< HEAD
+        "Color": "#E6D9A9"
+=======
+        "Color": "#FF0769"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "4d375dc28fa54e8997527ec4a5601f53",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.00141643059490085,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0008347245409015025,
+=======
+        "Percentage": 0.0013440860215053765,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "CA19A03099034779BA269A61FF76D6EB",
         "Name": "Put In Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:16:10",
         "EndTime": "2023-05-31 13:16:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:49:59",
+        "EndTime": "2023-05-13 19:50:09",
+=======
+        "StartTime": "2023-05-24 17:56:19",
+        "EndTime": "2023-05-24 17:56:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 0,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2307A9"
+=======
+<<<<<<< HEAD
+        "Color": "#A00894"
+=======
+        "Color": "#02ED10"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "5bb1b3d9f1fb482f89c463316117a955",
         "Barcode": "Plate1",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard1",
+<<<<<<< HEAD
         "Percentage": 0.0169971671388102,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.01001669449081803,
+=======
+        "Percentage": 0.016129032258064516,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
         "Name": "Run Sequences",
         "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:20:10",
         "EndTime": "2023-05-31 11:22:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:31:59",
+        "EndTime": "2023-05-13 16:33:59",
+=======
+        "StartTime": "2023-05-24 15:53:59",
+        "EndTime": "2023-05-24 15:55:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 120,
         "TimeSpan": "00:02:00",
         "RobotGetTime": 0,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#8D4C2C"
+=======
+<<<<<<< HEAD
+        "Color": "#1BC2CD"
+=======
+        "Color": "#4B3A88"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       }
     ]
   },
@@ -374,8 +904,18 @@
     "Name": "Plate2",
     "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
     "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+<<<<<<< HEAD
     "StartTime": "2023-05-31 11:18:50",
     "EndTime": "2023-05-31 11:23:00",
+=======
+<<<<<<< HEAD
+    "StartTime": "2023-05-13 16:30:39",
+    "EndTime": "2023-05-13 16:34:49",
+=======
+    "StartTime": "2023-05-24 15:52:39",
+    "EndTime": "2023-05-24 15:56:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
     "Children": [
       {
         "Id": "451ddd1140c3479ab30c18e3267b371f",
@@ -387,13 +927,31 @@
         "PlateProcessNodeId": "03C272052C4A4487A27299EC3F7FED85",
         "Name": "Get From Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:18:50",
         "EndTime": "2023-05-31 11:19:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:30:39",
+        "EndTime": "2023-05-13 16:30:49",
+=======
+        "StartTime": "2023-05-24 15:52:39",
+        "EndTime": "2023-05-24 15:52:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#95F082"
+=======
+<<<<<<< HEAD
+        "Color": "#47720A"
+=======
+        "Color": "#C7ECB3"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "ee0a140a89774f389ff9dabdcd0658a8",
@@ -405,13 +963,31 @@
         "PlateProcessNodeId": "58D365F93A3842CEBEBA38FA8B5E0595",
         "Name": "Put In Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:22:50",
         "EndTime": "2023-05-31 11:23:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:39",
+        "EndTime": "2023-05-13 16:34:49",
+=======
+        "StartTime": "2023-05-24 15:56:39",
+        "EndTime": "2023-05-24 15:56:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 0,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2AB714"
+=======
+<<<<<<< HEAD
+        "Color": "#CEDC86"
+=======
+        "Color": "#94AF90"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "a73da51bfcea4f87bcebbdb5acc89fc8",
@@ -423,13 +999,31 @@
         "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
         "Name": "Run Sequences",
         "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:20:10",
         "EndTime": "2023-05-31 11:22:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:31:59",
+        "EndTime": "2023-05-13 16:34:39",
+=======
+        "StartTime": "2023-05-24 15:53:59",
+        "EndTime": "2023-05-24 15:56:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 160,
         "TimeSpan": "00:02:40",
         "RobotGetTime": 0,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#A37D70"
+=======
+<<<<<<< HEAD
+        "Color": "#99EDBB"
+=======
+        "Color": "#273A3D"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       }
     ]
   },
@@ -438,368 +1032,898 @@
     "Name": "Plate3",
     "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
     "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+<<<<<<< HEAD
     "StartTime": "2023-05-31 11:20:10",
     "EndTime": "2023-05-31 13:20:10",
+=======
+<<<<<<< HEAD
+    "StartTime": "2023-05-13 16:31:59",
+    "EndTime": "2023-05-13 20:03:29",
+=======
+    "StartTime": "2023-05-24 15:53:59",
+    "EndTime": "2023-05-24 17:59:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
     "Children": [
       {
         "Id": "3abcccade5ac45e3984366bfbf8006f443",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "7A3B08A214C34737B482B2E1F9A207E0",
         "Name": "Get From Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:20:10",
         "EndTime": "2023-05-31 11:20:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:31:59",
+        "EndTime": "2023-05-13 16:32:09",
+=======
+        "StartTime": "2023-05-24 15:53:59",
+        "EndTime": "2023-05-24 15:54:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#1700F5"
+=======
+<<<<<<< HEAD
+        "Color": "#6D6678"
+=======
+        "Color": "#7A0433"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "a2821cc0ba5e446ba803a99a7fb863e245",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "6582FD88794A4600B8B388E4F729B175",
         "Name": "Open Lid",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:20:40",
         "EndTime": "2023-05-31 11:20:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:32:29",
+        "EndTime": "2023-05-13 16:32:39",
+=======
+        "StartTime": "2023-05-24 15:54:29",
+        "EndTime": "2023-05-24 15:54:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#8E476C"
+=======
+<<<<<<< HEAD
+        "Color": "#7D161E"
+=======
+        "Color": "#6F2BA3"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "58e55206f34f429db67d0b0f751ad68c47",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.004166666666666667,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.002364066193853428,
+=======
+        "Percentage": 0.003989361702127659,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "6E24506478EE493BA1DAFF48793D6695",
         "Name": "Washer",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:21:10",
         "EndTime": "2023-05-31 11:21:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:32:59",
+        "EndTime": "2023-05-13 16:33:29",
+=======
+        "StartTime": "2023-05-24 15:54:59",
+        "EndTime": "2023-05-24 15:55:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#135184"
+=======
+<<<<<<< HEAD
+        "Color": "#98D3FF"
+=======
+        "Color": "#D85E03"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "e2180b6779074f189cd02d2915740e6952",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "8AA7C0E249884336BCB8DED5AF76C1DB",
         "Name": "Close",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:25:10",
         "EndTime": "2023-05-31 11:25:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:36:59",
+        "EndTime": "2023-05-13 16:37:09",
+=======
+        "StartTime": "2023-05-24 15:58:59",
+        "EndTime": "2023-05-24 15:59:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#A2A376"
+=======
+<<<<<<< HEAD
+        "Color": "#DD4B7B"
+=======
+        "Color": "#A9D885"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "3705f6f6e1854e74bdc5bceb516417aa54",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.5,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.28368794326241137,
+=======
+        "Percentage": 0.4787234042553192,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "1A873FA760304F558B1FD3E059F764EA",
         "Name": "Incubator",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:25:20",
         "EndTime": "2023-05-31 12:25:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:39:49",
+        "EndTime": "2023-05-13 17:39:49",
+=======
+        "StartTime": "2023-05-24 15:59:09",
+        "EndTime": "2023-05-24 16:59:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 3600,
         "TimeSpan": "01:00:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#94A887"
+=======
+<<<<<<< HEAD
+        "Color": "#BCCC0B"
+=======
+        "Color": "#DA4C9A"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "b332a6803839414798266d8016e375d656",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "14119A15B25646FDBA0E14208D7D85DF",
         "Name": "Open Lid2",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:26:30",
         "EndTime": "2023-05-31 12:26:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:15:59",
+        "EndTime": "2023-05-13 18:16:09",
+=======
+        "StartTime": "2023-05-24 17:00:19",
+        "EndTime": "2023-05-24 17:00:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#E2D199"
+=======
+<<<<<<< HEAD
+        "Color": "#A81B08"
+=======
+        "Color": "#D701DE"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "db108564f2454122aabf4b5d9f7b042058",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.020833333333333332,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.01182033096926714,
+=======
+        "Percentage": 0.0199468085106383,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "065C0A3F4F404C56B32AED89C6773A39",
         "Name": "Washer+分液",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:27:00",
         "EndTime": "2023-05-31 12:29:30",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:16:29",
+        "EndTime": "2023-05-13 18:18:59",
+=======
+        "StartTime": "2023-05-24 17:00:49",
+        "EndTime": "2023-05-24 17:03:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 150,
         "TimeSpan": "00:02:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#8DD849"
+=======
+<<<<<<< HEAD
+        "Color": "#8F8B41"
+=======
+        "Color": "#A41E04"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "72b1a6b76fb7475f885151718442836160",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "9456EEC507F14BCAB6769EF7BF2742D1",
         "Name": "Close2",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:29:50",
         "EndTime": "2023-05-31 12:30:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:19:19",
+        "EndTime": "2023-05-13 18:19:29",
+=======
+        "StartTime": "2023-05-24 17:03:39",
+        "EndTime": "2023-05-24 17:03:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2BB753"
+=======
+<<<<<<< HEAD
+        "Color": "#B36C2F"
+=======
+        "Color": "#445E11"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "f7bdf993aeb845d4881e63883b06aacf62",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.25,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.14184397163120568,
+=======
+        "Percentage": 0.2393617021276596,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "DE4A5D33A1CD42DEAD0615ADCA5C321F",
         "Name": "Incubator2",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 12:30:00",
         "EndTime": "2023-05-31 13:00:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:19:49",
+        "EndTime": "2023-05-13 18:49:49",
+=======
+        "StartTime": "2023-05-24 17:03:49",
+        "EndTime": "2023-05-24 17:33:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 1800,
         "TimeSpan": "00:30:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#BCD011"
+=======
+<<<<<<< HEAD
+        "Color": "#4D18E9"
+=======
+        "Color": "#B32F14"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "53356cbf104c4174879ca423b953f93d64",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "3A00EAC6A23D4281AD70FD59A88CDCE0",
         "Name": "Open Lid3",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:00:20",
         "EndTime": "2023-05-31 13:00:30",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:50:09",
+        "EndTime": "2023-05-13 18:50:19",
+=======
+        "StartTime": "2023-05-24 17:34:09",
+        "EndTime": "2023-05-24 17:34:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#0DD9B4"
+=======
+<<<<<<< HEAD
+        "Color": "#CF030E"
+=======
+        "Color": "#64E8F7"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "7d43b27081c14b8eac4ba73331388d3066",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.004166666666666667,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.002364066193853428,
+=======
+        "Percentage": 0.003989361702127659,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "702601BEA15D445C8BF3DFBEFDD61646",
         "Name": "运行Protocol",
         "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:00:50",
         "EndTime": "2023-05-31 13:01:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 18:50:39",
+        "EndTime": "2023-05-13 18:51:09",
+=======
+        "StartTime": "2023-05-24 17:34:39",
+        "EndTime": "2023-05-24 17:35:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#0E4511"
+=======
+<<<<<<< HEAD
+        "Color": "#A07AE7"
+=======
+        "Color": "#C1C02B"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "0dcef70b228b415488d4ea7c1d2eba5e68",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.004166666666666667,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.002364066193853428,
+=======
+        "Percentage": 0.003989361702127659,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "66AC387CECA647D7A2D93D2DFB818C85",
         "Name": "分液器FX(加显色剂)",
         "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:01:40",
         "EndTime": "2023-05-31 13:02:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:03:09",
+        "EndTime": "2023-05-13 19:03:39",
+=======
+        "StartTime": "2023-05-24 17:35:29",
+        "EndTime": "2023-05-24 17:35:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#573AC6"
+=======
+<<<<<<< HEAD
+        "Color": "#E09CB3"
+=======
+        "Color": "#C76A98"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "0c87544237204dadbe5ef626cb14068e70",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "3891234627D44297A7064BB9EC80454A",
         "Name": "Close3",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:04:40",
         "EndTime": "2023-05-31 13:04:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:38:09",
+        "EndTime": "2023-05-13 19:38:19",
+=======
+        "StartTime": "2023-05-24 17:38:29",
+        "EndTime": "2023-05-24 17:38:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#426048"
+=======
+<<<<<<< HEAD
+        "Color": "#0D224D"
+=======
+        "Color": "#C30066"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "03edce0e903647118209a74f3b3ae00c72",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.08333333333333333,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.04728132387706856,
+=======
+        "Percentage": 0.0797872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "398FD969239343C1905D82D12E83E56C",
         "Name": "Incubator3",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:04:50",
         "EndTime": "2023-05-31 13:14:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:38:39",
+        "EndTime": "2023-05-13 19:48:39",
+=======
+        "StartTime": "2023-05-24 17:38:39",
+        "EndTime": "2023-05-24 17:48:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 600,
         "TimeSpan": "00:10:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#599D3C"
+=======
+<<<<<<< HEAD
+        "Color": "#E8B3F2"
+=======
+        "Color": "#5A3D96"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "47609adad6de479fa944795db41ed04574",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "59D8AD9937864DC1B03CA48A569124FD",
         "Name": "Open Lid4",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:15:10",
         "EndTime": "2023-05-31 13:15:20",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:48:59",
+        "EndTime": "2023-05-13 19:49:09",
+=======
+        "StartTime": "2023-05-24 17:53:49",
+        "EndTime": "2023-05-24 17:53:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#55DF38"
+=======
+<<<<<<< HEAD
+        "Color": "#A15391"
+=======
+        "Color": "#BBFCA0"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "b4e080a5b8f04615878160ad0d51476b76",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.004166666666666667,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.002364066193853428,
+=======
+        "Percentage": 0.003989361702127659,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "E5A0F965117842148626D72F83FBB241",
         "Name": "分液",
         "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:15:40",
         "EndTime": "2023-05-31 13:16:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:49:29",
+        "EndTime": "2023-05-13 19:49:59",
+=======
+        "StartTime": "2023-05-24 17:54:19",
+        "EndTime": "2023-05-24 17:54:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 30,
         "TimeSpan": "00:00:30",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#31CFA4"
+=======
+<<<<<<< HEAD
+        "Color": "#E0C2FA"
+=======
+        "Color": "#C4E5F2"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "9731fe7060c84072be3fe966837a0b7b78",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.016666666666666666,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.009456264775413711,
+=======
+        "Percentage": 0.015957446808510637,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "1D250F74EB9742348A9DAB6347A3F314",
         "Name": "Spin",
         "InstrumentName": "Victor Nivo_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:16:30",
         "EndTime": "2023-05-31 13:18:30",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:50:19",
+        "EndTime": "2023-05-13 19:52:19",
+=======
+        "StartTime": "2023-05-24 17:56:19",
+        "EndTime": "2023-05-24 17:58:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 120,
         "TimeSpan": "00:02:00",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#E9EF41"
+=======
+<<<<<<< HEAD
+        "Color": "#9C637C"
+=======
+        "Color": "#8B37B9"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "bf24858c57174d3b8ae4eb9d856717f580",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "A61383E86C8648089639A95B121BE65A",
         "Name": "Close4",
         "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:19:30",
         "EndTime": "2023-05-31 13:19:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:02:49",
+        "EndTime": "2023-05-13 20:02:59",
+=======
+        "StartTime": "2023-05-24 17:58:39",
+        "EndTime": "2023-05-24 17:58:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#B44466"
+=======
+<<<<<<< HEAD
+        "Color": "#E6D9A9"
+=======
+        "Color": "#FF0769"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "4d375dc28fa54e8997527ec4a5601f5382",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.001388888888888889,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.0007880220646178094,
+=======
+        "Percentage": 0.0013297872340425532,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "CA19A03099034779BA269A61FF76D6EB",
         "Name": "Put In Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 13:20:00",
         "EndTime": "2023-05-31 13:20:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:03:19",
+        "EndTime": "2023-05-13 20:03:29",
+=======
+        "StartTime": "2023-05-24 17:59:09",
+        "EndTime": "2023-05-24 17:59:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 0,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2307A9"
+=======
+<<<<<<< HEAD
+        "Color": "#A00894"
+=======
+        "Color": "#02ED10"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "5bb1b3d9f1fb482f89c463316117a95548",
         "Barcode": "Plate3",
         "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard3",
+<<<<<<< HEAD
         "Percentage": 0.02361111111111111,
+=======
+<<<<<<< HEAD
+        "Percentage": 0.013396375098502758,
+=======
+        "Percentage": 0.022606382978723406,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
         "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
         "Name": "Run Sequences",
         "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:22:20",
         "EndTime": "2023-05-31 11:25:10",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:09",
+        "EndTime": "2023-05-13 16:36:59",
+=======
+        "StartTime": "2023-05-24 15:56:09",
+        "EndTime": "2023-05-24 15:58:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 170,
         "TimeSpan": "00:02:50",
         "RobotGetTime": 0,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#1F1182"
+=======
+<<<<<<< HEAD
+        "Color": "#D7147A"
+=======
+        "Color": "#8FEC26"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       }
     ]
   },
@@ -808,8 +1932,18 @@
     "Name": "Plate4",
     "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
     "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+<<<<<<< HEAD
     "StartTime": "2023-05-31 11:23:00",
     "EndTime": "2023-05-31 11:26:00",
+=======
+<<<<<<< HEAD
+    "StartTime": "2023-05-13 16:34:49",
+    "EndTime": "2023-05-13 16:37:19",
+=======
+    "StartTime": "2023-05-24 15:56:49",
+    "EndTime": "2023-05-24 15:59:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
     "Children": [
       {
         "Id": "451ddd1140c3479ab30c18e3267b371f83",
@@ -1689,13 +2823,31 @@
         "PlateProcessNodeId": "03C272052C4A4487A27299EC3F7FED85",
         "Name": "Get From Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:28:30",
         "EndTime": "2023-05-31 11:28:40",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:49",
+        "EndTime": "2023-05-13 16:34:59",
+=======
+        "StartTime": "2023-05-24 16:05:49",
+        "EndTime": "2023-05-24 16:05:59",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 10,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#95F082"
+=======
+<<<<<<< HEAD
+        "Color": "#47720A"
+=======
+        "Color": "#C7ECB3"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "ee0a140a89774f389ff9dabdcd0658a8171",
@@ -1707,13 +2859,31 @@
         "PlateProcessNodeId": "58D365F93A3842CEBEBA38FA8B5E0595",
         "Name": "Put In Hotel",
         "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:30:50",
         "EndTime": "2023-05-31 11:31:00",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:37:09",
+        "EndTime": "2023-05-13 16:37:19",
+=======
+        "StartTime": "2023-05-24 16:08:09",
+        "EndTime": "2023-05-24 16:08:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 10,
         "TimeSpan": "00:00:10",
         "RobotGetTime": 0,
         "RobotPutTime": 10,
+<<<<<<< HEAD
         "Color": "#2AB714"
+=======
+<<<<<<< HEAD
+        "Color": "#CEDC86"
+=======
+        "Color": "#94AF90"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       },
       {
         "Id": "a73da51bfcea4f87bcebbdb5acc89fc8135",
@@ -1725,13 +2895,825 @@
         "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
         "Name": "Run Sequences",
         "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
         "StartTime": "2023-05-31 11:28:40",
         "EndTime": "2023-05-31 11:30:50",
+=======
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:59",
+        "EndTime": "2023-05-13 16:37:09",
+=======
+        "StartTime": "2023-05-24 16:05:59",
+        "EndTime": "2023-05-24 16:08:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
         "EstDuration": 130,
         "TimeSpan": "00:02:10",
         "RobotGetTime": 0,
         "RobotPutTime": 0,
+<<<<<<< HEAD
         "Color": "#715905"
+=======
+<<<<<<< HEAD
+        "Color": "#23B2BB"
+=======
+        "Color": "#4E979F"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+      }
+    ]
+  },
+  {
+<<<<<<< HEAD
+    "Id": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+    "Name": "Plate5",
+    "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+    "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+    "StartTime": "2023-05-13 16:32:09",
+    "EndTime": "2023-05-13 20:06:39",
+    "Children": [
+      {
+        "Id": "ce77ca0d6e594e058a489a76c6c5a31c86",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+    "Id": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+    "Name": "Plate11",
+    "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+    "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+    "StartTime": "2023-05-24 16:02:59",
+    "EndTime": "2023-05-24 18:10:39",
+    "Children": [
+      {
+        "Id": "ce77ca0d6e594e058a489a76c6c5a31c215",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "7A3B08A214C34737B482B2E1F9A207E0",
+        "Name": "Get From Hotel",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:32:09",
+        "EndTime": "2023-05-13 16:32:19",
+=======
+        "StartTime": "2023-05-24 16:02:59",
+        "EndTime": "2023-05-24 16:03:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 0,
+<<<<<<< HEAD
+        "Color": "#6D6678"
+      },
+      {
+        "Id": "61abd9773ea749ac9c791d7a36faf1dd88",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#7A0433"
+      },
+      {
+        "Id": "61abd9773ea749ac9c791d7a36faf1dd217",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "6582FD88794A4600B8B388E4F729B175",
+        "Name": "Open Lid",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:29",
+        "EndTime": "2023-05-13 16:34:39",
+=======
+        "StartTime": "2023-05-24 16:05:29",
+        "EndTime": "2023-05-24 16:05:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#7D161E"
+      },
+      {
+        "Id": "2631a37ab87245e7b49713b509188f4090",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.002331002331002331,
+=======
+        "Color": "#6F2BA3"
+      },
+      {
+        "Id": "2631a37ab87245e7b49713b509188f40219",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0039164490861618795,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "6E24506478EE493BA1DAFF48793D6695",
+        "Name": "Washer",
+        "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:34:59",
+        "EndTime": "2023-05-13 16:35:29",
+=======
+        "StartTime": "2023-05-24 16:05:59",
+        "EndTime": "2023-05-24 16:06:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 30,
+        "TimeSpan": "00:00:30",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#98D3FF"
+      },
+      {
+        "Id": "73bc4a6fe9454db3873f64550a37aebb95",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#D85E03"
+      },
+      {
+        "Id": "73bc4a6fe9454db3873f64550a37aebb224",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "8AA7C0E249884336BCB8DED5AF76C1DB",
+        "Name": "Close",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:39:29",
+        "EndTime": "2023-05-13 16:39:39",
+=======
+        "StartTime": "2023-05-24 16:10:29",
+        "EndTime": "2023-05-24 16:10:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#DD4B7B"
+      },
+      {
+        "Id": "8069dfa7963c46988830a597478ffb2797",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.27972027972027974,
+=======
+        "Color": "#A9D885"
+      },
+      {
+        "Id": "8069dfa7963c46988830a597478ffb27226",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.4699738903394256,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "1A873FA760304F558B1FD3E059F764EA",
+        "Name": "Incubator",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:39:59",
+        "EndTime": "2023-05-13 17:39:59",
+=======
+        "StartTime": "2023-05-24 16:10:39",
+        "EndTime": "2023-05-24 17:10:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 3600,
+        "TimeSpan": "01:00:00",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#BCCC0B"
+      },
+      {
+        "Id": "b6ea485884c0481eac3d520c816cd47d99",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#DA4C9A"
+      },
+      {
+        "Id": "b6ea485884c0481eac3d520c816cd47d228",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "14119A15B25646FDBA0E14208D7D85DF",
+        "Name": "Open Lid2",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:03:29",
+        "EndTime": "2023-05-13 19:03:39",
+=======
+        "StartTime": "2023-05-24 17:15:39",
+        "EndTime": "2023-05-24 17:15:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#A81B08"
+      },
+      {
+        "Id": "e4f4ec73f4f449b5b137bc3993045cc8101",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.011655011655011656,
+=======
+        "Color": "#D701DE"
+      },
+      {
+        "Id": "e4f4ec73f4f449b5b137bc3993045cc8230",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0195822454308094,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "065C0A3F4F404C56B32AED89C6773A39",
+        "Name": "Washer+分液",
+        "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:03:59",
+        "EndTime": "2023-05-13 19:06:29",
+=======
+        "StartTime": "2023-05-24 17:16:09",
+        "EndTime": "2023-05-24 17:18:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 150,
+        "TimeSpan": "00:02:30",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#8F8B41"
+      },
+      {
+        "Id": "4cbd4bc8f525418b9ead8708354528c4103",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#A41E04"
+      },
+      {
+        "Id": "4cbd4bc8f525418b9ead8708354528c4232",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "9456EEC507F14BCAB6769EF7BF2742D1",
+        "Name": "Close2",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:06:49",
+        "EndTime": "2023-05-13 19:06:59",
+=======
+        "StartTime": "2023-05-24 17:18:59",
+        "EndTime": "2023-05-24 17:19:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#B36C2F"
+      },
+      {
+        "Id": "ce2a5c2e2a4047a28cf2b59dd05baec9105",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.13986013986013987,
+=======
+        "Color": "#445E11"
+      },
+      {
+        "Id": "ce2a5c2e2a4047a28cf2b59dd05baec9234",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.2349869451697128,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "DE4A5D33A1CD42DEAD0615ADCA5C321F",
+        "Name": "Incubator2",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:07:19",
+        "EndTime": "2023-05-13 19:37:19",
+=======
+        "StartTime": "2023-05-24 17:19:09",
+        "EndTime": "2023-05-24 17:49:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 1800,
+        "TimeSpan": "00:30:00",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#4D18E9"
+      },
+      {
+        "Id": "64f07120ec4247d9b5bb833674b616a1107",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#B32F14"
+      },
+      {
+        "Id": "64f07120ec4247d9b5bb833674b616a1236",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "3A00EAC6A23D4281AD70FD59A88CDCE0",
+        "Name": "Open Lid3",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:37:39",
+        "EndTime": "2023-05-13 19:37:49",
+=======
+        "StartTime": "2023-05-24 17:49:29",
+        "EndTime": "2023-05-24 17:49:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#CF030E"
+      },
+      {
+        "Id": "10938651014c473abd979dad170e1373109",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.002331002331002331,
+=======
+        "Color": "#64E8F7"
+      },
+      {
+        "Id": "10938651014c473abd979dad170e1373238",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0039164490861618795,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "702601BEA15D445C8BF3DFBEFDD61646",
+        "Name": "运行Protocol",
+        "InstrumentName": "Wellwash_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:38:09",
+        "EndTime": "2023-05-13 19:38:39",
+=======
+        "StartTime": "2023-05-24 17:49:59",
+        "EndTime": "2023-05-24 17:50:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 30,
+        "TimeSpan": "00:00:30",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#A07AE7"
+      },
+      {
+        "Id": "7408981b35bf4ee7bf02517acf153445111",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.002331002331002331,
+=======
+        "Color": "#C1C02B"
+      },
+      {
+        "Id": "7408981b35bf4ee7bf02517acf153445240",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0039164490861618795,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "66AC387CECA647D7A2D93D2DFB818C85",
+        "Name": "分液器FX(加显色剂)",
+        "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:50:39",
+        "EndTime": "2023-05-13 19:51:09",
+=======
+        "StartTime": "2023-05-24 17:50:49",
+        "EndTime": "2023-05-24 17:51:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 30,
+        "TimeSpan": "00:00:30",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#E09CB3"
+      },
+      {
+        "Id": "4fc5a766cadf4333983eaf7c19ccdc3c113",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#C76A98"
+      },
+      {
+        "Id": "4fc5a766cadf4333983eaf7c19ccdc3c242",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "3891234627D44297A7064BB9EC80454A",
+        "Name": "Close3",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:51:29",
+        "EndTime": "2023-05-13 19:51:39",
+=======
+        "StartTime": "2023-05-24 17:51:39",
+        "EndTime": "2023-05-24 17:51:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#0D224D"
+      },
+      {
+        "Id": "2352e6cb81af4131bb9a61a90e94a2e5115",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.046620046620046623,
+=======
+        "Color": "#C30066"
+      },
+      {
+        "Id": "2352e6cb81af4131bb9a61a90e94a2e5244",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0783289817232376,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "398FD969239343C1905D82D12E83E56C",
+        "Name": "Incubator3",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 19:51:59",
+        "EndTime": "2023-05-13 20:01:59",
+=======
+        "StartTime": "2023-05-24 17:51:49",
+        "EndTime": "2023-05-24 18:01:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 600,
+        "TimeSpan": "00:10:00",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#E8B3F2"
+      },
+      {
+        "Id": "9cb905bd42db4dc2af95997c33215f1d117",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#5A3D96"
+      },
+      {
+        "Id": "9cb905bd42db4dc2af95997c33215f1d246",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "59D8AD9937864DC1B03CA48A569124FD",
+        "Name": "Open Lid4",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:02:19",
+        "EndTime": "2023-05-13 20:02:29",
+=======
+        "StartTime": "2023-05-24 18:05:09",
+        "EndTime": "2023-05-24 18:05:19",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#A15391"
+      },
+      {
+        "Id": "e2dccccf1f7543a7a84c31957029a119119",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.002331002331002331,
+=======
+        "Color": "#BBFCA0"
+      },
+      {
+        "Id": "e2dccccf1f7543a7a84c31957029a119248",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0039164490861618795,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "E5A0F965117842148626D72F83FBB241",
+        "Name": "分液",
+        "InstrumentName": "Multidrop Combi_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:02:49",
+        "EndTime": "2023-05-13 20:03:19",
+=======
+        "StartTime": "2023-05-24 18:05:39",
+        "EndTime": "2023-05-24 18:06:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 30,
+        "TimeSpan": "00:00:30",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#E0C2FA"
+      },
+      {
+        "Id": "6586059e07454a4f96c0f6d978ab0649121",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.009324009324009324,
+=======
+        "Color": "#C4E5F2"
+      },
+      {
+        "Id": "6586059e07454a4f96c0f6d978ab0649250",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.015665796344647518,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "1D250F74EB9742348A9DAB6347A3F314",
+        "Name": "Spin",
+        "InstrumentName": "Victor Nivo_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:03:39",
+        "EndTime": "2023-05-13 20:05:39",
+=======
+        "StartTime": "2023-05-24 18:07:39",
+        "EndTime": "2023-05-24 18:09:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 120,
+        "TimeSpan": "00:02:00",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#9C637C"
+      },
+      {
+        "Id": "04fb3511d7a149b19b09394dff312eff123",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#8B37B9"
+      },
+      {
+        "Id": "04fb3511d7a149b19b09394dff312eff252",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "A61383E86C8648089639A95B121BE65A",
+        "Name": "Close4",
+        "InstrumentName": "PlateLidOpenAndClose_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:05:59",
+        "EndTime": "2023-05-13 20:06:09",
+=======
+        "StartTime": "2023-05-24 18:09:59",
+        "EndTime": "2023-05-24 18:10:09",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#E6D9A9"
+      },
+      {
+        "Id": "f228aa39aec34742921b786af4358160125",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.000777000777000777,
+=======
+        "Color": "#FF0769"
+      },
+      {
+        "Id": "f228aa39aec34742921b786af4358160254",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.0013054830287206266,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "CA19A03099034779BA269A61FF76D6EB",
+        "Name": "Put In Hotel",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 20:06:29",
+        "EndTime": "2023-05-13 20:06:39",
+=======
+        "StartTime": "2023-05-24 18:10:29",
+        "EndTime": "2023-05-24 18:10:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 0,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#A00894"
+      },
+      {
+        "Id": "cd107a8cd191431d8e0a534795630bc691",
+        "Barcode": "Plate5",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard5",
+        "Percentage": 0.010878010878010878,
+=======
+        "Color": "#02ED10"
+      },
+      {
+        "Id": "cd107a8cd191431d8e0a534795630bc6220",
+        "Barcode": "Plate11",
+        "Pid": "EF2D59EFE7F74504B839CEF389A614CFboard11",
+        "Percentage": 0.018276762402088774,
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "EF2D59EFE7F74504B839CEF389A614CF",
+        "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
+        "Name": "Run Sequences",
+        "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:37:09",
+        "EndTime": "2023-05-13 16:39:29",
+=======
+        "StartTime": "2023-05-24 16:08:09",
+        "EndTime": "2023-05-24 16:10:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 140,
+        "TimeSpan": "00:02:20",
+        "RobotGetTime": 0,
+        "RobotPutTime": 0,
+<<<<<<< HEAD
+        "Color": "#878AB8"
+=======
+        "Color": "#03732C"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+      }
+    ]
+  },
+  {
+<<<<<<< HEAD
+    "Id": "F050673CB0B54749B65E8BD073BC1D4Aboard6",
+    "Name": "Plate6",
+    "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+    "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+    "StartTime": "2023-05-13 16:37:19",
+    "EndTime": "2023-05-13 16:39:49",
+    "Children": [
+      {
+        "Id": "d05a48fa097949698c900d312bdebac7126",
+        "Barcode": "Plate6",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard6",
+=======
+    "Id": "F050673CB0B54749B65E8BD073BC1D4Aboard12",
+    "Name": "Plate12",
+    "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+    "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+    "StartTime": "2023-05-24 16:08:19",
+    "EndTime": "2023-05-24 16:10:49",
+    "Children": [
+      {
+        "Id": "d05a48fa097949698c900d312bdebac7255",
+        "Barcode": "Plate12",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard12",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "Percentage": 0.06666666666666667,
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+        "PlateProcessNodeId": "03C272052C4A4487A27299EC3F7FED85",
+        "Name": "Get From Hotel",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:37:19",
+        "EndTime": "2023-05-13 16:37:29",
+=======
+        "StartTime": "2023-05-24 16:08:19",
+        "EndTime": "2023-05-24 16:08:29",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 10,
+        "RobotPutTime": 0,
+<<<<<<< HEAD
+        "Color": "#47720A"
+      },
+      {
+        "Id": "517de4814454415cbe84eb80fff8a32f128",
+        "Barcode": "Plate6",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard6",
+=======
+        "Color": "#C7ECB3"
+      },
+      {
+        "Id": "517de4814454415cbe84eb80fff8a32f257",
+        "Barcode": "Plate12",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard12",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "Percentage": 0.06666666666666667,
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+        "PlateProcessNodeId": "58D365F93A3842CEBEBA38FA8B5E0595",
+        "Name": "Put In Hotel",
+        "InstrumentName": "StorageCarousel_1",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:39:39",
+        "EndTime": "2023-05-13 16:39:49",
+=======
+        "StartTime": "2023-05-24 16:10:39",
+        "EndTime": "2023-05-24 16:10:49",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 10,
+        "TimeSpan": "00:00:10",
+        "RobotGetTime": 0,
+        "RobotPutTime": 10,
+<<<<<<< HEAD
+        "Color": "#CEDC86"
+      },
+      {
+        "Id": "f75bdb7df0974eeb836fd6da49f243a992",
+        "Barcode": "Plate6",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard6",
+=======
+        "Color": "#94AF90"
+      },
+      {
+        "Id": "f75bdb7df0974eeb836fd6da49f243a9221",
+        "Barcode": "Plate12",
+        "Pid": "F050673CB0B54749B65E8BD073BC1D4Aboard12",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "Percentage": 0.8666666666666667,
+        "AssayProcessId": "8EB5E1215B2B443D83A4360ECF0CE1BD",
+        "PlateProcessId": "F050673CB0B54749B65E8BD073BC1D4A",
+        "PlateProcessNodeId": "F7FB4BAB7380487A9D59356DEF613BE4",
+        "Name": "Run Sequences",
+        "InstrumentName": "9E210A6AD7674F70ADB062DD6CD16110",
+<<<<<<< HEAD
+        "StartTime": "2023-05-13 16:37:29",
+        "EndTime": "2023-05-13 16:39:39",
+=======
+        "StartTime": "2023-05-24 16:08:29",
+        "EndTime": "2023-05-24 16:10:39",
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+        "EstDuration": 130,
+        "TimeSpan": "00:02:10",
+        "RobotGetTime": 0,
+        "RobotPutTime": 0,
+<<<<<<< HEAD
+        "Color": "#9996C5"
+=======
+        "Color": "#66580C"
+>>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
+>>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
       }
     ]
   }
