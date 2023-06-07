@@ -100,16 +100,8 @@ def data_read():
     machines_json = data['assaysmodel'][0]['machines']
     assayssid = data['assaysmodel'][0]['assaysid']
     base_num = len(tasks_json)
-<<<<<<< HEAD
-    board_num = 4  # board_num 表示该任务图需要复制多少份
-=======
-<<<<<<< HEAD
-    board_num = 3  # board_num 表示该任务图需要复制多少份
-=======
-    board_num = 2  # board_num 表示该任务图需要复制多少份
->>>>>>> 7a850e08e7439334a4d6a1bb5ed19a5b8da5e402
+    board_num = 10  # board_num 表示该任务图需要复制多少份
     window_size = 2  # window_size 表示每次排几个任务。
->>>>>>> 27d8f204f85e72009922a6e1eff4af2db3d6b49a
     heuristics = 0
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}
@@ -140,6 +132,10 @@ def data_read():
         task.taskplates = tasks_json[tidx]['taskplates']
         task.color = "#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
         task.processtype = tasks_json[tidx]['processtype']
+        task.timeout = tasks_json[tidx]['timeout']
+        task.bind = 0
+        if "Incubator" in task.task_name or task.task_name == "Get From Hotel" or task.idx == 28 or task.idx == 27 or task.idx == 26:
+            task.bind = 1
         if task.PlateProcess not in plateprocesses:
             plateprocesses.append(task.PlateProcess)
     for pidx, pos in enumerate(positions):
@@ -176,6 +172,8 @@ def data_read():
             tasks[t].sequncestepid = task_base.sequncestepid
             tasks[t].taskplates = task_base.taskplates
             tasks[t].color = task_base.color
+            tasks[t].timeout = task_base.timeout
+            tasks[t].bind = task_base.bind
             tasks[t].processtype = task_base.processtype
     for t in range(board_num * base_num):  # 复制的任务的前驱和后继的id对应加上
         if t >= base_num:
@@ -217,6 +215,10 @@ def list_scheduling2(tasks, t_idx_dic):
     for node in START_NEXT:
         tasks = dfs2(tasks, node, t_idx_dic)
     print("tasks' priority are shown as follows:")
+    for task in tasks:
+        if task.bind == 1:
+            for t in task.next:
+                tasks[t_idx_dic[t]].priority = tasks[t_idx_dic[t]].priority + 100000000
     return tasks
 
 
@@ -271,7 +273,6 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
     cnt = 0
     while len(q) > 0:
         cnt += 1
-        # print("len:", len(task_list), task_list)
         task = heapq.heappop(q)  # EACH TIME GET THE PRIOR TASK
         SIG_CALL_BACK = 0  # SIG_CALL_BACK用于记录是否在当前队列中找到了可执行的任务。
         PROGRAM_IN_TIME = time.time()
@@ -415,7 +416,7 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
         #     print("task_state:", task_state)
         pq_list = []
         # end_task_id = min(end_task_id, len(tasks))
-        for idx in task_list:
+        for idx in task_list:  #
             t = tasks[idx]
             flag = 1
             if t.pre is not None:
@@ -435,7 +436,7 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 flag2 = 1
             if flag == 1 and flag2 == 1 and t.status == 0:
                 heapq.heappush(q, t)
-                pq_list.append(t.id)           
+                pq_list.append(t.id)
         SAVED_PRIOR_QUEUE[step] = [t.id for t in q]
         Finished_task = []
         for idx in task_list:
@@ -479,7 +480,7 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                         continue
                 positions[p_idx_dic[pos]].status = 1
             # 占用position恢复
-            for pos in task.position:  
+            for pos in task.position:
                 if "Incubator" in task.task_name:
                     continue
                 elif task.task_name == "robot":
@@ -492,8 +493,8 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 positions[p_idx_dic[pos]].status = 0
             # 优先队列恢复
             heapq.heappush(q, task)
-        if step % 1 == 0:
-            print("进度：", step, "/", len(tasks))
+        # if step % 1 == 0:
+        #     print("进度：", step, "/", len(tasks))
         # PROGRAM_END_TIME = time.time()
         # sum += PROGRAM_END_TIME - PROGRAM_START_TIME
         # print("sum Time:", PROGRAM_END_TIME - PROGRAM_START_TIME, "AVG Time:",  sum/cnt, "s")
@@ -506,8 +507,6 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TAS
         print("exsiting deadlock !")
     else:
         print("successfully compute solution !")
-    print("step=", step)
-    # tasks_status = SAVED_CUR_TASK_STATUS[step-1]
     task_id = SAVED_CUR_TASK
     tsk_tmp = []
     for tid in task_id:
@@ -568,11 +567,17 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TAS
                 Tm[release_id] = begin_time
         # print("task_id:", task, " begin:", tasks[task].start_time, " end:", tasks[task].available)
     print("最优时间：", max(Tm))
-    my_list = []
-    for task in tasks:
-        my_list.append([t_idx_dic[task.id], task.task_name, task.start_time, task.available])
-    with open('my_file.json', 'w') as f:
-        json.dump(my_list, f)
+
+    # Te = [[] for _ in positions]
+    # for task in task_id:  # 先按照给定顺序，得到资源可用时间。 再根据每个板的流程，从后向前遍历板
+    #     task = t_idx_dic[task]  # task表示当前任务的下标
+
+    
+    # my_list = []
+    # for task in tasks:
+    #     my_list.append([t_idx_dic[task.id], task.task_name, task.start_time, task.available])
+    # with open('my_file.json', 'w') as f:
+    #     json.dump(my_list, f)
 
 
 def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines):
@@ -641,7 +646,7 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
             timespan_trans = '{:02}:{:02}:{:02}'.format(hour, minute, second)
             robotGetTime = tasks[task].robotgettime
             robotPutTime = tasks[task].robotputtime
-            color = tasks[task].color # "#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+            color = tasks[task].color  # "#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
             sub_child = {
                 "Id": child_id,
                 "Barcode": barcode,
@@ -658,7 +663,9 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
                 "TimeSpan": timespan_trans,
                 "RobotGetTime": robotGetTime,
                 "RobotPutTime": robotPutTime,
-                "Color": color
+                "Color": color,
+                "TaskStartTime": int(tasks[task].start_time),
+                "TaskEndTime": int(tasks[task].available)
             }
             Children.append(sub_child)
         # print("mintime = ", mintime.strftime("%Y-%m-%d %H:%M:%S"))
@@ -702,12 +709,28 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
                     "TimeSpan": timespan_trans,
                     "RobotGetTime": 0,
                     "RobotPutTime": 0,
-                    "Color": color
+                    "Color": color,
+                    "TaskStartTime": int(tasks[stask[0][0]].start_time),
+                    "TaskEndTime": int(tasks[stask[len(stask)-1][0]].available)
                 }
                 Children.append(sub_child)
         for child in Children:
             time_cur = child['EstDuration']
             child['Percentage'] = time_cur / ((maxtime-mintime).total_seconds())
+        # for idx in range(len(Children)-1, -1, -1):
+        #     child = Children[idx]   
+        #     if idx + 1 < len(Children):
+        #         TaskStartTime = child['TaskStartTime']
+        #         TaskEndTime = child['TaskEndTime']
+        #         nextChild = Children[idx + 1]
+        #         nTaskStartTime = nextChild['TaskStartTime']
+        #         if TaskEndTime < nTaskStartTime:
+        #             TaskStartTime = TaskStartTime + nTaskStartTime - TaskEndTime
+        #             TaskEndTime = nTaskStartTime
+        #             child['TaskStartTime'] = TaskStartTime
+        #             child['TaskEndTime'] = TaskEndTime
+        #             child['StartTime'] = (datetime.timedelta(seconds=int(TaskStartTime)) + now).strftime("%Y-%m-%d %H:%M:%S")
+        #             child['EndTime'] = (datetime.timedelta(seconds=int(TaskEndTime)) + now).strftime("%Y-%m-%d %H:%M:%S")
         StartTime = mintime.strftime("%Y-%m-%d %H:%M:%S")
         EndTime = maxtime.strftime("%Y-%m-%d %H:%M:%S")
         GantChartSub = {

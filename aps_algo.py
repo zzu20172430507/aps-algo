@@ -33,6 +33,7 @@ if __name__ == "__main__":
     # 1. Initialize
     count = board_num // window_size + (0 if board_num % window_size == 0 else 1)
     print(count)
+    # exit()
     tasks, positions, i, Finished, SAVED_INFORMATION, SAVED_CUR_TASK, \
         SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, \
         SAVED_CUR_RESOURCE_MACHINES, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, \
@@ -62,5 +63,4 @@ if __name__ == "__main__":
     print("运行:", PROGRAM_RUN_TIME - PROGRAM_INIT_TIME, "s")
     print("计算甘特图:", PROGRAM_OUT_TIME - PROGRAM_RUN_TIME, "s")
     print("生成文件:", PROGRAM_END_TIME - PROGRAM_OUT_TIME, "s")
-    
     # my_modules.display(tasks)
