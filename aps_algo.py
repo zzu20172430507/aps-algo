@@ -10,15 +10,12 @@ from my_modules import generate_colors
 from my_modules import *
 TEST_MODE = 1
 
-#  21：46
-
 if __name__ == "__main__":
     PROGRAM_START_TIME = time.time()
     # Data Read
     tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, heuristics, window_size = my_modules.data_read()
     PROGRAM_READ_TIME = time.time()
     # L1 Scheduling
-    # tasks = my_modules.list_scheduling(tasks, t_idx_dic)
     tasks = my_modules.list_scheduling2(tasks, t_idx_dic)
     PROGRAM_PRIOR_TIME = time.time()
     # L1 Result Output & Task Graph & Resource Output-- TEST CODE
@@ -47,7 +44,7 @@ if __name__ == "__main__":
                        SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT, SAVED_CUR_TASK, base_num)
     PROGRAM_RUN_TIME = time.time()
     # 3. Results Output
-    my_modules.ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_dic)
+    my_modules.ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_dic, plateprocesses)
     for idx, task in enumerate(tasks):
         print("ID:", idx, "S:", task.start_time, "E:", task.available)
 

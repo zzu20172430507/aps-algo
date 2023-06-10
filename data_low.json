@@ -6,18 +6,18 @@
         "assaysid": "8EB5E1215B2B443D83A4360ECF0CE1BD",
         "tasks": [
           {
-            "id": "3abcccade5ac45e3984366bfbf8006f4",
+            "id": "ce77ca0d6e594e058a489a76c6c5a31c",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "occupy_dependency": [
@@ -37,7 +37,7 @@
               
             ],
             "next": [
-              "bee947260eb74b3186820378779cc4c0"
+              "82e48f8ff4544fa8a2454cbe46245b6b"
             ],
             "machine": "",
             "position": "",
@@ -69,27 +69,26 @@
             "processtypetext": "抓板工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "bee947260eb74b3186820378779cc4c0",
+            "id": "82e48f8ff4544fa8a2454cbe46245b6b",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -106,10 +105,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "3abcccade5ac45e3984366bfbf8006f4"
+              "ce77ca0d6e594e058a489a76c6c5a31c"
             ],
             "next": [
-              "a2821cc0ba5e446ba803a99a7fb863e2"
+              "61abd9773ea749ac9c791d7a36faf1dd"
             ],
             "machine": "",
             "position": "",
@@ -141,19 +140,18 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "a2821cc0ba5e446ba803a99a7fb863e2",
+            "id": "61abd9773ea749ac9c791d7a36faf1dd",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -170,10 +168,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "bee947260eb74b3186820378779cc4c0"
+              "82e48f8ff4544fa8a2454cbe46245b6b"
             ],
             "next": [
-              "a62d7c8b65cb4b70bf50c65099414284"
+              "b1b19375c14442cda7b4fea3ae41ac98"
             ],
             "machine": "",
             "position": "",
@@ -205,27 +203,26 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "a62d7c8b65cb4b70bf50c65099414284",
+            "id": "b1b19375c14442cda7b4fea3ae41ac98",
             "occupy": [
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -242,10 +239,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "a2821cc0ba5e446ba803a99a7fb863e2"
+              "61abd9773ea749ac9c791d7a36faf1dd"
             ],
             "next": [
-              "58e55206f34f429db67d0b0f751ad68c"
+              "2631a37ab87245e7b49713b509188f40"
             ],
             "machine": "",
             "position": "",
@@ -277,19 +274,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "58e55206f34f429db67d0b0f751ad68c",
+            "id": "2631a37ab87245e7b49713b509188f40",
             "occupy": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "release": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "occupy_dependency": [
@@ -306,10 +302,10 @@
             "robotputtime": 10,
             "estduration": 30,
             "pre": [
-              "a62d7c8b65cb4b70bf50c65099414284"
+              "b1b19375c14442cda7b4fea3ae41ac98"
             ],
             "next": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "machine": "",
             "position": "",
@@ -341,25 +337,24 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "5bb1b3d9f1fb482f89c463316117a955",
+            "id": "cd107a8cd191431d8e0a534795630bc6",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "34091178C4004DA4B24721BEB5AF3B5B"
+                "51EB58081E2D4014B6ECDA2C38C6E980"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "occupy_dependency": [
@@ -376,10 +371,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "58e55206f34f429db67d0b0f751ad68c"
+              "2631a37ab87245e7b49713b509188f40"
             ],
             "next": [
-              "a73da51bfcea4f87bcebbdb5acc89fc8"
+              "f75bdb7df0974eeb836fd6da49f243a9"
             ],
             "machine": "",
             "position": "Position 1",
@@ -435,32 +430,31 @@
             "processtypetext": "多板工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "a73da51bfcea4f87bcebbdb5acc89fc8",
+            "id": "f75bdb7df0974eeb836fd6da49f243a9",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "3CE30013F64E4C0BBFEB1D1ACB475C31"
+                "9FCC1A22907C44FCA97471382A4B354F"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "release_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "dependency2": -1,
             "status": 0,
@@ -470,11 +464,11 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "5bb1b3d9f1fb482f89c463316117a955",
-              "451ddd1140c3479ab30c18e3267b371f"
+              "cd107a8cd191431d8e0a534795630bc6",
+              "d05a48fa097949698c900d312bdebac7"
             ],
             "next": [
-              "ac0e437d8ba34d49856bcc51aa04413e"
+              "2a010e545c604da6b2a9ee907b90febd"
             ],
             "machine": "",
             "position": "Position 2",
@@ -530,26 +524,25 @@
             "processtypetext": "多板工艺",
             "taskplates": [
               "F050673CB0B54749B65E8BD073BC1D4A"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "ac0e437d8ba34d49856bcc51aa04413e",
+            "id": "2a010e545c604da6b2a9ee907b90febd",
             "occupy": [
               [
-                "1c4a7ae083034eca892c8b00aa61a2d4"
+                "d4ef57231eb14791b5509cd91b3a46d9"
               ]
             ],
             "release": [
               [
-                "1c4a7ae083034eca892c8b00aa61a2d4"
+                "d4ef57231eb14791b5509cd91b3a46d9"
               ]
             ],
             "occupy_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "release_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "dependency2": -1,
             "status": 0,
@@ -559,10 +552,10 @@
             "robotputtime": 10,
             "estduration": 120,
             "pre": [
-              "a73da51bfcea4f87bcebbdb5acc89fc8"
+              "f75bdb7df0974eeb836fd6da49f243a9"
             ],
             "next": [
-              "127305c2a65c44afb4103d1c57f76bdd"
+              "2e66f5325d264b3a99e9c042ceda6612"
             ],
             "machine": "",
             "position": null,
@@ -619,34 +612,33 @@
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF",
               "F050673CB0B54749B65E8BD073BC1D4A"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "127305c2a65c44afb4103d1c57f76bdd",
+            "id": "2e66f5325d264b3a99e9c042ceda6612",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "34091178C4004DA4B24721BEB5AF3B5B"
+                "51EB58081E2D4014B6ECDA2C38C6E980"
               ]
             ],
             "occupy_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "release_dependency": [
-              "5bb1b3d9f1fb482f89c463316117a955"
+              "cd107a8cd191431d8e0a534795630bc6"
             ],
             "dependency2": -1,
             "status": 0,
@@ -656,11 +648,11 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "ac0e437d8ba34d49856bcc51aa04413e"
+              "2a010e545c604da6b2a9ee907b90febd"
             ],
             "next": [
-              "e2180b6779074f189cd02d2915740e69",
-              "933a0cf9fd524f6db520594f4d829630"
+              "73bc4a6fe9454db3873f64550a37aebb",
+              "06bd8d6a40c14c95b382d2942138f602"
             ],
             "machine": "",
             "position": "Position 1",
@@ -716,19 +708,18 @@
             "processtypetext": "多板工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "e2180b6779074f189cd02d2915740e69",
+            "id": "73bc4a6fe9454db3873f64550a37aebb",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -745,10 +736,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "127305c2a65c44afb4103d1c57f76bdd"
+              "2e66f5325d264b3a99e9c042ceda6612"
             ],
             "next": [
-              "c99a3359d4464bd0b348a591f76a94ef"
+              "7eeb297847f04160aa9e272ccaa7231b"
             ],
             "machine": "",
             "position": "",
@@ -780,27 +771,26 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "c99a3359d4464bd0b348a591f76a94ef",
+            "id": "7eeb297847f04160aa9e272ccaa7231b",
             "occupy": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -817,10 +807,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "e2180b6779074f189cd02d2915740e69"
+              "73bc4a6fe9454db3873f64550a37aebb"
             ],
             "next": [
-              "3705f6f6e1854e74bdc5bceb516417aa"
+              "8069dfa7963c46988830a597478ffb27"
             ],
             "machine": "",
             "position": "",
@@ -852,19 +842,18 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "3705f6f6e1854e74bdc5bceb516417aa",
+            "id": "8069dfa7963c46988830a597478ffb27",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "occupy_dependency": [
@@ -881,10 +870,10 @@
             "robotputtime": 10,
             "estduration": 3600,
             "pre": [
-              "c99a3359d4464bd0b348a591f76a94ef"
+              "7eeb297847f04160aa9e272ccaa7231b"
             ],
             "next": [
-              "26d0cb765e184d768a7c79f9c58efdf7"
+              "4258c0f10fa3426494239d2a2caca682"
             ],
             "machine": "",
             "position": "",
@@ -916,27 +905,26 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "26d0cb765e184d768a7c79f9c58efdf7",
+            "id": "4258c0f10fa3426494239d2a2caca682",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -953,10 +941,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "3705f6f6e1854e74bdc5bceb516417aa"
+              "8069dfa7963c46988830a597478ffb27"
             ],
             "next": [
-              "b332a6803839414798266d8016e375d6"
+              "b6ea485884c0481eac3d520c816cd47d"
             ],
             "machine": "",
             "position": "",
@@ -988,19 +976,18 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "b332a6803839414798266d8016e375d6",
+            "id": "b6ea485884c0481eac3d520c816cd47d",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -1017,10 +1004,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "26d0cb765e184d768a7c79f9c58efdf7"
+              "4258c0f10fa3426494239d2a2caca682"
             ],
             "next": [
-              "8314b158b3a64eeda659090afa6f32a4"
+              "6e0b2344b71d4c8c9b1880dc841a2251"
             ],
             "machine": "",
             "position": "",
@@ -1052,27 +1039,26 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "8314b158b3a64eeda659090afa6f32a4",
+            "id": "6e0b2344b71d4c8c9b1880dc841a2251",
             "occupy": [
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -1089,10 +1075,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "b332a6803839414798266d8016e375d6"
+              "b6ea485884c0481eac3d520c816cd47d"
             ],
             "next": [
-              "db108564f2454122aabf4b5d9f7b0420"
+              "e4f4ec73f4f449b5b137bc3993045cc8"
             ],
             "machine": "",
             "position": "",
@@ -1124,19 +1110,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "db108564f2454122aabf4b5d9f7b0420",
+            "id": "e4f4ec73f4f449b5b137bc3993045cc8",
             "occupy": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "release": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "occupy_dependency": [
@@ -1153,10 +1138,10 @@
             "robotputtime": 10,
             "estduration": 150,
             "pre": [
-              "8314b158b3a64eeda659090afa6f32a4"
+              "6e0b2344b71d4c8c9b1880dc841a2251"
             ],
             "next": [
-              "080e2f4644b7489cb044ccd68143bff5"
+              "0a1bb9c8ea454149ae62c4563107d178"
             ],
             "machine": "",
             "position": "",
@@ -1188,27 +1173,26 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "080e2f4644b7489cb044ccd68143bff5",
+            "id": "0a1bb9c8ea454149ae62c4563107d178",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "occupy_dependency": [
@@ -1225,10 +1209,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "db108564f2454122aabf4b5d9f7b0420"
+              "e4f4ec73f4f449b5b137bc3993045cc8"
             ],
             "next": [
-              "72b1a6b76fb7475f8851517184428361"
+              "4cbd4bc8f525418b9ead8708354528c4"
             ],
             "machine": "",
             "position": "",
@@ -1260,19 +1244,18 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "72b1a6b76fb7475f8851517184428361",
+            "id": "4cbd4bc8f525418b9ead8708354528c4",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -1289,10 +1272,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "080e2f4644b7489cb044ccd68143bff5"
+              "0a1bb9c8ea454149ae62c4563107d178"
             ],
             "next": [
-              "65d2e8484ab64faaac76e7db26eb63f1"
+              "599553bdb7dc4e8e8d0cb6fccad2512d"
             ],
             "machine": "",
             "position": "",
@@ -1324,27 +1307,26 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "65d2e8484ab64faaac76e7db26eb63f1",
+            "id": "599553bdb7dc4e8e8d0cb6fccad2512d",
             "occupy": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -1361,10 +1343,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "72b1a6b76fb7475f8851517184428361"
+              "4cbd4bc8f525418b9ead8708354528c4"
             ],
             "next": [
-              "f7bdf993aeb845d4881e63883b06aacf"
+              "ce2a5c2e2a4047a28cf2b59dd05baec9"
             ],
             "machine": "",
             "position": "",
@@ -1396,19 +1378,18 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "f7bdf993aeb845d4881e63883b06aacf",
+            "id": "ce2a5c2e2a4047a28cf2b59dd05baec9",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "occupy_dependency": [
@@ -1425,10 +1406,10 @@
             "robotputtime": 10,
             "estduration": 1800,
             "pre": [
-              "65d2e8484ab64faaac76e7db26eb63f1"
+              "599553bdb7dc4e8e8d0cb6fccad2512d"
             ],
             "next": [
-              "1139b3a245134118b6268eb50b1a6331"
+              "3034119cf8624845944819c75775a64e"
             ],
             "machine": "",
             "position": "",
@@ -1460,27 +1441,26 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "1139b3a245134118b6268eb50b1a6331",
+            "id": "3034119cf8624845944819c75775a64e",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -1497,10 +1477,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "f7bdf993aeb845d4881e63883b06aacf"
+              "ce2a5c2e2a4047a28cf2b59dd05baec9"
             ],
             "next": [
-              "53356cbf104c4174879ca423b953f93d"
+              "64f07120ec4247d9b5bb833674b616a1"
             ],
             "machine": "",
             "position": "",
@@ -1532,19 +1512,18 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "53356cbf104c4174879ca423b953f93d",
+            "id": "64f07120ec4247d9b5bb833674b616a1",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -1561,10 +1540,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "1139b3a245134118b6268eb50b1a6331"
+              "3034119cf8624845944819c75775a64e"
             ],
             "next": [
-              "667d59e9cd9f4759b3bc56385bf97536"
+              "b0f7d77d7f774060a81bd82b1d28d51b"
             ],
             "machine": "",
             "position": "",
@@ -1596,27 +1575,26 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "667d59e9cd9f4759b3bc56385bf97536",
+            "id": "b0f7d77d7f774060a81bd82b1d28d51b",
             "occupy": [
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -1633,10 +1611,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "53356cbf104c4174879ca423b953f93d"
+              "64f07120ec4247d9b5bb833674b616a1"
             ],
             "next": [
-              "7d43b27081c14b8eac4ba73331388d30"
+              "10938651014c473abd979dad170e1373"
             ],
             "machine": "",
             "position": "",
@@ -1668,19 +1646,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "7d43b27081c14b8eac4ba73331388d30",
+            "id": "10938651014c473abd979dad170e1373",
             "occupy": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "release": [
               [
-                "7c45b62f55734ee2b35d386b641dd828"
+                "ad246026a7f748ec9d9fb60bec0fd8e2"
               ]
             ],
             "occupy_dependency": [
@@ -1697,10 +1674,10 @@
             "robotputtime": 10,
             "estduration": 30,
             "pre": [
-              "667d59e9cd9f4759b3bc56385bf97536"
+              "b0f7d77d7f774060a81bd82b1d28d51b"
             ],
             "next": [
-              "8d459c1b69c24f9ca985ffee6ac24c90"
+              "2ef0fd3b52734e37b1fe66d6108a0112"
             ],
             "machine": "",
             "position": "",
@@ -1732,25 +1709,24 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "8d459c1b69c24f9ca985ffee6ac24c90",
+            "id": "2ef0fd3b52734e37b1fe66d6108a0112",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "653537B6B79E429A91D2ADB0D9AA5EC4"
+                "0E96AA09A7B346AAA93AAE92B6EBC74E"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "12505F0202204FCFBC2ABAD3E03EA02D"
+                "E25D23B3D1D54896AAB70201966C16D5"
               ]
             ],
             "occupy_dependency": [
@@ -1767,10 +1743,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "7d43b27081c14b8eac4ba73331388d30"
+              "10938651014c473abd979dad170e1373"
             ],
             "next": [
-              "0dcef70b228b415488d4ea7c1d2eba5e"
+              "7408981b35bf4ee7bf02517acf153445"
             ],
             "machine": "",
             "position": "",
@@ -1802,19 +1778,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "0dcef70b228b415488d4ea7c1d2eba5e",
+            "id": "7408981b35bf4ee7bf02517acf153445",
             "occupy": [
               [
-                "a93edf2143aa411fabea5344e06285e8"
+                "3d406c4bb6384a86816c5645b33584bf"
               ]
             ],
             "release": [
               [
-                "a93edf2143aa411fabea5344e06285e8"
+                "3d406c4bb6384a86816c5645b33584bf"
               ]
             ],
             "occupy_dependency": [
@@ -1831,10 +1806,10 @@
             "robotputtime": 10,
             "estduration": 30,
             "pre": [
-              "8d459c1b69c24f9ca985ffee6ac24c90"
+              "2ef0fd3b52734e37b1fe66d6108a0112"
             ],
             "next": [
-              "3bfcb28911dd49c99d159152d3f02551"
+              "d72819d202de48cd9fbe57369fc792d4"
             ],
             "machine": "",
             "position": "",
@@ -1866,27 +1841,26 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "3bfcb28911dd49c99d159152d3f02551",
+            "id": "d72819d202de48cd9fbe57369fc792d4",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "653537B6B79E429A91D2ADB0D9AA5EC4"
+                "0E96AA09A7B346AAA93AAE92B6EBC74E"
               ]
             ],
             "occupy_dependency": [
@@ -1903,10 +1877,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "0dcef70b228b415488d4ea7c1d2eba5e"
+              "7408981b35bf4ee7bf02517acf153445"
             ],
             "next": [
-              "0c87544237204dadbe5ef626cb14068e"
+              "4fc5a766cadf4333983eaf7c19ccdc3c"
             ],
             "machine": "",
             "position": "",
@@ -1938,19 +1912,18 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "0c87544237204dadbe5ef626cb14068e",
+            "id": "4fc5a766cadf4333983eaf7c19ccdc3c",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -1967,10 +1940,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "3bfcb28911dd49c99d159152d3f02551"
+              "d72819d202de48cd9fbe57369fc792d4"
             ],
             "next": [
-              "17a151d346264fe0a11baec6ee506aa5"
+              "213bec13bffe4031b429c2296d2f4013"
             ],
             "machine": "",
             "position": "",
@@ -2002,27 +1975,26 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "17a151d346264fe0a11baec6ee506aa5",
+            "id": "213bec13bffe4031b429c2296d2f4013",
             "occupy": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -2039,10 +2011,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "0c87544237204dadbe5ef626cb14068e"
+              "4fc5a766cadf4333983eaf7c19ccdc3c"
             ],
             "next": [
-              "03edce0e903647118209a74f3b3ae00c"
+              "2352e6cb81af4131bb9a61a90e94a2e5"
             ],
             "machine": "",
             "position": "",
@@ -2074,19 +2046,18 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "03edce0e903647118209a74f3b3ae00c",
+            "id": "2352e6cb81af4131bb9a61a90e94a2e5",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "occupy_dependency": [
@@ -2103,10 +2074,10 @@
             "robotputtime": 10,
             "estduration": 600,
             "pre": [
-              "17a151d346264fe0a11baec6ee506aa5"
+              "213bec13bffe4031b429c2296d2f4013"
             ],
             "next": [
-              "68a981301ebe406fa36ee48359460472"
+              "2918586f2a9c4ce79230a72b69570a1e"
             ],
             "machine": "",
             "position": "",
@@ -2138,27 +2109,26 @@
             "processtypetext": "孵育工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "68a981301ebe406fa36ee48359460472",
+            "id": "2918586f2a9c4ce79230a72b69570a1e",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -2175,10 +2145,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "03edce0e903647118209a74f3b3ae00c"
+              "2352e6cb81af4131bb9a61a90e94a2e5"
             ],
             "next": [
-              "47609adad6de479fa944795db41ed045"
+              "9cb905bd42db4dc2af95997c33215f1d"
             ],
             "machine": "",
             "position": "",
@@ -2210,19 +2180,18 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "47609adad6de479fa944795db41ed045",
+            "id": "9cb905bd42db4dc2af95997c33215f1d",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -2239,10 +2208,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "68a981301ebe406fa36ee48359460472"
+              "2918586f2a9c4ce79230a72b69570a1e"
             ],
             "next": [
-              "411dc0a229bd48f0853efc739c03658b"
+              "40e95eb265a942399a81adefac6e8b26"
             ],
             "machine": "",
             "position": "",
@@ -2274,27 +2243,26 @@
             "processtypetext": "开盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "411dc0a229bd48f0853efc739c03658b",
+            "id": "40e95eb265a942399a81adefac6e8b26",
             "occupy": [
               [
-                "653537B6B79E429A91D2ADB0D9AA5EC4"
+                "0E96AA09A7B346AAA93AAE92B6EBC74E"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -2311,10 +2279,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "47609adad6de479fa944795db41ed045"
+              "9cb905bd42db4dc2af95997c33215f1d"
             ],
             "next": [
-              "b4e080a5b8f04615878160ad0d51476b"
+              "e2dccccf1f7543a7a84c31957029a119"
             ],
             "machine": "",
             "position": "",
@@ -2346,19 +2314,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "b4e080a5b8f04615878160ad0d51476b",
+            "id": "e2dccccf1f7543a7a84c31957029a119",
             "occupy": [
               [
-                "a93edf2143aa411fabea5344e06285e8"
+                "3d406c4bb6384a86816c5645b33584bf"
               ]
             ],
             "release": [
               [
-                "a93edf2143aa411fabea5344e06285e8"
+                "3d406c4bb6384a86816c5645b33584bf"
               ]
             ],
             "occupy_dependency": [
@@ -2375,10 +2342,10 @@
             "robotputtime": 10,
             "estduration": 30,
             "pre": [
-              "411dc0a229bd48f0853efc739c03658b"
+              "40e95eb265a942399a81adefac6e8b26"
             ],
             "next": [
-              "d1df7453431c4fbb859c7820ddeaa89f"
+              "a5a310d858b745098339cb740d115d70"
             ],
             "machine": "",
             "position": "",
@@ -2410,25 +2377,24 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "d1df7453431c4fbb859c7820ddeaa89f",
+            "id": "a5a310d858b745098339cb740d115d70",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "3F10988EE9E24D68BB2B851733BAA7E2"
+                "3D19AEE7A47849DBA177A27CED00FA07"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "653537B6B79E429A91D2ADB0D9AA5EC4"
+                "0E96AA09A7B346AAA93AAE92B6EBC74E"
               ]
             ],
             "occupy_dependency": [
@@ -2445,10 +2411,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "b4e080a5b8f04615878160ad0d51476b"
+              "e2dccccf1f7543a7a84c31957029a119"
             ],
             "next": [
-              "9731fe7060c84072be3fe966837a0b7b"
+              "6586059e07454a4f96c0f6d978ab0649"
             ],
             "machine": "",
             "position": "",
@@ -2480,19 +2446,18 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "9731fe7060c84072be3fe966837a0b7b",
+            "id": "6586059e07454a4f96c0f6d978ab0649",
             "occupy": [
               [
-                "cd5a3aa749a3499cb04cd89ff0cceb8e"
+                "ebd27e508a9f4a59993f2d142922a42d"
               ]
             ],
             "release": [
               [
-                "cd5a3aa749a3499cb04cd89ff0cceb8e"
+                "ebd27e508a9f4a59993f2d142922a42d"
               ]
             ],
             "occupy_dependency": [
@@ -2509,10 +2474,10 @@
             "robotputtime": 10,
             "estduration": 120,
             "pre": [
-              "d1df7453431c4fbb859c7820ddeaa89f"
+              "a5a310d858b745098339cb740d115d70"
             ],
             "next": [
-              "2ccffeb3f5cd4f60806cfeddff58c68f"
+              "8ce0c5808dcb42f1b212ef72f5976a5d"
             ],
             "machine": "",
             "position": "",
@@ -2544,27 +2509,26 @@
             "processtypetext": "标准工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "2ccffeb3f5cd4f60806cfeddff58c68f",
+            "id": "8ce0c5808dcb42f1b212ef72f5976a5d",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "release": [
               [
-                "3F10988EE9E24D68BB2B851733BAA7E2"
+                "3D19AEE7A47849DBA177A27CED00FA07"
               ]
             ],
             "occupy_dependency": [
@@ -2581,10 +2545,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "9731fe7060c84072be3fe966837a0b7b"
+              "6586059e07454a4f96c0f6d978ab0649"
             ],
             "next": [
-              "bf24858c57174d3b8ae4eb9d856717f5"
+              "04fb3511d7a149b19b09394dff312eff"
             ],
             "machine": "",
             "position": "",
@@ -2616,19 +2580,18 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "bf24858c57174d3b8ae4eb9d856717f5",
+            "id": "04fb3511d7a149b19b09394dff312eff",
             "occupy": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "release": [
               [
-                "9525397b49f64dfea79bdc543cde0049"
+                "cb9c9692e2484e218ca8780a278b962a"
               ]
             ],
             "occupy_dependency": [
@@ -2645,10 +2608,10 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "2ccffeb3f5cd4f60806cfeddff58c68f"
+              "8ce0c5808dcb42f1b212ef72f5976a5d"
             ],
             "next": [
-              "2084bdd6690a4e3e8d5d5a7b0ac88d6d"
+              "0e634adf59cd4d989cd0bd6348dbee08"
             ],
             "machine": "",
             "position": "",
@@ -2680,27 +2643,26 @@
             "processtypetext": "关盖工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "2084bdd6690a4e3e8d5d5a7b0ac88d6d",
+            "id": "0e634adf59cd4d989cd0bd6348dbee08",
             "occupy": [
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "A3AF6A1A4A2341A2994ED1B4A8E00B26",
-                "302AF5D56D64493D8C69C956136D9421",
-                "D51A41257B894CE19AA2D25317CA5996",
-                "A20F14459C0C40D5AE9BE8718C9CF860",
-                "25E353DDED5944AB948C672021EBDB9A",
-                "A528E4B5B66240E0A6C134331EB68524"
+                "0D4C23B499C5457CB550EF31BF84D137",
+                "A13688DB95A04ADCBE72878E8791C2F8",
+                "54C41056FDDB4CB88D133DBBAEF10F8A",
+                "B78DDAC8A780401CB7D024E345F8C4A1",
+                "7A7AFB62FC564691A22DA92D9AD3E695",
+                "17FA63E962BF4CAE91E1AB86305C9F30"
               ]
             ],
             "occupy_dependency": [
@@ -2717,10 +2679,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "bf24858c57174d3b8ae4eb9d856717f5"
+              "04fb3511d7a149b19b09394dff312eff"
             ],
             "next": [
-              "4d375dc28fa54e8997527ec4a5601f53"
+              "f228aa39aec34742921b786af4358160"
             ],
             "machine": "",
             "position": "",
@@ -2752,22 +2714,21 @@
             "processtypetext": "放板工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "4d375dc28fa54e8997527ec4a5601f53",
+            "id": "f228aa39aec34742921b786af4358160",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -2784,7 +2745,7 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "2084bdd6690a4e3e8d5d5a7b0ac88d6d"
+              "0e634adf59cd4d989cd0bd6348dbee08"
             ],
             "next": [
               
@@ -2819,22 +2780,21 @@
             "processtypetext": "放板工艺",
             "taskplates": [
               "EF2D59EFE7F74504B839CEF389A614CF"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "451ddd1140c3479ab30c18e3267b371f",
+            "id": "d05a48fa097949698c900d312bdebac7",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "occupy_dependency": [
@@ -2854,7 +2814,7 @@
               
             ],
             "next": [
-              "a73da51bfcea4f87bcebbdb5acc89fc8"
+              "f75bdb7df0974eeb836fd6da49f243a9"
             ],
             "machine": "",
             "position": "",
@@ -2886,32 +2846,31 @@
             "processtypetext": "抓板工艺",
             "taskplates": [
               "F050673CB0B54749B65E8BD073BC1D4A"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "933a0cf9fd524f6db520594f4d829630",
+            "id": "06bd8d6a40c14c95b382d2942138f602",
             "occupy": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "release": [
               [
-                "4A614D02B20343EF9CABEB446CF1F4DA"
+                "F6DA084ACADA4F5CA303D22A3C0BFBF7"
               ],
               [
-                "3CE30013F64E4C0BBFEB1D1ACB475C31"
+                "9FCC1A22907C44FCA97471382A4B354F"
               ]
             ],
             "occupy_dependency": [
-              "e844aa2486d2428096e64d2cbf3b91f3"
+              "79cdf6d192944dc8b1d185dd90adb135"
             ],
             "release_dependency": [
-              "e844aa2486d2428096e64d2cbf3b91f3"
+              "79cdf6d192944dc8b1d185dd90adb135"
             ],
             "dependency2": -1,
             "status": 0,
@@ -2921,10 +2880,10 @@
             "robotputtime": 10,
             "estduration": 20,
             "pre": [
-              "127305c2a65c44afb4103d1c57f76bdd"
+              "2e66f5325d264b3a99e9c042ceda6612"
             ],
             "next": [
-              "ee0a140a89774f389ff9dabdcd0658a8"
+              "517de4814454415cbe84eb80fff8a32f"
             ],
             "machine": "",
             "position": "Position 2",
@@ -2980,22 +2939,21 @@
             "processtypetext": "多板工艺",
             "taskplates": [
               "F050673CB0B54749B65E8BD073BC1D4A"
-            ],
-            "timeout": 60
+            ]
           },
           {
-            "id": "ee0a140a89774f389ff9dabdcd0658a8",
+            "id": "517de4814454415cbe84eb80fff8a32f",
             "occupy": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ]
             ],
             "release": [
               [
-                "2873206f63d04e38b8661251129f2d7b"
+                "581ba76ba01d469eab08ab0e83f68dd1"
               ],
               [
-                "0406B7BB81C94B498186E78606D5BFC2"
+                "4904EA4CA22943BABB8C220FE68A6101"
               ]
             ],
             "occupy_dependency": [
@@ -3012,7 +2970,7 @@
             "robotputtime": 10,
             "estduration": 10,
             "pre": [
-              "933a0cf9fd524f6db520594f4d829630"
+              "06bd8d6a40c14c95b382d2942138f602"
             ],
             "next": [
               
@@ -3047,13 +3005,12 @@
             "processtypetext": "放板工艺",
             "taskplates": [
               "F050673CB0B54749B65E8BD073BC1D4A"
-            ],
-            "timeout": 60
+            ]
           }
         ],
         "positions": [
           {
-            "id": "A3AF6A1A4A2341A2994ED1B4A8E00B26",
+            "id": "0D4C23B499C5457CB550EF31BF84D137",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 1",
@@ -3061,7 +3018,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "302AF5D56D64493D8C69C956136D9421",
+            "id": "A13688DB95A04ADCBE72878E8791C2F8",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 2",
@@ -3069,7 +3026,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "D51A41257B894CE19AA2D25317CA5996",
+            "id": "54C41056FDDB4CB88D133DBBAEF10F8A",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 3",
@@ -3077,7 +3034,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "A20F14459C0C40D5AE9BE8718C9CF860",
+            "id": "B78DDAC8A780401CB7D024E345F8C4A1",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 4",
@@ -3085,7 +3042,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "25E353DDED5944AB948C672021EBDB9A",
+            "id": "7A7AFB62FC564691A22DA92D9AD3E695",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 5",
@@ -3093,7 +3050,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "A528E4B5B66240E0A6C134331EB68524",
+            "id": "17FA63E962BF4CAE91E1AB86305C9F30",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 Position 6",
@@ -3101,7 +3058,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "3F10988EE9E24D68BB2B851733BAA7E2",
+            "id": "3D19AEE7A47849DBA177A27CED00FA07",
             "status": 0,
             "machine": "36C27F50528245278526E211C282FBFA",
             "positionname": "Victor Nivo_1",
@@ -3109,7 +3066,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "34091178C4004DA4B24721BEB5AF3B5B",
+            "id": "51EB58081E2D4014B6ECDA2C38C6E980",
             "status": 0,
             "machine": "77CD5056579E44A0A2866B7F5C0B6958",
             "positionname": "Janus_1 Position 1",
@@ -3117,7 +3074,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "3CE30013F64E4C0BBFEB1D1ACB475C31",
+            "id": "9FCC1A22907C44FCA97471382A4B354F",
             "status": 0,
             "machine": "77CD5056579E44A0A2866B7F5C0B6958",
             "positionname": "Janus_1 Position 2",
@@ -3125,7 +3082,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "12505F0202204FCFBC2ABAD3E03EA02D",
+            "id": "E25D23B3D1D54896AAB70201966C16D5",
             "status": 0,
             "machine": "A3C696911BC34A8CB60815D6C4529DE5",
             "positionname": "Wellwash_1",
@@ -3133,7 +3090,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "4A614D02B20343EF9CABEB446CF1F4DA",
+            "id": "F6DA084ACADA4F5CA303D22A3C0BFBF7",
             "status": 0,
             "machine": "E95161839F544EFBA2CE6E66A1598553",
             "positionname": "DENSO RC8_1",
@@ -3141,7 +3098,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "0406B7BB81C94B498186E78606D5BFC2",
+            "id": "4904EA4CA22943BABB8C220FE68A6101",
             "status": 0,
             "machine": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
             "positionname": "StorageCarousel_1",
@@ -3149,7 +3106,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "653537B6B79E429A91D2ADB0D9AA5EC4",
+            "id": "0E96AA09A7B346AAA93AAE92B6EBC74E",
             "status": 0,
             "machine": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
             "positionname": "Multidrop Combi_1",
@@ -3157,7 +3114,7 @@
             "sourcetype": "plate"
           },
           {
-            "id": "9525397b49f64dfea79bdc543cde0049",
+            "id": "cb9c9692e2484e218ca8780a278b962a",
             "status": 0,
             "machine": "2F7670293A2746479AD1F01C64C34E04",
             "positionname": "PlateLidOpenAndClose_1 work",
@@ -3165,7 +3122,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "cd5a3aa749a3499cb04cd89ff0cceb8e",
+            "id": "ebd27e508a9f4a59993f2d142922a42d",
             "status": 0,
             "machine": "36C27F50528245278526E211C282FBFA",
             "positionname": "Victor Nivo_1 work",
@@ -3173,7 +3130,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "1c4a7ae083034eca892c8b00aa61a2d4",
+            "id": "d4ef57231eb14791b5509cd91b3a46d9",
             "status": 0,
             "machine": "77CD5056579E44A0A2866B7F5C0B6958",
             "positionname": "Janus_1 work",
@@ -3181,7 +3138,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "7c45b62f55734ee2b35d386b641dd828",
+            "id": "ad246026a7f748ec9d9fb60bec0fd8e2",
             "status": 0,
             "machine": "A3C696911BC34A8CB60815D6C4529DE5",
             "positionname": "Wellwash_1 work",
@@ -3189,7 +3146,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "6e9c8cdaccb8440cb6486f3639a27e68",
+            "id": "c67a1d16604b4cdc82ee0887726dae71",
             "status": 0,
             "machine": "E95161839F544EFBA2CE6E66A1598553",
             "positionname": "DENSO RC8_1 work",
@@ -3197,7 +3154,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "2873206f63d04e38b8661251129f2d7b",
+            "id": "581ba76ba01d469eab08ab0e83f68dd1",
             "status": 0,
             "machine": "ECD1C75C6C6F4EAC98CC75D90DBEB7B4",
             "positionname": "StorageCarousel_1 work",
@@ -3205,7 +3162,7 @@
             "sourcetype": "work"
           },
           {
-            "id": "a93edf2143aa411fabea5344e06285e8",
+            "id": "3d406c4bb6384a86816c5645b33584bf",
             "status": 0,
             "machine": "EE46C2FDBA2E4F33AA42273B2F74DF6F",
             "positionname": "Multidrop Combi_1 work",
