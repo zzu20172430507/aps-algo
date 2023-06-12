@@ -1,0 +1,4789 @@
+{
+  "assaysModel": [
+    {
+      "name": "WRF\u63D0\u53D6\u6784\u5EFA",
+      "projectId": "0BF33E31B01C4290AD7D66223A6BA95F",
+      "assaysId": "9C0486C51D8F4801AB4EB1EF0779F7A9",
+      "tasks": [
+        {
+          "id": "90083c5787094d9f85431591f49893c7",
+          "occupy": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "release": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 3,
+          "robotGetTime": 15,
+          "robotPutTime": 0,
+          "estDuration": 3,
+          "pre": [
+            
+          ],
+          "next": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Get From Hotel",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "E4300371311F4D18AD0DD23A0AAE33A0",
+          "processType": 2,
+          "processTypeText": "\u6293\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "39269f7d486b428dbd37049114ea4d48",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "F0C57DB4E22C45228EB9A65D41B7E291",
+              "8E8CF052894547B2805FA6C88852DC5F",
+              "FBD6F333545849EAA30939B9104243A1"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "90083c5787094d9f85431591f49893c7"
+          ],
+          "next": [
+            "6c82ea4e507143328362c050da1777e8"
+          ],
+          "machine": "",
+          "position": "Position 1",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "265037BA63CC44A3A395C7A9D54499AE",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "6c82ea4e507143328362c050da1777e8",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "EF4E1DF9B6674A7FAA7B857C921494D0",
+              "B81281FA59BA451AAADBCD63EDA021B5",
+              "F423E265D02246EEA872A7B7DB041A77"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "occupy_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "release_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "39269f7d486b428dbd37049114ea4d48",
+            "b229a599b26a463cbbfaf552bcde0ca5"
+          ],
+          "next": [
+            "585e31d800554278987d765c214f59e9"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90532",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "B68D0D9ACE3C4F0A853E295593DE9222",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "585e31d800554278987d765c214f59e9",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "F19AF756468D4138A2B2A04583339FDF",
+              "E3CBA8199DDB4EE9AAD6D52903F5DD8E",
+              "A0BDFE2251D14F1CBCB69F6736A233F0"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "occupy_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "release_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "6c82ea4e507143328362c050da1777e8",
+            "08d5a6a56cfd4635bbcd4c66721c7a7f"
+          ],
+          "next": [
+            "74280f5e64bd4b1284f9e33505ba7efd"
+          ],
+          "machine": "",
+          "position": "Position 3",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90533",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "792669C7EE61479588291DA2E1DC1D6D"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "74280f5e64bd4b1284f9e33505ba7efd",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "835C6A2CE49A44DF99D26E5F8144629B",
+              "F0DF7EE32944419E9AFE3D2C59759C0B",
+              "E242F16D183A4E4BB2EDC3A677F1AB92"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "occupy_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "release_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "585e31d800554278987d765c214f59e9",
+            "b49765154b1b4cf081408312260440b9"
+          ],
+          "next": [
+            "18f88274f1974951bb8212da1b1979e1"
+          ],
+          "machine": "",
+          "position": "Position 4",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90534",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "BC13F49A1FC14C0793356DF7E260D944",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "13B646BA17EE4A0BBC96ED2E47154F01"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "18f88274f1974951bb8212da1b1979e1",
+          "occupy": [
+            [
+              "102ea40b154f4a4b9fce711369916ad0",
+              "ca719607568b40a08ca670aca3453ce8",
+              "590bf5334b9d497d97bcf036ee7eac6d"
+            ]
+          ],
+          "release": [
+            [
+              "102ea40b154f4a4b9fce711369916ad0",
+              "ca719607568b40a08ca670aca3453ce8",
+              "590bf5334b9d497d97bcf036ee7eac6d"
+            ]
+          ],
+          "occupy_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "release_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 780,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 780,
+          "pre": [
+            "74280f5e64bd4b1284f9e33505ba7efd"
+          ],
+          "next": [
+            "45030cfd17484469a6c6b7cebee8917e"
+          ],
+          "machine": "",
+          "position": null,
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load And Run Protocol",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": null,
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load And Run Protocol",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990",
+            "FF23D79897444688A90E9D1FA4E02BA1",
+            "792669C7EE61479588291DA2E1DC1D6D",
+            "13B646BA17EE4A0BBC96ED2E47154F01"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "45030cfd17484469a6c6b7cebee8917e",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "F0C57DB4E22C45228EB9A65D41B7E291",
+              "8E8CF052894547B2805FA6C88852DC5F",
+              "FBD6F333545849EAA30939B9104243A1"
+            ]
+          ],
+          "occupy_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "release_dependency": [
+            "39269f7d486b428dbd37049114ea4d48"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "18f88274f1974951bb8212da1b1979e1"
+          ],
+          "next": [
+            "01ca69377c654d6dba8a830ab166a968",
+            "c1a26595872a4b70b011445dccd3a4a8"
+          ],
+          "machine": "",
+          "position": "Position 1",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Unload Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "7DA84E9D1C96406EBBD646BA30CAF849",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4B1FBB7BB5FD4BFCB7AF308E2C9FE8B0",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "01ca69377c654d6dba8a830ab166a968",
+          "occupy": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ]
+          ],
+          "release": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "45030cfd17484469a6c6b7cebee8917e"
+          ],
+          "next": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Incubator",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4703B85E38CF44CF89A16D3404C05C4C",
+          "processType": 5,
+          "processTypeText": "\u5B75\u80B2\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "982d0428d899426faa6c3cfd9cf4b8f5",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "DF2619C466A34B0B8C2D0D373ED0603B"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "01ca69377c654d6dba8a830ab166a968",
+            "72cc047b48ae4714b3142a86eec3619a"
+          ],
+          "next": [
+            "3d7c40a8ffa047439bd492c6a937c890"
+          ],
+          "machine": "",
+          "position": "Position 1",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90535",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "CD06150A904B4C10A9DF97C8D3EA3141",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "3d7c40a8ffa047439bd492c6a937c890",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "54C70AECFB1C4B4B820D92F0D00ADAB3"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "next": [
+            "442608597d75450fb1a0f1e71ccb45ea"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "A1A26316F1124DB88FB194A303086780",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "442608597d75450fb1a0f1e71ccb45ea",
+          "occupy": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "release": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 120,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 120,
+          "pre": [
+            "3d7c40a8ffa047439bd492c6a937c890"
+          ],
+          "next": [
+            "caf26df0daf84d019dfb1148e8c07fa3"
+          ],
+          "machine": "",
+          "position": null,
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load And Run Protocol",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": null,
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load And Run Protocol",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "6515AE4785664B1EA00AC79A0D597806",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990",
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "caf26df0daf84d019dfb1148e8c07fa3",
+          "occupy": [
+            
+          ],
+          "release": [
+            [
+              "E03AA85AEF4143A682336EDF07DA0652"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 0,
+          "robotPutTime": 0,
+          "estDuration": 0,
+          "pre": [
+            "442608597d75450fb1a0f1e71ccb45ea"
+          ],
+          "next": [
+            "7af11f342e2e42b1b49221582310d328"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Unload Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "A45D2A783BB34E17B6CB82528E3BEA05",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "7af11f342e2e42b1b49221582310d328",
+          "occupy": [
+            
+          ],
+          "release": [
+            
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "caf26df0daf84d019dfb1148e8c07fa3"
+          ],
+          "next": [
+            "421c77fbca8d47dd9d87cd2743dbf4fb"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "982D203C00994204AB060E9634E47B9D",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "421c77fbca8d47dd9d87cd2743dbf4fb",
+          "occupy": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "release": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 120,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 120,
+          "pre": [
+            "7af11f342e2e42b1b49221582310d328"
+          ],
+          "next": [
+            "8d1b015c70044ea8b55c2bdce5a18650"
+          ],
+          "machine": "",
+          "position": null,
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load And Run Protocol",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": null,
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load And Run Protocol",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "7FB0AEEBBD4A471E827BF91A82EF1727",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990",
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "8d1b015c70044ea8b55c2bdce5a18650",
+          "occupy": [
+            
+          ],
+          "release": [
+            [
+              "E03AA85AEF4143A682336EDF07DA0652"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 0,
+          "robotPutTime": 0,
+          "estDuration": 0,
+          "pre": [
+            "421c77fbca8d47dd9d87cd2743dbf4fb"
+          ],
+          "next": [
+            "ee46e9c9cc0242dabd5b5e847d670c9b"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Unload Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "B89EA51345DA401B877400EF1EFD5395",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "ee46e9c9cc0242dabd5b5e847d670c9b",
+          "occupy": [
+            
+          ],
+          "release": [
+            
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "8d1b015c70044ea8b55c2bdce5a18650"
+          ],
+          "next": [
+            "b63a7833143d4cba8f8b98cd73ef4fc2"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "783F0A47C78B414DA8793330871374EE",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "b63a7833143d4cba8f8b98cd73ef4fc2",
+          "occupy": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "release": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 120,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 120,
+          "pre": [
+            "ee46e9c9cc0242dabd5b5e847d670c9b"
+          ],
+          "next": [
+            "8f14a81ed34b431fa7e26ad0ca6453f2"
+          ],
+          "machine": "",
+          "position": null,
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load And Run Protocol",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": null,
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load And Run Protocol",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "47EAF2EA9C384A1BB700461589EE6BAF",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990",
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "8f14a81ed34b431fa7e26ad0ca6453f2",
+          "occupy": [
+            
+          ],
+          "release": [
+            [
+              "E03AA85AEF4143A682336EDF07DA0652"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 0,
+          "robotPutTime": 0,
+          "estDuration": 0,
+          "pre": [
+            "b63a7833143d4cba8f8b98cd73ef4fc2"
+          ],
+          "next": [
+            "0bb220f80ca248c9ba876accf1fab6c0"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Unload Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "087915EC48D646F3AEF483B14C336B27",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "0bb220f80ca248c9ba876accf1fab6c0",
+          "occupy": [
+            
+          ],
+          "release": [
+            
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "8f14a81ed34b431fa7e26ad0ca6453f2"
+          ],
+          "next": [
+            "d8b0314ceeec45ecbde20530dd27fc54"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "9B2708283BDC4CCAA049C3256832D13F",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "d8b0314ceeec45ecbde20530dd27fc54",
+          "occupy": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "release": [
+            [
+              "9918303313d24ab189664f1fb7f243d8"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 120,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 120,
+          "pre": [
+            "0bb220f80ca248c9ba876accf1fab6c0"
+          ],
+          "next": [
+            "7a4b76d293234961a5e5d708c3cc375f"
+          ],
+          "machine": "",
+          "position": null,
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Load And Run Protocol",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": null,
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Load And Run Protocol",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "0F695F8E902347609858E91E28822834",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990",
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "7a4b76d293234961a5e5d708c3cc375f",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "54C70AECFB1C4B4B820D92F0D00ADAB3"
+            ]
+          ],
+          "occupy_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "release_dependency": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "d8b0314ceeec45ecbde20530dd27fc54"
+          ],
+          "next": [
+            "14efb9798bf541a990b797e47be0d7c5",
+            "56aa5c04acac4c6b9af5f67eff98c44e"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "\u6CF3\u90531",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "Unload Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "6D95986EE4F942228B8AB386AA3E2B5B",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "2BAC6567CB3B4F12AE5F05F0A6498AC8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "14efb9798bf541a990b797e47be0d7c5",
+          "occupy": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "release": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 18,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 18,
+          "pre": [
+            "7a4b76d293234961a5e5d708c3cc375f"
+          ],
+          "next": [
+            "d3827355d96344c5be531b27aca088a2"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Seal",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "56FF8E9E606B47859C9E37F1577FEE45",
+          "processType": 0,
+          "processTypeText": "\u6807\u51C6\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "d3827355d96344c5be531b27aca088a2",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 30,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "14efb9798bf541a990b797e47be0d7c5"
+          ],
+          "next": [
+            "5f664a94621d44eaa4a4a35e428a49bf"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "robot",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "099B24479F5E4ADF9FFB96E87753ABDA",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "5f664a94621d44eaa4a4a35e428a49bf",
+          "occupy": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ]
+          ],
+          "release": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 0,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "d3827355d96344c5be531b27aca088a2"
+          ],
+          "next": [
+            
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Trash Chute",
+          "plateProcess": "147FBD4D396B493E9D65AD3DC2E38990",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90531",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "099B24479F5E4ADF9FFB96E87753ABDA",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "147FBD4D396B493E9D65AD3DC2E38990"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "b229a599b26a463cbbfaf552bcde0ca5",
+          "occupy": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "release": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 3,
+          "robotGetTime": 15,
+          "robotPutTime": 0,
+          "estDuration": 3,
+          "pre": [
+            
+          ],
+          "next": [
+            "6c82ea4e507143328362c050da1777e8"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Get From Hotel",
+          "plateProcess": "FF23D79897444688A90E9D1FA4E02BA1",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90532",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "8291D2B7FB184AC8B838EE6293C4F111",
+          "processType": 2,
+          "processTypeText": "\u6293\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "c1a26595872a4b70b011445dccd3a4a8",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "EF4E1DF9B6674A7FAA7B857C921494D0",
+              "B81281FA59BA451AAADBCD63EDA021B5",
+              "F423E265D02246EEA872A7B7DB041A77"
+            ]
+          ],
+          "occupy_dependency": [
+            "5e70dc8c7ab94ec1890ce7c043ce1ed1"
+          ],
+          "release_dependency": [
+            "5e70dc8c7ab94ec1890ce7c043ce1ed1"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "45030cfd17484469a6c6b7cebee8917e"
+          ],
+          "next": [
+            "71dbe0fe82044a409306698932bf4d1e",
+            "17e3a2064d8b4fbfa2442a5b6dff1b12"
+          ],
+          "machine": "",
+          "position": "Position 2",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "FF23D79897444688A90E9D1FA4E02BA1",
+          "stepPlateName": "\u6CF3\u90532",
+          "taskPlateName": "\u6CF3\u90532",
+          "stepName": "Unload Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "9D3EAF7590264BABA94DCB3B99BBE191",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "4D547EA2E3C14D2DBC3428C6A078DC68",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "71dbe0fe82044a409306698932bf4d1e",
+          "occupy": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "release": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 18,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 18,
+          "pre": [
+            "c1a26595872a4b70b011445dccd3a4a8"
+          ],
+          "next": [
+            "a88a73236a674e3cabfc84c8e32a6f5a"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Seal",
+          "plateProcess": "FF23D79897444688A90E9D1FA4E02BA1",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90532",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "286602F27A2C490FB38DB9248684E792",
+          "processType": 0,
+          "processTypeText": "\u6807\u51C6\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "a88a73236a674e3cabfc84c8e32a6f5a",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 30,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "71dbe0fe82044a409306698932bf4d1e"
+          ],
+          "next": [
+            "a44017300bf0484786889ba3a6f7ab82"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "robot",
+          "plateProcess": "FF23D79897444688A90E9D1FA4E02BA1",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90532",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "161507DC684847EFA58E9CF82892ECEA",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "a44017300bf0484786889ba3a6f7ab82",
+          "occupy": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ]
+          ],
+          "release": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 0,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "a88a73236a674e3cabfc84c8e32a6f5a"
+          ],
+          "next": [
+            
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Trash Chute",
+          "plateProcess": "FF23D79897444688A90E9D1FA4E02BA1",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90532",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "161507DC684847EFA58E9CF82892ECEA",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "FF23D79897444688A90E9D1FA4E02BA1"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "08d5a6a56cfd4635bbcd4c66721c7a7f",
+          "occupy": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "release": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 3,
+          "robotGetTime": 15,
+          "robotPutTime": 0,
+          "estDuration": 3,
+          "pre": [
+            
+          ],
+          "next": [
+            "585e31d800554278987d765c214f59e9"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Get From Hotel",
+          "plateProcess": "792669C7EE61479588291DA2E1DC1D6D",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90533",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "131449C149224DE3BF1E5CDB5F175134",
+          "processType": 2,
+          "processTypeText": "\u6293\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "792669C7EE61479588291DA2E1DC1D6D"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "17e3a2064d8b4fbfa2442a5b6dff1b12",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "F19AF756468D4138A2B2A04583339FDF",
+              "E3CBA8199DDB4EE9AAD6D52903F5DD8E",
+              "A0BDFE2251D14F1CBCB69F6736A233F0"
+            ]
+          ],
+          "occupy_dependency": [
+            "656ec27ec5cf4b46af344fbfff686c47"
+          ],
+          "release_dependency": [
+            "656ec27ec5cf4b46af344fbfff686c47"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "c1a26595872a4b70b011445dccd3a4a8"
+          ],
+          "next": [
+            "1bd3fd5a87694a899ab9c24339bccb7d",
+            "1e3b7003fb76444da92e090a3c12bc20"
+          ],
+          "machine": "",
+          "position": "Position 3",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "792669C7EE61479588291DA2E1DC1D6D",
+          "stepPlateName": "\u6CF3\u90533",
+          "taskPlateName": "\u6CF3\u90533",
+          "stepName": "Unload Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "97D18FB7CDAA41929F083836895D0858",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "C1CC9C49C3CB40D488020EF2E889535A",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "792669C7EE61479588291DA2E1DC1D6D"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "1bd3fd5a87694a899ab9c24339bccb7d",
+          "occupy": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ]
+          ],
+          "release": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 0,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "17e3a2064d8b4fbfa2442a5b6dff1b12"
+          ],
+          "next": [
+            
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Trash Chute",
+          "plateProcess": "792669C7EE61479588291DA2E1DC1D6D",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90533",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "52E581E7509A46B78ECD4328D35D9504",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "792669C7EE61479588291DA2E1DC1D6D"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "b49765154b1b4cf081408312260440b9",
+          "occupy": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ],
+            [
+              "45C12186839943F38F39039064F7C0E1"
+            ]
+          ],
+          "release": [
+            [
+              "8c0a705517d149ecbaa18f16f35fc365"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 3,
+          "robotGetTime": 15,
+          "robotPutTime": 0,
+          "estDuration": 3,
+          "pre": [
+            
+          ],
+          "next": [
+            "74280f5e64bd4b1284f9e33505ba7efd"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Get From Hotel",
+          "plateProcess": "13B646BA17EE4A0BBC96ED2E47154F01",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90534",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "D3EAD0F7960342AB835EAAA9B379286B",
+          "processType": 2,
+          "processTypeText": "\u6293\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "13B646BA17EE4A0BBC96ED2E47154F01"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "1e3b7003fb76444da92e090a3c12bc20",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "835C6A2CE49A44DF99D26E5F8144629B",
+              "F0DF7EE32944419E9AFE3D2C59759C0B",
+              "E242F16D183A4E4BB2EDC3A677F1AB92"
+            ]
+          ],
+          "occupy_dependency": [
+            "a2600b22136443e38493eb187939bb16"
+          ],
+          "release_dependency": [
+            "a2600b22136443e38493eb187939bb16"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "17e3a2064d8b4fbfa2442a5b6dff1b12"
+          ],
+          "next": [
+            "566da0a9c58049a6a10da9e055e806ad"
+          ],
+          "machine": "",
+          "position": "Position 4",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "13B646BA17EE4A0BBC96ED2E47154F01",
+          "stepPlateName": "\u6CF3\u90534",
+          "taskPlateName": "\u6CF3\u90534",
+          "stepName": "Unload Plate",
+          "sequnceId": "033F9DFBC819436AA6B32886B1A9EB75",
+          "steps": [
+            {
+              "id": "265037BA63CC44A3A395C7A9D54499AE",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "B68D0D9ACE3C4F0A853E295593DE9222",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "FB3CFB2654FC4A18AB372E423C0A8E7C",
+              "name": "Load Plate",
+              "sortNum": 3
+            },
+            {
+              "id": "BC13F49A1FC14C0793356DF7E260D944",
+              "name": "Load Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "D7C46D1E71F041CCBBB7DFA3758D75A5",
+              "name": "Load And Run Protocol",
+              "sortNum": 5
+            },
+            {
+              "id": "7DA84E9D1C96406EBBD646BA30CAF849",
+              "name": "Unload Plate",
+              "sortNum": 6
+            },
+            {
+              "id": "9D3EAF7590264BABA94DCB3B99BBE191",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "97D18FB7CDAA41929F083836895D0858",
+              "name": "Unload Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "96D665FB7B4448F681E74EDC3D377C8E",
+              "name": "Unload Plate",
+              "sortNum": 9
+            }
+          ],
+          "sequnceStepId": "96D665FB7B4448F681E74EDC3D377C8E",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "7823C6DC3CD64AAF931704C5830362A8",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "13B646BA17EE4A0BBC96ED2E47154F01"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "566da0a9c58049a6a10da9e055e806ad",
+          "occupy": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ]
+          ],
+          "release": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 0,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "1e3b7003fb76444da92e090a3c12bc20"
+          ],
+          "next": [
+            
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Trash Chute",
+          "plateProcess": "13B646BA17EE4A0BBC96ED2E47154F01",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90534",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "561A602BDF7F40D4A01E55B92D99CD88",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "13B646BA17EE4A0BBC96ED2E47154F01"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "72cc047b48ae4714b3142a86eec3619a",
+          "occupy": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ],
+            [
+              "4989699FA52747DBB4980AF157417CF8"
+            ]
+          ],
+          "release": [
+            [
+              "5f999d99a4704b988bc1f97522921114"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 15,
+          "robotPutTime": 0,
+          "estDuration": 1,
+          "pre": [
+            
+          ],
+          "next": [
+            "982d0428d899426faa6c3cfd9cf4b8f5"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Get From Hotel",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "BB24B31B3AC54BCDB8AD3D8F98E7AAE8",
+          "processType": 2,
+          "processTypeText": "\u6293\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "56aa5c04acac4c6b9af5f67eff98c44e",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "DF2619C466A34B0B8C2D0D373ED0603B"
+            ]
+          ],
+          "occupy_dependency": [
+            "eb01b70667724fbd9e7419965ee02b0d"
+          ],
+          "release_dependency": [
+            "eb01b70667724fbd9e7419965ee02b0d"
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 0,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "7a4b76d293234961a5e5d708c3cc375f"
+          ],
+          "next": [
+            "97a5439b30ef46bf8740fe4ce458daf7"
+          ],
+          "machine": "",
+          "position": "Position 1",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Unload Plate",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "\u6CF3\u90535",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "Unload Plate",
+          "sequnceId": "FFB39783B7EB4F67BBB1CFD0D0B98734",
+          "steps": [
+            {
+              "id": "CD06150A904B4C10A9DF97C8D3EA3141",
+              "name": "Load Plate",
+              "sortNum": 1
+            },
+            {
+              "id": "A1A26316F1124DB88FB194A303086780",
+              "name": "Load Plate",
+              "sortNum": 2
+            },
+            {
+              "id": "6515AE4785664B1EA00AC79A0D597806",
+              "name": "Load And Run Protocol",
+              "sortNum": 3
+            },
+            {
+              "id": "A45D2A783BB34E17B6CB82528E3BEA05",
+              "name": "Unload Plate",
+              "sortNum": 4
+            },
+            {
+              "id": "982D203C00994204AB060E9634E47B9D",
+              "name": "Load Plate",
+              "sortNum": 5
+            },
+            {
+              "id": "7FB0AEEBBD4A471E827BF91A82EF1727",
+              "name": "Load And Run Protocol",
+              "sortNum": 6
+            },
+            {
+              "id": "B89EA51345DA401B877400EF1EFD5395",
+              "name": "Unload Plate",
+              "sortNum": 7
+            },
+            {
+              "id": "783F0A47C78B414DA8793330871374EE",
+              "name": "Load Plate",
+              "sortNum": 8
+            },
+            {
+              "id": "47EAF2EA9C384A1BB700461589EE6BAF",
+              "name": "Load And Run Protocol",
+              "sortNum": 9
+            },
+            {
+              "id": "087915EC48D646F3AEF483B14C336B27",
+              "name": "Unload Plate",
+              "sortNum": 10
+            },
+            {
+              "id": "9B2708283BDC4CCAA049C3256832D13F",
+              "name": "Load Plate",
+              "sortNum": 11
+            },
+            {
+              "id": "0F695F8E902347609858E91E28822834",
+              "name": "Load And Run Protocol",
+              "sortNum": 12
+            },
+            {
+              "id": "6D95986EE4F942228B8AB386AA3E2B5B",
+              "name": "Unload Plate",
+              "sortNum": 13
+            },
+            {
+              "id": "C40E434DD04547F9B63BE30383A9C1EC",
+              "name": "Unload Plate",
+              "sortNum": 14
+            }
+          ],
+          "sequnceStepId": "C40E434DD04547F9B63BE30383A9C1EC",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "CB1E738F2222456FA193014EFFF1405C",
+          "processType": 1,
+          "processTypeText": "\u591A\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "97a5439b30ef46bf8740fe4ce458daf7",
+          "occupy": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "release": [
+            [
+              "98d14df7376d46cbaa1ac24b821e6788",
+              "7e5e9a3917144839a6a8766435a761f1"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 18,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 18,
+          "pre": [
+            "56aa5c04acac4c6b9af5f67eff98c44e"
+          ],
+          "next": [
+            "1cd9ade57e8a42ab963f88a57515f4bf"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Seal",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "A8FF96AAD3AA4EDD80B8952DDD86250C",
+          "processType": 0,
+          "processTypeText": "\u6807\u51C6\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "1cd9ade57e8a42ab963f88a57515f4bf",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "8E6CE2A291B7496FB59F9C3B1C64C30E",
+              "7702931558394D60AABC88394C2A4C3C",
+              "1A764A74D92242DAB86CD6551AB0032C"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "FA34F1991DC04680B2170080C24163D0",
+              "85E9277E1A6142AAB42366C2150EA192"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 30,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "97a5439b30ef46bf8740fe4ce458daf7"
+          ],
+          "next": [
+            "87a8fabda60344e6835205685bc0d6e8"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "robot",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "94718D512A93442B827D35CB90B498FB",
+          "processType": 6,
+          "processTypeText": "\u65E0\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "87a8fabda60344e6835205685bc0d6e8",
+          "occupy": [
+            [
+              "467245f4cf7844fc9f12fdb64f70b91b",
+              "bea198e125a84c0487381ff469da8da5",
+              "dfe3bf21f1204e34a67eccf0194ed6bd"
+            ]
+          ],
+          "release": [
+            [
+              "467245f4cf7844fc9f12fdb64f70b91b",
+              "bea198e125a84c0487381ff469da8da5",
+              "dfe3bf21f1204e34a67eccf0194ed6bd"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 3600,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 3600,
+          "pre": [
+            "1cd9ade57e8a42ab963f88a57515f4bf"
+          ],
+          "next": [
+            "84f83b9ca92142c6be86b5cf72c2f465"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Run Experiment",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "C71DB48771694F2A92BA5F439B555B16",
+          "processType": 0,
+          "processTypeText": "\u6807\u51C6\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "84f83b9ca92142c6be86b5cf72c2f465",
+          "occupy": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "release": [
+            [
+              "E05D39850FC345BE80FFF9F9BCBA7163"
+            ],
+            [
+              "8E6CE2A291B7496FB59F9C3B1C64C30E",
+              "7702931558394D60AABC88394C2A4C3C",
+              "1A764A74D92242DAB86CD6551AB0032C"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 30,
+          "robotGetTime": 15,
+          "robotPutTime": 15,
+          "estDuration": 30,
+          "pre": [
+            "87a8fabda60344e6835205685bc0d6e8"
+          ],
+          "next": [
+            "61b3273ba3854959ac4976f04ed2f6f5"
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "robot",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "CDA5929F4B1F48769BAD5CC8CFF1DA6E",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        },
+        {
+          "id": "61b3273ba3854959ac4976f04ed2f6f5",
+          "occupy": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ]
+          ],
+          "release": [
+            [
+              "209042d195a748779e3b6b8e008fac98"
+            ],
+            [
+              "7F4B28A1C81948578AE9640F3F6BF967"
+            ]
+          ],
+          "occupy_dependency": [
+            
+          ],
+          "release_dependency": [
+            
+          ],
+          "dependency2": -1,
+          "status": 0,
+          "priority": 0,
+          "time": 1,
+          "robotGetTime": 0,
+          "robotPutTime": 15,
+          "estDuration": 1,
+          "pre": [
+            "84f83b9ca92142c6be86b5cf72c2f465"
+          ],
+          "next": [
+            
+          ],
+          "machine": "",
+          "position": "",
+          "release_machine": [
+            
+          ],
+          "release_position": [
+            
+          ],
+          "dependency": -1,
+          "available": 0,
+          "start_time": 0,
+          "heuristic": 0,
+          "taskName": "Trash Chute",
+          "plateProcess": "0E9B109E61764F0591EBB1D20E4607EA",
+          "stepPlateName": "",
+          "taskPlateName": "\u6CF3\u90535",
+          "stepName": "",
+          "sequnceId": "",
+          "steps": [
+            
+          ],
+          "sequnceStepId": "",
+          "procedurIds": [
+            
+          ],
+          "nodeId": "CDA5929F4B1F48769BAD5CC8CFF1DA6E",
+          "processType": 3,
+          "processTypeText": "\u653E\u677F\u5DE5\u827A",
+          "taskPlates": [
+            "0E9B109E61764F0591EBB1D20E4607EA"
+          ],
+          "timeOut": 60
+        }
+      ],
+      "positions": [
+        {
+          "id": "7702931558394D60AABC88394C2A4C3C",
+          "status": 0,
+          "machine": "07BC38D925374795B515B42A410759AD",
+          "positionName": "Roche Light Cycler 480_2",
+          "machineName": "Roche Light Cycler 480_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "FBD6F333545849EAA30939B9104243A1",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 1",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "F423E265D02246EEA872A7B7DB041A77",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 2",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "A0BDFE2251D14F1CBCB69F6736A233F0",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 3",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "E242F16D183A4E4BB2EDC3A677F1AB92",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 4",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "94453FC3549A47718496358004BCBE35",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 5",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "17EEA10177F543EC9C34043D21BEDC32",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 6",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "EF24140E24CC4B32BE3ECE812BA3D6B4",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 7",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "D01BB0B4C04445E5B8C3D0B63EBD2D89",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 8",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "6D58E3E0908C42A684C57739A39C8313",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 9",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "FFE18AF72EAE4316BA4FEB56417026E3",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 Position 10",
+          "machineName": "Janus_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "85E9277E1A6142AAB42366C2150EA192",
+          "status": 0,
+          "machine": "3FED8285E2DE4F85B5D928D3AA38523B",
+          "positionName": "HeatSealerA4S_2",
+          "machineName": "HeatSealerA4S_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "45C12186839943F38F39039064F7C0E1",
+          "status": 0,
+          "machine": "42D6673832414042A87FFBA1FCC3FA62",
+          "positionName": "StorageCarousel_2",
+          "machineName": "StorageCarousel_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "8E6CE2A291B7496FB59F9C3B1C64C30E",
+          "status": 0,
+          "machine": "8BAEF7A41FA543ADBDABBB3AFB4E68D6",
+          "positionName": "Roche Light Cycler 480_1",
+          "machineName": "Roche Light Cycler 480_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "F0C57DB4E22C45228EB9A65D41B7E291",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 1",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "EF4E1DF9B6674A7FAA7B857C921494D0",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 2",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "F19AF756468D4138A2B2A04583339FDF",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 3",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "835C6A2CE49A44DF99D26E5F8144629B",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 4",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "9F4C35F2C6F64463908EA0EC9DE9DB36",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 5",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "F2DBE2E75F8A4A7AACEDA32309A10D92",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 6",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "3652552035D54803896FD1326541AF55",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 7",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "E075C15125A14854AC1FF1D228352C71",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 8",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "7AC1738736054EC183D67515FF387E11",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 9",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "9EC71AEB512F4D039A9F546A771484BE",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 Position 10",
+          "machineName": "Janus_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "FA34F1991DC04680B2170080C24163D0",
+          "status": 0,
+          "machine": "97DFE610B21F41C69AE0F8F828F8793E",
+          "positionName": "HeatSealerA4S_1",
+          "machineName": "HeatSealerA4S_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "E05D39850FC345BE80FFF9F9BCBA7163",
+          "status": 0,
+          "machine": "A6C8910A13C54ED28B64E0D372B8275B",
+          "positionName": "DENSO RC8_1",
+          "machineName": "DENSO RC8_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "4989699FA52747DBB4980AF157417CF8",
+          "status": 0,
+          "machine": "A8C6C0F9D9BD4DC6884FED9FCF89F820",
+          "positionName": "StorageCarousel_1",
+          "machineName": "StorageCarousel_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "8E8CF052894547B2805FA6C88852DC5F",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 1",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "B81281FA59BA451AAADBCD63EDA021B5",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 2",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "E3CBA8199DDB4EE9AAD6D52903F5DD8E",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 3",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "F0DF7EE32944419E9AFE3D2C59759C0B",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 4",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "2B3A5CB0265D4B03B2BDE6B7972E2267",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 5",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "7E591C4738EA43B497EC8EA94BCB814D",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 6",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "DA36DD62D54A4CA48A92D378B1C2FBC4",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 7",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "FC6D8D52BF9A440CA6CBDE1F1F1D986C",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 8",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "A6752E60770F4C5EB844B83E8B41BF96",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 9",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "1586E04DE5EF4C049B79ED5A7B5AC4D8",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 Position 10",
+          "machineName": "Janus_2",
+          "sourceType": "plate"
+        },
+        {
+          "id": "7F4B28A1C81948578AE9640F3F6BF967",
+          "status": 0,
+          "machine": "C2C8D597924449E7BAE547CF6DBD4109",
+          "positionName": "TrashChute_1",
+          "machineName": "TrashChute_1",
+          "sourceType": "plate"
+        },
+        {
+          "id": "DF2619C466A34B0B8C2D0D373ED0603B",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 1",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "54C70AECFB1C4B4B820D92F0D00ADAB3",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 2",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "B0941A5D50DB4FB59AD67C4D9FB1F252",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 3",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "D7F3974F89FC448C8638544260FF43FF",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 4",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "BC31732C63244ED594F3E5F4D170EBF5",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 5",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "D54D4567F352414F87382DDFD4ECDC21",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 6",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "26823D81F99A4262824CD4B5551B2BEC",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 7",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "9D35F303E82745208EF54B4ACCEA7268",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 8",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "D3445DF16C46484E834EDD5DDDDC9D5D",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 9",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "EDEEEB4BFCD84E308012DA466AB8C1C9",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 Position 10",
+          "machineName": "Janus_4",
+          "sourceType": "plate"
+        },
+        {
+          "id": "1A764A74D92242DAB86CD6551AB0032C",
+          "status": 0,
+          "machine": "E20F945A79E74C5285A1666FF6D442F3",
+          "positionName": "Roche Light Cycler 480_3",
+          "machineName": "Roche Light Cycler 480_3",
+          "sourceType": "plate"
+        },
+        {
+          "id": "467245f4cf7844fc9f12fdb64f70b91b",
+          "status": 0,
+          "machine": "07BC38D925374795B515B42A410759AD",
+          "positionName": "Roche Light Cycler 480_2 work",
+          "machineName": "Roche Light Cycler 480_2",
+          "sourceType": "work"
+        },
+        {
+          "id": "102ea40b154f4a4b9fce711369916ad0",
+          "status": 0,
+          "machine": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "positionName": "Janus_3 work",
+          "machineName": "Janus_3",
+          "sourceType": "work"
+        },
+        {
+          "id": "98d14df7376d46cbaa1ac24b821e6788",
+          "status": 0,
+          "machine": "3FED8285E2DE4F85B5D928D3AA38523B",
+          "positionName": "HeatSealerA4S_2 work",
+          "machineName": "HeatSealerA4S_2",
+          "sourceType": "work"
+        },
+        {
+          "id": "8c0a705517d149ecbaa18f16f35fc365",
+          "status": 0,
+          "machine": "42D6673832414042A87FFBA1FCC3FA62",
+          "positionName": "StorageCarousel_2 work",
+          "machineName": "StorageCarousel_2",
+          "sourceType": "work"
+        },
+        {
+          "id": "bea198e125a84c0487381ff469da8da5",
+          "status": 0,
+          "machine": "8BAEF7A41FA543ADBDABBB3AFB4E68D6",
+          "positionName": "Roche Light Cycler 480_1 work",
+          "machineName": "Roche Light Cycler 480_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "ca719607568b40a08ca670aca3453ce8",
+          "status": 0,
+          "machine": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "positionName": "Janus_1 work",
+          "machineName": "Janus_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "7e5e9a3917144839a6a8766435a761f1",
+          "status": 0,
+          "machine": "97DFE610B21F41C69AE0F8F828F8793E",
+          "positionName": "HeatSealerA4S_1 work",
+          "machineName": "HeatSealerA4S_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "5e4f0a83892741c889d6cc1942d14688",
+          "status": 0,
+          "machine": "A6C8910A13C54ED28B64E0D372B8275B",
+          "positionName": "DENSO RC8_1 work",
+          "machineName": "DENSO RC8_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "5f999d99a4704b988bc1f97522921114",
+          "status": 0,
+          "machine": "A8C6C0F9D9BD4DC6884FED9FCF89F820",
+          "positionName": "StorageCarousel_1 work",
+          "machineName": "StorageCarousel_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "590bf5334b9d497d97bcf036ee7eac6d",
+          "status": 0,
+          "machine": "AE05E50F98BA4AB2B2D233811B23B700",
+          "positionName": "Janus_2 work",
+          "machineName": "Janus_2",
+          "sourceType": "work"
+        },
+        {
+          "id": "209042d195a748779e3b6b8e008fac98",
+          "status": 0,
+          "machine": "C2C8D597924449E7BAE547CF6DBD4109",
+          "positionName": "TrashChute_1 work",
+          "machineName": "TrashChute_1",
+          "sourceType": "work"
+        },
+        {
+          "id": "9918303313d24ab189664f1fb7f243d8",
+          "status": 0,
+          "machine": "E03AA85AEF4143A682336EDF07DA0652",
+          "positionName": "Janus_4 work",
+          "machineName": "Janus_4",
+          "sourceType": "work"
+        },
+        {
+          "id": "dfe3bf21f1204e34a67eccf0194ed6bd",
+          "status": 0,
+          "machine": "E20F945A79E74C5285A1666FF6D442F3",
+          "positionName": "Roche Light Cycler 480_3 work",
+          "machineName": "Roche Light Cycler 480_3",
+          "sourceType": "work"
+        }
+      ],
+      "machines": [
+        {
+          "id": "07BC38D925374795B515B42A410759AD",
+          "name": "Roche Light Cycler 480_2",
+          "type": "Roche Light Cycler 480"
+        },
+        {
+          "id": "17290B2E31E546F99B415C2D1CFCE2F5",
+          "name": "Janus_3",
+          "type": "Janus"
+        },
+        {
+          "id": "3FED8285E2DE4F85B5D928D3AA38523B",
+          "name": "HeatSealerA4S_2",
+          "type": "HeatSealerA4S"
+        },
+        {
+          "id": "42D6673832414042A87FFBA1FCC3FA62",
+          "name": "StorageCarousel_2",
+          "type": "StorageCarousel"
+        },
+        {
+          "id": "8BAEF7A41FA543ADBDABBB3AFB4E68D6",
+          "name": "Roche Light Cycler 480_1",
+          "type": "Roche Light Cycler 480"
+        },
+        {
+          "id": "8E5E4CB9B76342C6BB79CBE0FE318AD3",
+          "name": "Janus_1",
+          "type": "Janus"
+        },
+        {
+          "id": "97DFE610B21F41C69AE0F8F828F8793E",
+          "name": "HeatSealerA4S_1",
+          "type": "HeatSealerA4S"
+        },
+        {
+          "id": "A6C8910A13C54ED28B64E0D372B8275B",
+          "name": "DENSO RC8_1",
+          "type": "DENSO RC8"
+        },
+        {
+          "id": "A8C6C0F9D9BD4DC6884FED9FCF89F820",
+          "name": "StorageCarousel_1",
+          "type": "StorageCarousel"
+        },
+        {
+          "id": "AE05E50F98BA4AB2B2D233811B23B700",
+          "name": "Janus_2",
+          "type": "Janus"
+        },
+        {
+          "id": "C2C8D597924449E7BAE547CF6DBD4109",
+          "name": "TrashChute_1",
+          "type": "TrashChute"
+        },
+        {
+          "id": "E03AA85AEF4143A682336EDF07DA0652",
+          "name": "Janus_4",
+          "type": "Janus"
+        },
+        {
+          "id": "E20F945A79E74C5285A1666FF6D442F3",
+          "name": "Roche Light Cycler 480_3",
+          "type": "Roche Light Cycler 480"
+        }
+      ]
+    }
+  ]
+}

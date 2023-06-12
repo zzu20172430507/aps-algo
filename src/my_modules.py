@@ -1,8 +1,7 @@
 # import plotly as py
 import copy
-import time
 import json
-# import plotly.figure_factory as ff
+import heapq
 import random
 
 
@@ -91,18 +90,30 @@ def generate_colors(x):
     return colors
 
 
-def data_read():
+def data_read(data):
     # Data Input Process
-    with open("./data_low.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-    tasks_json = data['assaysmodel'][0]['tasks']
-    positions_json = data['assaysmodel'][0]['positions']
-    machines_json = data['assaysmodel'][0]['machines']
-    assayssid = data['assaysmodel'][0]['assaysid']
+    # with open("./data_low_h.json", "r", encoding="utf-8") as f:
+    #     data = json.load(f)
+    # headers = {'content-type': 'application/json'}
+    # upload_url = 'http://192.168.1.107:5089/home/GetTaskList?projectId=B48A055EF802466DBFC34B1600993BFA'  # first
+    # # upload_url = 'http://192.168.1.107:5089/home/GetTaskList?projectId=3ABB3B0A4914479CB0BD3D2889F50EDA'  # second
+    # r = requests.get(upload_url, headers=headers)
+    # if r.status_code != 200:
+    #     print(f'数据接收异常，返回码: {r.status_code}，重新接收数据')
+    # if r.content:
+    #     recvData = r.content.decode('utf-8')
+    #     jsonData = json.loads(recvData)
+    #     readData = jsonData
+    # else:
+    #     print(f'数据为空，返回码: {r.status_code}，请检查数据')
+    # data = readData
+    tasks_json = data['assaysModel'][0]['tasks']
+    positions_json = data['assaysModel'][0]['positions']
+    machines_json = data['assaysModel'][0]['machines']
+    assayssid = data['assaysModel'][0]['assaysId']
     base_num = len(tasks_json)
-    board_num = 50  # board_num 表示该任务图需要复制多少份
-    window_size = 2  # window_size 表示每次排几个任务
-    heuristics = 0
+    board_num = 10  # board_num 表示该任务图需要复制多少份
+    window_size = 1  # window_size 表示每次排几个任务
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}
     m_idx_dic = {}
@@ -119,19 +130,19 @@ def data_read():
         task.occupy = tasks_json[tidx]['occupy']
         task.release = tasks_json[tidx]['release']
         task.time = tasks_json[tidx]['time']
-        task.task_name = tasks_json[tidx]['taskname']
-        task.PlateProcess = tasks_json[tidx]['plateprocess']
+        task.task_name = tasks_json[tidx]['taskName']
+        task.PlateProcess = tasks_json[tidx]['plateProcess']
         task.pre = tasks_json[tidx]['pre']
         task.next = tasks_json[tidx]['next']
-        task.nodeid = tasks_json[tidx]['nodeid']
-        task.robotgettime = tasks_json[tidx]['robotgettime']
-        task.robotputtime = tasks_json[tidx]['robotputtime']
-        task.sequnceid = tasks_json[tidx]['sequnceid']
+        task.nodeid = tasks_json[tidx]['nodeId']
+        task.robotgettime = tasks_json[tidx]['robotGetTime']
+        task.robotputtime = tasks_json[tidx]['robotPutTime']
+        task.sequnceid = tasks_json[tidx]['sequnceId']
         task.steps = tasks_json[tidx]['steps']
-        task.sequncestepid = tasks_json[tidx]['sequncestepid']
-        task.taskplates = tasks_json[tidx]['taskplates']
+        task.sequncestepid = tasks_json[tidx]['sequnceStepId']
+        task.taskplates = tasks_json[tidx]['taskPlates']
         task.color = "#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
-        task.processtype = tasks_json[tidx]['processtype']
+        task.processtype = tasks_json[tidx]['processType']
         # task.timeout = tasks_json[tidx]['timeout']
         task.bind = 0
         if "Incubator" in task.task_name or task.task_name == "Get From Hotel" or task.idx == 28 or task.idx == 27 or task.idx == 26:
@@ -140,7 +151,7 @@ def data_read():
             plateprocesses.append(task.PlateProcess)
     for pidx, pos in enumerate(positions):
         pos.id = positions_json[pidx]['id']
-        pos.name = positions_json[pidx]['positionname']
+        pos.name = positions_json[pidx]['positionName']
         pos.machine = positions_json[pidx]['machine']
         p_idx_dic[positions_json[pidx]['id']] = pidx
     for midx, mac in enumerate(machines):
@@ -191,7 +202,7 @@ def data_read():
             for rel_id, rel in enumerate(task_base.release_dependency):
                 if rel != -1:
                     tasks[t].release_dependency[rel_id] = task_base.release_dependency[rel_id] + int(t//base_num*base_num)
-    return tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, heuristics, window_size
+    return tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, window_size
 
 
 def list_scheduling(tasks, t_idx_dic):
@@ -251,31 +262,20 @@ def Initialize(tasks, begin, end, positions, t_idx_dic, p_idx_dic):
                 pq_tmp.append(t_idx_dic[task.id])
     i = 0
     Finished = []
-    SAVED_INFORMATION = []  # 用于存储每步选择过的task，当前这步选择的task，选择前的状态
     SAVED_CUR_TASK = []  # 存储的是当前步选择的设备
-    SAVED_CUR_TASK_STATUS = [[] for _ in range(len(tasks)+1)]  # 存储 step 时的任务的状态
-    SAVED_CUR_RESOURCE_POSITIONS = [[] for _ in range(len(tasks)+1)]  # 存储position状态
-    SAVED_CUR_RESOURCE_MACHINES = [[] for _ in range(len(tasks)+1)]    # 存储machine状态
     SAVED_PRE_DECISIONS = [[] for _ in range(len(tasks)+1)]  # 记录每一个step曾经做过的决策
     SAVED_PRIOR_QUEUE = [[] for _ in range(len(tasks)+1)]  # 记录在做决策前的优先队列的内容
     SAVED_PRIOR_QUEUE[0] = [t.id for t in q]
-
-    TASK_SELECT = [[] for _ in range(len(tasks)+1)]
-    DEAD = 0  # 用于调试
     step = 0  # step 用于表示当前的步骤
     print("step:", step, "Priority_queue:", pq_tmp)
-    return tasks, positions, i, Finished, SAVED_INFORMATION, SAVED_CUR_TASK, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, TASK_SELECT, DEAD, step, q, pq_tmp
+    return tasks, positions, i, Finished, SAVED_CUR_TASK, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, step, q
 
 
-def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_PRE_DECISIONS, step, SAVED_CUR_TASK_STATUS, SAVED_CUR_RESOURCE_POSITIONS, SAVED_CUR_RESOURCE_MACHINES, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, DEAD, heuristics, TASK_SELECT, SAVED_CUR_TASK, base_num):
+def Run(tasks, end_task_id, positions, machines, q, SAVED_PRE_DECISIONS, step, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, SAVED_CUR_TASK, base_num):
     task_list = [i for i in range(0, end_task_id)]
-    PROGRAM_REP_TIME = 0
-    cnt = 0
     while len(q) > 0:
-        cnt += 1
         task = heapq.heappop(q)  # EACH TIME GET THE PRIOR TASK
         SIG_CALL_BACK = 0  # SIG_CALL_BACK用于记录是否在当前队列中找到了可执行的任务。
-        PROGRAM_IN_TIME = time.time()
         while task.id in SAVED_PRE_DECISIONS[step]:  # 所有优先队列中的任务如果出现在了之前这一步的记录中，那么则不会选择，如果都没有，那么sigcallback记为1
             if len(q) == 0:
                 SIG_CALL_BACK = 1
@@ -333,8 +333,6 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
                 task = heapq.heappop(q)
             if SIG_tmp == 0:
                 break
-        PROGRAM_OUT_TIME = time.time()
-        PROGRAM_REP_TIME += PROGRAM_OUT_TIME-PROGRAM_IN_TIME
         SAVED_PRE_DECISIONS[step].append(copy.deepcopy(task.id))
         SAVED_CUR_TASK.append(task.id)
         # print("!!!", task.idx, " ", task.task_name, t_idx_dic[task.id], "base:", len(SAVED_PRE_DECISIONS[step]), "mod:", t_idx_dic[task.id] % base_num)
@@ -408,14 +406,7 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
         other_q = []
         while i < len(q):  # 输出一下当前优先队列里的内容，用于调试   先将优先队列内容清空，看所有任务当前是否能执行，后续可以对这里进行一定的优化工作。
             other_q.append(t_idx_dic[heapq.heappop(q).id])
-        # task_state = []
-        # for t in tasks:
-        #     task_state.append(t.status)
-        # if DEAD == 1:
-        #     print(task.id, "其他优先队列中的task:", other_q)
-        #     print("task_state:", task_state)
         pq_list = []
-        # end_task_id = min(end_task_id, len(tasks))
         for idx in task_list:  #
             t = tasks[idx]
             flag = 1
@@ -442,13 +433,6 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
         for idx in task_list:
             if tasks[idx].status == 1:
                 Finished_task.append(t.id)
-        # print("step:", step, "Selected_Task:", task.task_name, "Priority_queue:", pq_list, "Finished:", Finished_task, "occ:", task.occupy, "rel:", task.release)
-        # print("step:", step, "Selected_Task:", task.task_name, " id: ", t_idx_dic[task.id])
-        # posS = []
-        # for p in positions:
-        #     posS.append(p.status)
-        # print("pos_status:", posS)
-        TASK_SELECT[step] = Finished_task
         flag = 0
         if len(q) == 0 and step == len(tasks):
             break
@@ -495,30 +479,23 @@ def Run(tasks, start_task_id, end_task_id, positions, machines, q, heapq, SAVED_
             heapq.heappush(q, task)
         # if step % 1 == 0:
         #     print("进度：", step, "/", len(tasks))
-        # PROGRAM_END_TIME = time.time()
-        # sum += PROGRAM_END_TIME - PROGRAM_START_TIME
-        # print("sum Time:", PROGRAM_END_TIME - PROGRAM_START_TIME, "AVG Time:",  sum/cnt, "s")
-    print("回溯:", PROGRAM_REP_TIME, " ", cnt)
-    return tasks, positions, machines, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK
+        # if step > len(q)/2:
+        #     GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines)
+    return tasks, positions, machines, step, SAVED_CUR_TASK
 
 
-def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_idc, plateprocesses):
+def ResultsOutput(tasks, step, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_idc, plateprocesses):
     if step != len(tasks):
         print("exsiting deadlock !")
     else:
         print("successfully compute solution !")
-    task_id = SAVED_CUR_TASK
+    task_id = SAVED_CUR_TASK  # 遍历SAVED_CUR_TASK
     tsk_tmp = []
     for tid in task_id:
         tsk_tmp.append(t_idx_dic[tid])
     print("task分配资源的顺序为:")
     print(len(task_id))
     print(tsk_tmp)
-    colors = generate_colors(board_num * base_num)
-    tmp = []
-    for t in range(board_num * base_num):
-        tmp.append(colors[t])
-    colors = tmp
     Tm = [0 for _ in positions]  # Tm表示每个资源的可用时间
     PositionStatus = [0 for _ in positions]  # 表示资源当前被哪个任务占用
     for task in task_id:
@@ -571,7 +548,7 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TAS
     #  1 按顺序遍历所有任务，记录资源占用时间段。
     #  Firstly ， data structure
     TimeOcc = [[] for _ in positions]
-    for task in task_id: 
+    for task in task_id:
         task = t_idx_dic[task]  # task表示当前任务的下标
         for occ_pos in tasks[task].position:
             pos_id = occ_pos
@@ -594,10 +571,10 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TAS
                 for plate in task.taskplates:
                     if plate == process:
                         board_to_task[idx + b_idx].append(t_idx_dic[task.id])
-    for idx in range(len(board_to_task)-1, -1, -1):
-        boardi = board_to_task[idx]
-        for task_idx in range(len(boardi)-1, -1, -1):  # 倒序遍历任务
-            task_idx = boardi[task_idx]
+    for idxx in range(len(board_to_task)-1, -1, -1):
+        boardi = board_to_task[idxx]
+        for t_idx in range(len(boardi)-1, -1, -1):  # 倒序遍历任务
+            task_idx = boardi[t_idx]
             if len(tasks[task_idx].next) > 0:  # 如果有后续节点，首先计算出后续任务最早开始时间
                 min_start_time = 9999999999999
                 for nxt in tasks[task_idx].next:
@@ -626,19 +603,27 @@ def ResultsOutput(tasks, step, SAVED_CUR_TASK_STATUS, TASK_SELECT, SAVED_CUR_TAS
                             if tasks[task_idx].idx == occ[2]:
                                 occ[0] = tasks[task_idx].start_time
                                 occ[1] = tasks[task_idx].available
+            if idxx == 1 and task_idx == 40:
+                print(tasks[task_idx].task_name)
+                print(boardi)
+                print(tasks[task_idx].start_time)
+                print(tasks[task_idx].available)
+                for b in boardi:
+                    print(tasks[b].task_name)
     for idx in range(len(board_to_task)-1, -1, -1):
         boardi = board_to_task[idx]
-        # print(boardi)
         for t_idx in range(len(boardi)-1, -1, -1):  # 倒序遍历任务
-            task_idx = boardi[t_idx]
-            if t_idx-1 > 0 and "robot" not in tasks[task_idx].task_name:
-                if "robot" in tasks[boardi[t_idx-1]].task_name:
-                    pre_task_end_time = tasks[boardi[t_idx-2]].available
-                    tasks[task_idx].start_time = pre_task_end_time
-                else:
-                    pre_task_end_time = tasks[boardi[t_idx-1]].available
-                    tasks[task_idx].start_time = pre_task_end_time
-    # exit()
+            task_idx = boardi[t_idx]  # task_idx表示要处理的任务。
+            if "robot" not in tasks[task_idx].task_name:  # 如果不是robot节点，则和前驱任务链接起来。
+                min_end_time = 0
+                for pre in tasks[task_idx].pre:
+                    if "robot" in tasks[t_idx_dic[pre]].task_name:
+                        ppre = tasks[t_idx_dic[tasks[t_idx_dic[pre]].pre[0]]]
+                        min_end_time = max(min_end_time, ppre.available)
+                    else:
+                        min_end_time = max(min_end_time, tasks[t_idx_dic[pre]].available)
+                    tasks[task_idx].start_time = min_end_time
+
 
 def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines):
     GantChartParent = []
@@ -737,7 +722,7 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
                 if tasks[task].sequnceid == seq:
                     for _ in sequences[seq]:
                         if tasks[task].sequncestepid == _['id']:
-                            stask.append([task, _['sortnum']])
+                            stask.append([task, _['sortNum']])
                             break
             stask = sorted(stask, key=lambda x: x[1])
             if stask != []:
@@ -777,20 +762,6 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
         for child in Children:
             time_cur = child['EstDuration']
             child['Percentage'] = time_cur / ((maxtime-mintime).total_seconds())
-        # for idx in range(len(Children)-1, -1, -1):
-        #     child = Children[idx]   
-        #     if idx + 1 < len(Children):
-        #         TaskStartTime = child['TaskStartTime']
-        #         TaskEndTime = child['TaskEndTime']
-        #         nextChild = Children[idx + 1]
-        #         nTaskStartTime = nextChild['TaskStartTime']
-        #         if TaskEndTime < nTaskStartTime:
-        #             TaskStartTime = TaskStartTime + nTaskStartTime - TaskEndTime
-        #             TaskEndTime = nTaskStartTime
-        #             child['TaskStartTime'] = TaskStartTime
-        #             child['TaskEndTime'] = TaskEndTime
-        #             child['StartTime'] = (datetime.timedelta(seconds=int(TaskStartTime)) + now).strftime("%Y-%m-%d %H:%M:%S")
-        #             child['EndTime'] = (datetime.timedelta(seconds=int(TaskEndTime)) + now).strftime("%Y-%m-%d %H:%M:%S")
         StartTime = mintime.strftime("%Y-%m-%d %H:%M:%S")
         EndTime = maxtime.strftime("%Y-%m-%d %H:%M:%S")
         GantChartSub = {
@@ -803,13 +774,9 @@ def GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssi
             "Children": Children
         }
         GantChartParent.append(GantChartSub)
-    with open('GantChart.json', 'w', encoding='utf-8') as f:
+    with open('D:\\apache-tomcat-10.1.9\\webapps\\gantchart\\GantChart.json', 'w', encoding='utf-8') as f:
         json.dump(GantChartParent, f, indent=2, ensure_ascii=False)
     return GantChartParent
-
-
-def TestGant(GantChartParent):
-    print(GantChartParent)
 
 
 def create_draw_defination(tasks):
@@ -822,19 +789,3 @@ def create_draw_defination(tasks):
         operation['Resource'] = task.idx
         df.append(operation)
     return df
-
-
-def display(tasks):
-    # pyplt = py.offline.plot
-    import plotly.figure_factory as ff
-    df = create_draw_defination(tasks)
-    fig = ff.create_gantt(df)
-    # pyplt(fig, filename='tmp1.html')
-    fig.show()
-
-def record_task(tasks):
-    my_list = []
-    for task in tasks:
-        my_list.append([t_idx_dic[task.id], task.task_name, task.start_time, task.available])
-    with open('my_file.json', 'w') as f:
-        json.dump(my_list, f)
