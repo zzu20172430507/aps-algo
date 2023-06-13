@@ -17,7 +17,7 @@ def scheduler(data):
     # L1 Scheduling
     tasks = my_modules.list_scheduling2(tasks, t_idx_dic)
     PROGRAM_PRIOR_TIME = time.time()
-    # L1 Result Output & Task Graph & Resource Output-- TEST CODE
+    # L1 Result Output & Task Graph & Resource Outp t-- TEST CODE
     if TEST_MODE == 1:
         for _id, task in enumerate(tasks):
             print(f"task {_id} priority:", task.priority)
@@ -36,13 +36,11 @@ def scheduler(data):
         #     for _ in task.release:
         #         for __ in _:
         #             print(positions[p_idx_dic[__]].name)
-    # Scheduling: 1. Initialize 2. Running  3. Results Output  4. Generating Output
     # 1. Initialize
     tasks, positions, i, Finished, SAVED_CUR_TASK, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, \
         step, q = my_modules.Initialize(tasks, 0, window_size * base_num, positions, t_idx_dic, p_idx_dic)
     PROGRAM_INIT_TIME = time.time()
     # 2. Running
-    # exit()
     tasks, positions, machines, step, SAVED_CUR_TASK = \
         my_modules.Run(tasks, window_size * base_num, positions, machines, q, SAVED_PRE_DECISIONS,
                        step, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, SAVED_CUR_TASK, base_num)
@@ -66,7 +64,7 @@ def scheduler(data):
 
     # 4.Generating Outputo
     PROGRAM_OUT_TIME = time.time()
-    # gantchart = my_modules.GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines)
+    gantchart = my_modules.GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines)
     PROGRAM_END_TIME = time.time()
 
     if TEST_MODE == 1:
@@ -77,7 +75,7 @@ def scheduler(data):
         print("运行:", PROGRAM_RUN_TIME - PROGRAM_INIT_TIME, "s")
         print("计算甘特图:", PROGRAM_OUT_TIME - PROGRAM_RUN_TIME, "s")
         print("生成文件:", PROGRAM_END_TIME - PROGRAM_OUT_TIME, "s")
-    return None  #gantchart
+    return gantchart
 
 
 @app.route('/dispatch', methods=['POST'])
