@@ -112,7 +112,14 @@ def data_read(data):
     machines_json = data['assaysModel'][0]['machines']
     assayssid = data['assaysModel'][0]['assaysId']
     base_num = len(tasks_json)
-    board_num = 10  # board_num 表示该任务图需要复制多少份
+    board_num = 10  # 这里board_num不能单纯的设置成一个数，而是要通过一个模块计算出来，另外需要任务图中任务与板子信息做绑定
+    # 现在知道的信息是他是属于哪个泳道的，每个泳道对应从某些存储栈中拿取板子，我需要知道拿取的板子是什么，然后把该泳道的任务标记成该板子。
+    # 1. 维护每个泳道的任务有哪些
+    # 2. 每个泳道用到的存储设备对应的区域
+    # 3. 从这些区域每次取一个板子，如果不存在则记录报错。
+    # 4. 每取一个板子则生成一个任务图，该任务图中泳道对应的板子的id。
+    # 5. 生成任务图后使用原算法进行调度，得到调度方案生成甘特图时，板子的名字需要做一个匹配。
+
     window_size = 1  # window_size 表示每次排几个任务
     t_idx_dic = {}  # 表示Id在数组中的下标
     p_idx_dic = {}
@@ -121,7 +128,7 @@ def data_read(data):
     positions = [Position(p) for p in range(len(positions_json))]
     machines = [MachineBase(m+1) for m in range(len(machines_json))]
     plateprocesses = []   # 用于记录有几个不同的泳道，一个泳道就是一个板子
-    for tidx, task in enumerate(tasks):
+    for tidx, task in enumerate(tasks):  # 复制任务基本信息
         if tidx >= base_num:
             break
         task.id = tasks_json[tidx]['id']            # id表示task的id
@@ -149,7 +156,7 @@ def data_read(data):
             task.bind = 1
         if task.PlateProcess not in plateprocesses:
             plateprocesses.append(task.PlateProcess)
-    for pidx, pos in enumerate(positions):
+    for pidx, pos in enumerate(positions): # position资源基本信息
         pos.id = positions_json[pidx]['id']
         pos.name = positions_json[pidx]['positionName']
         pos.machine = positions_json[pidx]['machine']
