@@ -1,22 +1,27 @@
 import time
-import sys
-sys.path.append("./src")
 import my_modules
-from my_modules import *
+import threading
+import datetime
 from flask import Flask, request, jsonify
 TEST_MODE = 1
 app = Flask(__name__)
 gantt_chart = None
+global t_idx_dic, p_idx_dic, m_idx_dic, tasks, step, board_num, base_num, positions, machines, plateprocesses, SAVED_CUR_TASK, assayssid
 
 
 def scheduler(data):
+    global SAVED_CUR_TASK, gantt_chart, step
+    now = datetime.datetime.now()
+    # delta = datetime.timedelta(days=0, hours=0, minutes=5)  # 设置要添加的时间段
+    # now = now + delta
     PROGRAM_START_TIME = time.time()
     # Data Read
-    tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, assayssid, base_num, board_num, window_size = my_modules.data_read(data)
+    tasks, positions, machines, plateprocesses, t_idx_dic, p_idx_dic, m_idx_dic, base_num, board_num, window_size = my_modules.data_read(data)
     PROGRAM_READ_TIME = time.time()
     # L1 Scheduling
     tasks = my_modules.list_scheduling2(tasks, t_idx_dic)
     PROGRAM_PRIOR_TIME = time.time()
+
     # L1 Result Output & Task Graph & Resource Outp t-- TEST CODE
     if TEST_MODE == 1:
         for _id, task in enumerate(tasks):
@@ -37,34 +42,34 @@ def scheduler(data):
         #         for __ in _:
         #             print(positions[p_idx_dic[__]].name)
     # 1. Initialize
-    tasks, positions, i, Finished, SAVED_CUR_TASK, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, \
-        step, q = my_modules.Initialize(tasks, 0, window_size * base_num, positions, t_idx_dic, p_idx_dic)
+    tasks, positions, i, Finished, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, \
+        q = my_modules.Initialize(tasks, 0, window_size * base_num, positions, t_idx_dic, p_idx_dic)
     PROGRAM_INIT_TIME = time.time()
     # 2. Running
-    tasks, positions, machines, step, SAVED_CUR_TASK = \
+    tasks, positions, machines = \
         my_modules.Run(tasks, window_size * base_num, positions, machines, q, SAVED_PRE_DECISIONS,
-                       step, SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, SAVED_CUR_TASK, base_num)
+                    SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, base_num)
     PROGRAM_RUN_TIME = time.time()
     
     # 3. Results Output
-    my_modules.ResultsOutput(tasks, step, SAVED_CUR_TASK, board_num, base_num, positions, machines, t_idx_dic, p_idx_dic, m_idx_dic, plateprocesses)
+    my_modules.ResultsOutput(tasks, board_num, base_num, positions, t_idx_dic, p_idx_dic, m_idx_dic, plateprocesses)
     for task in tasks:
-        if task.task_name == "Open Lid3":
+        if task.task_name == "Open Lid4":
             print("!!!!!!!!!")
             print(task.task_name, task.start_time, " ", task.available, task.time)
             for pre in task.pre:
                 ptask = tasks[t_idx_dic[pre]]
-                print(ptask.task_name, ptask.start_time, " ", ptask.available, ptask.time)
+                print(ptask.task_name, ptask.start_time, " ", ptask.available, ptask.time, ptask.idx)
                 for ppre in ptask.pre:
                     pptask = tasks[t_idx_dic[ppre]]
-                    print(pptask.task_name, pptask.start_time, " ", pptask.available, pptask.time)
+                    print(pptask.task_name, pptask.start_time, " ", pptask.available, pptask.time, pptask.idx)
     if TEST_MODE == 1:
         for idx, task in enumerate(tasks):
             print("ID:", idx, "S:", task.start_time, "E:", task.available)
-
-    # 4.Generating Outputo
+    
+    # 4.Generating Output
     PROGRAM_OUT_TIME = time.time()
-    gantchart = my_modules.GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines)
+    gantt_chart = my_modules.GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, machines, now)
     PROGRAM_END_TIME = time.time()
 
     if TEST_MODE == 1:
@@ -75,22 +80,33 @@ def scheduler(data):
         print("运行:", PROGRAM_RUN_TIME - PROGRAM_INIT_TIME, "s")
         print("计算甘特图:", PROGRAM_OUT_TIME - PROGRAM_RUN_TIME, "s")
         print("生成文件:", PROGRAM_END_TIME - PROGRAM_OUT_TIME, "s")
-    return gantchart
 
 
 @app.route('/dispatch', methods=['POST'])
 def handle_dispatch_requeset():
     data = request.get_json()
-    result = {"message": "调度请求已收到", "data": data}
-    global gantt_chart
-    gantt_chart = scheduler(data)
+    result = {"message": "调度请求已收到, 任务启动成功"}
+    thread = threading.Thread(target=scheduler, args=(data,))
+    thread.start()
     return jsonify(result)
 
 
 @app.route('/file', methods=['GET'])
 def handle_file_request():
-    return jsonify(gantt_chart)
+    if gantt_chart is not None:
+        return jsonify(gantt_chart)
+    else:
+        result = {"message": "任务尚未调度完成"}
+        return jsonify(result)
+
+
+@app.route('/get_intermediate_result', methods=['GET'])
+def get_intermediate_result():
+    res = my_modules.getTmpGant()
+    return jsonify(res)
 
 
 if __name__ == "__main__":
-    app.run(host='192.168.0.192', port=5000)
+    # ip = input("Input host IP  如 192.168.0.192 :")
+    ip = '192.168.0.192'
+    app.run(host=ip, port=5000)
