@@ -108,5 +108,5 @@ def get_intermediate_result():
 
 if __name__ == "__main__":
     # ip = input("Input host IP  如 192.168.0.192 :")
-    ip = '192.168.0.192'
+    ip = '10.192.253.121'
     app.run(host=ip, port=5000)
