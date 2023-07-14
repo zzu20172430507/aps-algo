@@ -156,7 +156,7 @@ def data_read(data):
     # else:
     #     print(f'数据为空，返回码: {r.status_code}，请检查数据')
     # data = readData
-    tasks_json = data['assaysmodel'][0]['tasks']
+    tasks_json = data['assaysmodel'][0]['tasks']  # + data['assaysmodel'][1]['tasks']
     positions_json = data['assaysmodel'][0]['positions']
     machines_json = data['assaysmodel'][0]['machines']
     assayssid = data['assaysmodel'][0]['assaysid']
@@ -285,8 +285,9 @@ def data_read(data):
         else:
             break
         pointer[0] += 1
+        break   # 这个break 后面要去掉，这里为了调试只是用一份任务图做调度。
     # 其他泳道每个泳道的板子从哪个地方出来。
-
+    
     board_num = int(len(tasks)/base_num)
     window_size = 1  # window_size 表示每次排几个任务
     t_idx_dic = {}  # 表示Id在数组中的下标
@@ -478,7 +479,7 @@ def Run(tasks, end_task_id, positions, machines, q, SAVED_PRE_DECISIONS, SAVED_P
                         continue
                 positions[p_idx_dic[pos]].status = 1
             # 占用position恢复
-            for pos in task.position:  
+            for pos in task.position:
                 if "Incubator" in task.task_name:
                     continue
                 elif task.task_name == "robot":
@@ -649,8 +650,8 @@ def Run(tasks, end_task_id, positions, machines, q, SAVED_PRE_DECISIONS, SAVED_P
                 positions[p_idx_dic[pos]].status = 0
             # 优先队列恢复
             heapq.heappush(q, task)
-        # if step % 1 == 0:
-        #     print("进度：", step, "/", len(tasks))
+        if step % 1 == 0:
+            print("进度：", step, "/", len(tasks), task.task_name)
         # if step > len(q)/2:
         #     GenerateGant(plateprocesses, board_num, tasks, base_num, t_idx_dic, assayssid, machines)
     return tasks, positions, machines

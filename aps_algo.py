@@ -21,7 +21,7 @@ def scheduler(data):
     # L1 Scheduling
     tasks = my_modules.list_scheduling2(tasks, t_idx_dic)
     PROGRAM_PRIOR_TIME = time.time()
-
+    
     # L1 Result Output & Task Graph & Resource Outp t-- TEST CODE
     if TEST_MODE == 1:
         for _id, task in enumerate(tasks):
@@ -45,12 +45,13 @@ def scheduler(data):
     tasks, positions, i, Finished, SAVED_PRE_DECISIONS, SAVED_PRIOR_QUEUE, \
         q = my_modules.Initialize(tasks, 0, window_size * base_num, positions, t_idx_dic, p_idx_dic)
     PROGRAM_INIT_TIME = time.time()
+
     # 2. Running
     tasks, positions, machines = \
         my_modules.Run(tasks, window_size * base_num, positions, machines, q, SAVED_PRE_DECISIONS,
                     SAVED_PRIOR_QUEUE, t_idx_dic, p_idx_dic, base_num)
     PROGRAM_RUN_TIME = time.time()
-    
+
     # 3. Results Output
     my_modules.ResultsOutput(tasks, board_num, base_num, positions, t_idx_dic, p_idx_dic, m_idx_dic, plateprocesses)
     for task in tasks:
@@ -109,4 +110,8 @@ def get_intermediate_result():
 if __name__ == "__main__":
     # ip = input("Input host IP  如 192.168.0.192 :")
     ip = '10.192.253.121'
+    # ip = '192.168.214.11'
+    ip = '192.168.200.103'
+    ip = '30.137.80.111'
+    ip = '10.192.204.237'
     app.run(host=ip, port=5000)
